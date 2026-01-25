@@ -1,0 +1,40 @@
+ホーム（index.html）
+│
+├─ About（about.html）
+├─ Services（services.html）
+├─ Works一覧（portfolio.html）
+│    └─ Works詳細（portfolio-detail.html）
+├─ Blog一覧（blog.html）
+│    └─ Blog詳細（blog-detail.html）
+└─ Contact（contact.html）
+
+一覧 → 詳細の動き
+
+これだけ覚えて
+
+Works一覧 → 作品をクリック → Works詳細 → 戻る
+Blog一覧  → 記事をクリック → Blog詳細  → 戻る
+
+
+この2パターンだけ
+
+③ 「作らなくていいもの」
+
+今はこれ不要
+
+Homeを何個も作る
+
+Pricing専用ページ
+
+FAQ専用ページ
+
+Homeの中にセクションとして置けばOK
+
+④ 面接での説明（そのまま言える）
+
+「制作会社サイトを想定して、
+ホームを起点に各ページへ遷移する
+シンプルな構成にしています。
+実務で多い一覧→詳細の流れも入れています。」
+
+これで十分通じる。

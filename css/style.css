@@ -1,0 +1,137 @@
+@charset "UTF-8";
+/* Variables
+--------------------------------*/
+:root {
+	--color-bg-dark: #28293e;
+	--color-bg-light: #fdf0e9;
+
+	--color-text-white: #ffffff;
+	--color-text-dark: #391400;
+
+	--color-accent: #EF6D58;
+}
+
+/* Base
+--------------------------------*/
+html {
+	font-size: 100%;
+	/* 1rem = 16px */
+}
+
+body {
+	font-size: 1rem;
+	font-family: "Epilogue", "Noto Sans JP", sans-serif;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+ul {
+	list-style: none;
+}
+
+/* h1: 72 / 80 */
+h1 {
+	font-size: 4.5rem;		/* 72px */
+	line-height: 1.1;		/* 80 ÷ 72 */
+	color: var(--color-text-white);
+}
+
+/* h2: 56 / 64 */
+h2 {
+	font-size: 3.5rem;		/* 56px */
+	line-height: 1.14;		/* 64 ÷ 56 */
+	color: var(--color-text-dark);
+}
+
+/* h3: 40 / 48 */
+h3 {
+	font-size: 2.5rem;		/* 40px */
+	line-height: 1.2;		/* 48 ÷ 40 */
+	color: var(--color-text-dark);
+}
+
+/* h4: 24 / 32 */
+h4 {
+	font-size: 1.5rem;		/* 24px */
+	line-height: 1.33;		/* 32 ÷ 24 */
+	color: var(--color-text-dark);
+}
+
+/* h5: 16 / 32 */
+h5 {
+	font-size: 1rem;		/* 16px */
+	font-weight: 400;
+	line-height: 2;			/* 32 ÷ 16 */
+	letter-spacing: 3px;
+	text-transform: uppercase;  
+	color: var(--color-accent);
+}
+
+header{
+	background-color: var(--color-bg-dark);
+	padding-top: 16px;
+}
+/* Layout
+--------------------------------*/
+
+
+/* Utility
+--------------------------------*/
+.sp-only {
+	display: inline;
+}
+
+
+/* Hero
+--------------------------------*/
+.hero {
+	background: var(--color-bg-dark);
+}
+
+.hero__lead{
+	margin-top: 0.25em;
+	color: var(--color-text-white);
+}
+
+/* Service
+--------------------------------*/
+.service {}
+
+/* Portfolio
+--------------------------------*/
+.portfolio {}
+
+/* Features
+--------------------------------*/
+.features {}
+
+/* Testimonials
+--------------------------------*/
+.testimonials {}
+
+/* FAQ
+--------------------------------*/
+.faq {}
+
+/* Blog
+--------------------------------*/
+.blog {}
+
+/* Contact
+--------------------------------*/
+.contact {}
+
+
+/* PC
+--------------------------------*/
+@media (min-width: 1440px) {
+	.u-sp-only {
+		display: none;
+	}
+}
+
+
