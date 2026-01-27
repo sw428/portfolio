@@ -6,6 +6,7 @@
 	--color-bg-light: #fdf0e9;
 
 	--color-text-white: #ffffff;
+	--color-text-gray: rgba(255, 255, 255, 0.64);
 	--color-text-dark: #391400;
 
 	--color-accent: #EF6D58;
@@ -14,8 +15,7 @@
 /* Base
 --------------------------------*/
 html {
-	font-size: 100%;
-	/* 1rem = 16px */
+	font-size: 100%;    /* 1rem = 16px */
 }
 
 body {
@@ -29,71 +29,106 @@ img {
 	height: auto;
 }
 
+a {
+	text-decoration: none;
+}
+
 ul {
 	list-style: none;
 }
 
-/* h1: 72 / 80 */
 h1 {
 	font-size: 4.5rem;		/* 72px */
-	line-height: 1.1;		/* 80 ÷ 72 */
+	line-height: 1.1;		/* 80(hight) ÷ 72 */
 	color: var(--color-text-white);
 }
 
-/* h2: 56 / 64 */
 h2 {
 	font-size: 3.5rem;		/* 56px */
 	line-height: 1.14;		/* 64 ÷ 56 */
-	color: var(--color-text-dark);
 }
 
-/* h3: 40 / 48 */
 h3 {
 	font-size: 2.5rem;		/* 40px */
-	line-height: 1.2;		/* 48 ÷ 40 */
+	line-height: 1.2;	/* 48 ÷ 40 */
 	color: var(--color-text-dark);
 }
 
-/* h4: 24 / 32 */
 h4 {
-	font-size: 1.5rem;		/* 24px */
-	line-height: 1.33;		/* 32 ÷ 24 */
+	font-size: 1.5rem;	/* 24px */
+	line-height: 1.33;	/* 32 ÷ 24 */
 	color: var(--color-text-dark);
 }
 
-/* h5: 16 / 32 */
-h5 {
-	font-size: 1rem;		/* 16px */
+
+/* Layout
+--------------------------------*/
+.l-inner {
+	width: 100%;
+	padding: 0 23px;
+}
+
+/* Text (Typography)
+--------------------------------*/
+.t-accent-text {
+	font-size: 1rem;			/* 16px */
 	font-weight: 400;
-	line-height: 2;			/* 32 ÷ 16 */
+	line-height: 2;				/* 32 ÷ 16 */
 	letter-spacing: 3px;
-	text-transform: uppercase;  
+	text-transform: uppercase;  /* HTML上で大文字にすると単語ではなく一音ずつとして読まれる可能性考慮 */
 	color: var(--color-accent);
 }
 
-header{
-	background-color: var(--color-bg-dark);
-	padding-top: 16px;
+.t-text{
+	font-size: 1rem;			/* 16px */
+	font-weight: 400;
+	line-height: 2;				/* 32 ÷ 16 */
+	letter-spacing: 0px;
+	color: var(--color-text-gray);
 }
-/* Layout
---------------------------------*/
-
 
 /* Utility
 --------------------------------*/
-.sp-only {
+.u-sp-only {
 	display: inline;
 }
 
+/* Header
+--------------------------------*/
+header {
+	background-color: var(--color-bg-dark);
+	padding-top: 16px;
+}
+.header__brand{
+	display: inline-flex;   /* 行レイアウトがaタグ(インライン要素)によるinline formatting context判断によるベースライン形成(縦に4px追加)防止の為のflex formatting context切り替え(親のflexとは無関係)*/
+}
+
+
+.header__controls{
+	display: flex;
+	align-items: center;
+	justify-content: space-between; 
+	}
 
 /* Hero
 --------------------------------*/
 .hero {
 	background: var(--color-bg-dark);
+	flex-direction: column;
+	align-items: flex-start;
+	padding-top: 32px;
 }
 
-.hero__lead{
-	margin-top: 0.25em;
+.hero__avatar {
+	margin-bottom: 30px;
+}
+
+.hero__title {
+	margin-bottom: 20px;
+}
+
+.hero__heading {
+	margin-bottom: -37px;
 	color: var(--color-text-white);
 }
 
