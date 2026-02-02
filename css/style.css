@@ -31,6 +31,7 @@ img {
 
 a {
 	text-decoration: none;
+	color: inherit;
 }
 
 ul {
@@ -60,7 +61,6 @@ h4 {
 	color: var(--color-text-dark);
 }
 
-
 /* Layout
 --------------------------------*/
 .l-inner {
@@ -86,6 +86,34 @@ h4 {
 	letter-spacing: 0px;
 	color: var(--color-text-gray);
 }
+/* Components
+--------------------------------*/
+.c-button {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 170px;
+	height: 48px;
+
+	padding-top: 3px;      /*ベースラインが消えてテキストがずれるため*/
+	border-radius: 7px;
+	font-weight: 900;
+	line-height: 1.3;
+	text-transform: uppercase;
+}
+
+/* Button variations */
+.c-button--primary {
+	background: var(--color-accent);
+	color: #fff;
+}
+
+.c-button--secondary {
+	background: transparent;
+	border: 1px solid #000000;
+	color: var(--color-text-dark);
+}
 
 /* Utility
 --------------------------------*/
@@ -95,7 +123,7 @@ h4 {
 
 /* Header
 --------------------------------*/
-header {
+.header {
 	background-color: var(--color-bg-dark);
 	padding-top: 16px;
 }
@@ -103,20 +131,95 @@ header {
 	display: inline-flex;   /* 行レイアウトがaタグ(インライン要素)によるinline formatting context判断によるベースライン形成(縦に4px追加)防止の為のflex formatting context切り替え(親のflexとは無関係)*/
 }
 
-
 .header__controls{
 	display: flex;
 	align-items: center;
 	justify-content: space-between; 
-	}
+}
+
+/* toggle button
+--------------------------------*/
+.header__toggle {
+	width: 48px;
+	height: 48px;
+	background: none;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	border-radius: 8px;
+	cursor: pointer;
+	position: relative;		/* z-index を効かせる */
+	z-index: 1001;			/* overlay より上 */
+}
+
+.header__line {
+	display: block;
+	width: 16px;
+	height: 2px;
+	background: var(--color-text-white);
+	margin: 6px auto;
+	transition: transform .3s, opacity .3s;
+}
+/* SP (default): overlay menu
+--------------------------------*/
+.header__nav {
+	display: none; /* ← 今の方式なら残す（後でopacity方式に改善可） */
+	position: fixed;
+	inset: 0;
+	background: rgba(0, 0, 0, .4);
+	color: var(--color-accent);
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+	z-index: 1000;
+}
+
+/* open */
+.header.is-open .header__nav {
+	display: block;
+	opacity: 1;
+	visibility: visible;
+	pointer-events: auto;
+}
+
+/* panel */
+.header__nav-panel {
+	background: #fff;
+	width: min(320px, 80vw);
+	padding: 24px;
+	margin-left: auto;
+}
+
+.header__nav-list{
+	color: var(--color-text-dark);
+}
+
+/* hamburger -> X */
+.header.is-open .header__line:nth-child(1) {
+	transform: translateY(8px) rotate(45deg);
+}
+
+.header.is-open .header__line:nth-child(2) {
+	opacity: 0;
+}
+
+.header.is-open .header__line:nth-child(3) {
+	transform: translateY(-8px) rotate(-45deg);
+}
+
+/* open中：×を右上固定（overlayに隠れない） */
+.header.is-open .header__toggle {
+	position: fixed;
+	top: 16px;
+	right: 16px;
+}
 
 /* Hero
 --------------------------------*/
 .hero {
 	background: var(--color-bg-dark);
-	flex-direction: column;
-	align-items: flex-start;
+	/* flex-direction: column; */
+	/* align-items: flex-start; */
 	padding-top: 32px;
+	padding-bottom: 48px;
 }
 
 .hero__avatar {
@@ -130,6 +233,10 @@ header {
 .hero__heading {
 	margin-bottom: -37px;
 	color: var(--color-text-white);
+}
+
+.hero__lead{
+	margin-bottom: 32px;
 }
 
 /* Service
@@ -163,9 +270,40 @@ header {
 
 /* PC
 --------------------------------*/
-@media (min-width: 1440px) {
+@media (min-width: 769px) {         /*1440？いくつにするか後で判断*/
+	/* Utility
+	--------------------------------*/
 	.u-sp-only {
 		display: none;
+	}
+	/* Header
+	--------------------------------*/
+	.header__toggle {
+		display: none;
+	}
+
+	.header__nav {
+		display: block;
+		position: static;
+		inset: auto;
+		opacity: 1;
+		visibility: visible;
+		pointer-events: auto;
+		background: transparent;
+		z-index: auto;
+	}
+
+	.header__nav-panel {
+		width: auto;
+		padding: 0;
+		margin: 0;
+		background: transparent;
+	}
+
+	.header__nav-list {
+		color: var(--color-text-white);
+		display: flex;
+		gap: 24px;
 	}
 }
 
