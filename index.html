@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;800&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;800;900&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -17,16 +17,26 @@
 		<div class="l-inner header__inner">
 			<div class="header__controls">
 				<!-- ロゴ -->
-						<a href="#top" class="header__brand">
-							<img src="img/logo.svg"  class="header__logo">
-						</a>
-
+				<a href="#top" class="header__brand">
+					<img src="img/logo.svg"  class="header__logo">
+				</a>
 				<!-- ハンバーガー -->
 				<button class="header__toggle" aria-label="メニューを開く">
 					<span class="header__line"></span>
 					<span class="header__line"></span>
 					<span class="header__line"></span>
 				</button>
+
+				<nav id="global-nav" class="header__nav" aria-hidden="true">
+					<div class="header__nav-panel">
+						<ul class="header__nav-list t-text">
+							<li><a href="#about">About</a></li>
+							<li><a href="#services">Services</a></li>
+							<li><a href="#pricing">Pricing</a></li>
+							<li><a href="#blog">Blog</a></li>
+						</ul>
+					</div>
+				</nav>
 			</div>
 		</div>
 	</header>
@@ -48,36 +58,93 @@
 					including technical skills, design,
 					business understanding.
 				</p>
+				<div>
+					<a href="#top" class="c-button c-button--primary">See My Work</a>
+				</div>
 			</div>
 		</section>
 		
-		<section class="service ">
-			<p class="service__title t-accent-text">Service</p>
+		<section class="service">
+			<div class="l-inner">
+				<p class="service__title t-accent-text">Service</p>
+				<h2 class="service__heading">How I Can Help You With</h2>
+			</div>
+			<div>
+				<div>
+					<div>
+						<img src="" alt="">
+					</div>
+					<p></p>
+				</div>
+				<p></p>
+				<div>
+					<button>
+						<img src="" alt="">
+					</button>
+					<p></p>
+				</div>
+			</div>
+			<div>
+				<div>
+					<div>
+						<img src="" alt="">
+					</div>
+					<p></p>
+				</div>
+				<p></p>
+				<div>
+					<button>
+						<img src="" alt="">
+					</button>
+					<p></p>
+				</div>
+			</div>
+			<p></p>
 		</section>
-		
+
 		<section class="portfolio">
+		<div class="l-inner">
 			<p class="portfolio__title t-accent-text">Portfolio</p>
+			<h2 class="portfolio__heading"></h2>
+		</div>
 		</section>
-		
+
 		<section class="features">
+		<div class="l-inner">
 			<p class="features__title t-accent-text">Features</p>
+			<h2 class="features__heading"></h2>
+		</div>
 		</section>
-		
+
 		<section class="testimonials">
+		<div class="l-inner">
 			<p class="testimonials__title t-accent-text">Testimonials</p>
+			<h2 class="testimonials__heading"></h2>
+		</div>
 		</section>
-		
+
 		<section class="faq">
+		<div class="l-inner">
 			<p class="faq__title t-accent-text">FAQ</p>
+			<h2 class="faq__heading"></h2>
+		</div>
 		</section>
-		
+
 		<section class="blog">
+		<div class="l-inner">
 			<p class="blog__title t-accent-text">Our Blog</p>
+			<h2 class="blog__heading"></h2>
+		</div>
 		</section>
-		
+
 		<section class="contact">
+		<div class="l-inner">
 			<p class="contact__title t-accent-text">Contact</p>
+			<h2 class="contact__heading"></h2>
+		</div>
 		</section>
 	</main>
+
+	<script src="js/main.js"></script>
 </body>
 </html>
