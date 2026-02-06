@@ -8,6 +8,7 @@
 	--color-text-white: #ffffff;
 	--color-text-gray: rgba(255, 255, 255, 0.64);
 	--color-text-dark: #391400;
+	--color-text-dark-gray: rgba(57, 20, 0,0.64);
 
 	--color-accent: #EF6D58;
 }
@@ -86,7 +87,10 @@ h4 {
 	letter-spacing: 0px;
 	color: var(--color-text-gray);
 }
+
 /* Components
+--------------------------------*/
+/* Button
 --------------------------------*/
 .c-button {
 	display: inline-flex;
@@ -113,6 +117,61 @@ h4 {
 	background: transparent;
 	border: 1px solid #000000;
 	color: var(--color-text-dark);
+}
+
+/* Circle button
+--------------------------------*/
+.c-circle-button {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+
+	background:var(--color-text-white);
+	border: none;
+	cursor: pointer;
+}
+
+/* 疑似要素作るための箱(flexboxの為幅がないと崩れる) */
+.c-circle-button__icon {
+	position: relative;   /* ← 疑似要素の基準 */
+	width:12px;
+	height: 12px;
+}
+
+/* +マーク */
+.c-circle-button__icon::before,
+.c-circle-button__icon::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	margin: auto;
+
+	width: 12px;
+	height: 2px;
+	background: #ef6c57;
+	transition: transform 0.3s;
+}
+
+/* 縦線 */
+.c-circle-button__icon::after {
+	transform: rotate(90deg);
+}
+
+.service__toggle.is-open .c-circle-button__icon::after {
+	transform: rotate(0deg);
+}
+
+/* Circle
+--------------------------------*/
+.c-circle{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background-color:#ef6c57;
 }
 
 /* Utility
@@ -241,11 +300,82 @@ h4 {
 
 /* Service
 --------------------------------*/
-.service {}
+.service {
+	background-color: var(--color-bg-light);
+	padding-top: 92px;
+	padding-bottom: 100px;
+}
+
+.service__inner{
+	text-align: center;
+}
+
+.service__title{
+	margin-bottom: 17px;
+}
+
+.service__heading{
+	margin-bottom: 35px;
+}
+
+.service__list{
+	text-align: left;
+	border: 1px solid #f3d1bf;
+	border-radius: 6px;
+	margin-bottom: 44px;
+}
+
+.service__item{
+	padding: 48px 28px;
+	border-bottom: 1px solid #f3d1bf;
+}
+
+.service__head{
+	display: flex;
+	align-items: center;
+	gap: 24px;
+	margin-bottom: 28px;
+}
+.service__icon{
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+}
+
+.service__text{
+	color: var(--color-text-dark-gray);
+	margin-bottom: 24px;
+}
+.service__toggle{
+	display:flex;
+	align-items:center;
+	gap:16px;
+}
+
+.service__toggle-text{
+	color: var(--color-text-dark);
+}
+
+.service__cta{
+	color: var(--color-text-dark-gray);
+}
+
+.service__cta-link{
+	color: var(--color-text-dark);
+}
+
 
 /* Portfolio
 --------------------------------*/
-.portfolio {}
+.portfolio {
+	background-color: var(--color-bg-dark);
+	padding-top: 76px;
+	padding-bottom: 64px;
+}
+
+.portfolio__heading{
+	color: var(--color-text-white);
+}
 
 /* Features
 --------------------------------*/
