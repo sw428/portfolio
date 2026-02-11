@@ -18,7 +18,7 @@
 			<div class="header__controls">
 				<!-- ロゴ -->
 				<a href="#top" class="header__brand">
-					<img src="img/logo.svg"  class="header__logo">
+					<img src="img/logo.svg" class="header__logo">
 				</a>
 				<!-- ハンバーガー -->
 				<button class="header__toggle" aria-label="メニューを開く">
@@ -45,7 +45,7 @@
 		<section class="hero">
 			<div class="l-inner">
 				<div>
-					<img class="hero__avatar" src="img/Bitmap.png" alt="">
+					<img class="hero__avatar" src="img/photo-hero.png" alt="">
 				</div>
 				<p class="hero__title t-accent-text">Gabriel Pires</p>
 				<h2 class="hero__heading">
@@ -76,7 +76,7 @@
 						<div class="service__body">
 							<div class="service__head">
 								<div class="service__icon c-circle">
-									<img src="img/Combined Shape.svg" alt="" />
+									<img src="img/icon-design.svg" alt="" />
 								</div>
 								<h4>Design</h4>
 							</div>
@@ -93,7 +93,6 @@
 							<span class="service__toggle-text t-text">Learn more</span>
 						</button>
 						
-
 						<div class="service__detail" id="service-detail-1" hidden>
 							<p class="service__detail-text">
 							<!-- 後で詳細を入れる -->
@@ -106,7 +105,7 @@
 						<div class="service__body">
 							<div class="service__head">
 								<div class="service__icon c-circle">
-									<img src="img/Combined Shape (1).svg" alt="" />
+									<img src="img/icon-development.svg" alt="" />
 								</div>
 								<h4>Development</h4>
 							</div>
@@ -141,14 +140,94 @@
 		</section>
 
 		<section class="portfolio">
-		<div class="l-inner">
-			<p class="portfolio__title t-accent-text">Portfolio</p>
-			<h3 class="portfolio__heading">Latest Work</h3>
-			<div>
-				<a href="#top" class="c-button c-button--secondary">Explore More</a>
+			<div class="l-inner">
+				<p class="portfolio__title t-accent-text">Portfolio</p>
+				<h3 class="portfolio__heading">Latest Work</h3>
+				<div>
+					<a href="#top" class="portfolio__button c-button c-button--dark">Explore More</a>
+				</div>
 			</div>
-		</div>
+			<div class="portfolio__grid">
+				<figure class="portfolio__item">
+					<a href="#" class="portfolio__link">
+						<!-- 画像 -->
+						<img class="portfolio__img" src="img/photo-design.jpg" alt="">
+						<!-- overlay -->
+						<figcaption class="portfolio__caption">
+							<!-- ラベル -->
+							<span class="portfolio__badge c-badge">
+								<span class="portfolio__badge-label t-text">Design</span>
+							</span>
+							<!-- タイトル -->
+							<h3 class="portfolio-item__title">SOFA</h3>
+						</figcaption>
+					</a>
+				</figure>
+				<figure class="portfolio__item">
+					<a href="#" class="portfolio__link">
+						<img class="portfolio__img" src="img/photo-branding.jpg" alt="">
+						<figcaption class="portfolio__caption">
+							<span class="portfolio__badge c-badge">
+								<span class="portfolio__badge-label">Branding</span>
+							</span>
+							<h3 class="portfolio-item__title">KeyBoard</h3>
+						</figcaption>
+					</a>
+				</figure>
+				<figure class="portfolio__item">
+					<a href="#" class="portfolio__link">
+						<img class="portfolio__img" src="img/photo-illustration.jpg" alt="">
+						<figcaption class="portfolio__caption">
+							<span class="portfolio__badge c-badge">
+								<span class="portfolio__badge-label">Illustration</span>
+							</span>
+							<h3 class="portfolio-item__title">Work Media</h3>
+						</figcaption>
+					</a>
+				</figure>
+			</div>
 		</section>
+
+		<section class="about">
+			<div class="l-inner">
+				<div>
+					<img src="img/photo-avatar.png" alt="">
+				</div>
+				<p class="about__title t-accent-text">Gabriel Pires</p>
+				<h3 class="about__heading">Professional Web Designer</h3>
+				<p class="about__lead t-text-big">Provides a full service range</p>
+				<p class="about__text t-text">
+					Ability to put themselves in the
+					merchant's shoes. It is meant to
+					partner on the long run, and work as an extension
+					of the merchant's team.
+				</p>
+				<div class="about__cta">
+					<a href="#top" class="c-button c-button--primary">See My Work</a>
+				</div>
+			</div>
+
+			<div class="about__stats">
+				<!-- card1 -->
+				<div class="about__card">
+					<div class="about__icon"></div>
+					<div>
+					<p class="about__num">42%</p>
+					<p class="about__text">Years of experience</p>
+					</div>
+				</div>
+
+				<!-- card2 -->
+				<div class="about__card">
+					<div class="about__icon"></div>
+					<div>
+						<p class="about__num">73+</p>
+						<p class="about__text">Projects Done</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
 
 		<section class="features">
 		<div class="l-inner">
