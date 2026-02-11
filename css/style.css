@@ -7,6 +7,7 @@
 
 	--color-text-white: #ffffff;
 	--color-text-gray: rgba(255, 255, 255, 0.64);
+	--color-text-gray-30: rgba(255, 255, 255, 0.3);
 	--color-text-dark: #391400;
 	--color-text-dark-gray: rgba(57, 20, 0,0.64);
 
@@ -67,6 +68,8 @@ h4 {
 .l-inner {
 	width: 100%;
 	padding: 0 23px;
+	max-width: 1170px;
+	margin: 0 auto;
 }
 
 /* Text (Typography)
@@ -86,6 +89,14 @@ h4 {
 	line-height: 2;				/* 32 ÷ 16 */
 	letter-spacing: 0px;
 	color: var(--color-text-gray);
+}
+
+.t-text-big{
+	font-size: 1.25rem;
+	font-weight: 400;
+	line-height: 1.6;
+	letter-spacing: 0;
+	color: var(--color-text-dark)
 }
 
 /* Components
@@ -117,6 +128,12 @@ h4 {
 	background: transparent;
 	border: 1px solid #000000;
 	color: var(--color-text-dark);
+}
+
+.c-button--dark {
+	background-color: transparent;
+	border: 1px solid var(--color-text-gray-30);
+	color: var(--color-text-white);
 }
 
 /* Circle button
@@ -172,6 +189,17 @@ h4 {
 	height: 80px;
 	border-radius: 50%;
 	background-color:#ef6c57;
+}
+
+.c-badge{
+	height: 38px;
+	padding: 5px 16px 1px;
+	background-color: var(--color-text-white);
+	border-radius: 19px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: fit-content;
 }
 
 /* Utility
@@ -336,6 +364,7 @@ h4 {
 	gap: 24px;
 	margin-bottom: 28px;
 }
+
 .service__icon{
 	display: flex;
 	justify-content: center;
@@ -364,7 +393,6 @@ h4 {
 	color: var(--color-text-dark);
 }
 
-
 /* Portfolio
 --------------------------------*/
 .portfolio {
@@ -373,13 +401,84 @@ h4 {
 	padding-bottom: 64px;
 }
 
+.portfolio__title{
+	margin-bottom: 17px;
+}
+
 .portfolio__heading{
 	color: var(--color-text-white);
+	border-color: var(--color-text-gray-30);
+	margin-bottom: 35px;
+}
+
+.portfolio__button{
+	margin-bottom: 48px;
+}
+
+.portfolio__grid{
+	margin: 0 auto;
+}
+
+.portfolio__item{
+	padding: 16px 18px;
+	border: 1px solid #3a3c56;
+	max-width: 448px;
+	margin: 0 auto;
+}
+
+/* リンク＝カードの箱にする */
+.portfolio__link{
+	display:block;
+	position: relative;
+}
+
+.portfolio__img{
+	width: 100%;
+}
+
+/* overlay */
+.portfolio__caption{
+	position: absolute;
+	inset: 0;
+	display: grid; 
+	gap: 23px;
+	align-content: end;     
+	padding: 0 0 40px 37px;
+}
+
+
+
+.portfolio__badge-label{
+	color: var(--color-text-dark);
+}
+
+.portfolio-item__title{
+	color: var(--color-text-white);
+}
+
+/* about
+--------------------------------*/
+.about{
+	background-color: var(--color-bg-light);
+	padding-top: 100px;
+	padding-bottom: 113px;
+}
+
+.about__title{
+	margin-bottom: 17px;
+}
+
+.about__heading{
+	margin-bottom: 29px;
 }
 
 /* Features
 --------------------------------*/
-.features {}
+.features {
+	background-color: var(--color-bg-dark);
+}
+
+
 
 /* Testimonials
 --------------------------------*/
