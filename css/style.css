@@ -4,6 +4,7 @@
 :root {
 	--color-bg-dark: #28293e;
 	--color-bg-light: #fdf0e9;
+	--color-bg-pink:#f9e5da;
 	--color-text-white: #ffffff;
 	--color-text-gray-30: #ffffff4d;
 	--color-text-gray-64: #ffffffa3;
@@ -41,23 +42,27 @@ ul {
 h1 {
 	font-size: 4.5rem;		/* 72px */
 	line-height: 1.1;		/* 80(hight) ÷ 72 */
+	font-weight: 800;
 	color: var(--color-text-white);
 }
 
 h2 {
 	font-size: 3.5rem;		/* 56px */
 	line-height: 1.14;		/* 64 ÷ 56 */
+	font-weight: 800;
 }
 
 h3 {
 	font-size: 2.5rem;		/* 40px */
-	line-height: 1.2;	/* 48 ÷ 40 */
+	line-height: 1.2;
+	font-weight: 800;	    /* 48 ÷ 40 */
 	color: var(--color-text-dark);
 }
 
 h4 {
 	font-size: 1.5rem;	/* 24px */
 	line-height: 1.33;	/* 32 ÷ 24 */
+	font-weight: 700;
 	color: var(--color-text-dark);
 }
 
@@ -72,6 +77,15 @@ h4 {
 
 /* Text (Typography)
 --------------------------------*/
+.t-h3-text{
+	font-size: 2.5rem;		
+	line-height: 1.2;
+	font-weight: 800;	    
+	color: var(--color-text-dark);
+	margin-top: 45px;
+	margin-bottom: 13px;
+}
+
 .t-accent-text {
 	font-size: 1rem;			/* 16px */
 	font-weight: 400;
@@ -90,7 +104,7 @@ h4 {
 }
 
 .t-text-big{
-	font-size: 1.25rem;
+	font-size: 1.25rem;   /*20px*/
 	font-weight: 400;
 	line-height: 1.6;
 	letter-spacing: 0;
@@ -100,42 +114,46 @@ h4 {
 /* Components
 --------------------------------*/
 /* Button
---------------------------------*/
+--------------------*/
+/* base */
 .c-button {
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
-	width: 154px;
 	height: 48px;
 
-	padding-top: 3px;      /*ベースラインが消えてテキストがずれるため*/
+	padding-top: 3px;      /*ディセンダー分と余白の差分ずれるため*/
 	border-radius: 7px;
 	font-weight: 900;
 	font-size: 14px;
-	line-height: 1;
 	text-transform: uppercase;
 }
 
-/* Button variations */
+/* color*/
 .c-button--primary {
 	background: var(--color-accent);
 	color: #fff;
 }
 
 .c-button--secondary {
-	background: transparent;
-	border: 1px solid #000000;
+	background: #fff;
 	color: var(--color-text-dark);
 }
+
 
 .c-button--dark {
 	background-color: transparent;
 	border: 1px solid var(--color-text-gray-30);
-	color: var(--color-text-white);
+	color: #fff;
 }
 
+/* size */
+.c-button--w170 { width:170px; }
+.c-button--w154 { width:154px; }
+.c-button--w138 { width:138px; }
+
 /* Circle button
---------------------------------*/
+--------------------*/
 .c-circle-button {
 	display: inline-flex;
 	justify-content: center;
@@ -181,12 +199,15 @@ h4 {
 }
 
 /* Circle
---------------------------------*/
+--------------------*/
+/* base */
 .c-circle{
-	width: 80px;
-	height: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	border-radius: 50%;
 	background-color:#ef6c57;
+	flex: 0 0 auto;
 }
 
 .c-badge{
@@ -199,6 +220,12 @@ h4 {
 	justify-content: center;
 	width: fit-content;
 }
+
+/* circle size  */
+.c-circle--lg{ width:112px; height:112px; }
+.c-circle--md{ width:80px;  height:80px;  }
+.c-circle--sm{ width:32px;  height:32px;  }
+
 
 /* Utility
 --------------------------------*/
@@ -344,6 +371,7 @@ h4 {
 
 .hero__heading {
 	margin-bottom: -37px;
+	margin-right:-33px;
 	color: var(--color-text-white);
 }
 
@@ -388,12 +416,6 @@ h4 {
 	align-items: center;
 	gap: 24px;
 	margin-bottom: 28px;
-}
-
-.service__icon{
-	display: flex;
-	justify-content: center;
-	align-items: center; 
 }
 
 .service__text{
@@ -493,29 +515,123 @@ h4 {
 	margin-bottom: 17px;
 }
 
+.about__lead{
+	margin-bottom: 18px;
+}
+
 .about__heading{
 	margin-bottom: 29px;
 }
 
 .about__text{
 	color: var(--color-text-dark-gray-64);
+	margin-bottom: 32px;
 }
 
 .about__cta{
-	
+	margin-bottom: 96px;
+}
+
+.about__stats{
+	border: 1px solid #f3d1bf;
+	border-radius: 6px;
+}
+
+.about__card{
+	display: flex;
+	width: 100%;
+	height: auto;
+	gap: 29px;
+}
+
+.about__card + .about__card{
+	border-top:1px solid #f3d1bf;
+}
+
+.about__icon{
+	margin-top: 32px;
+	margin-left: 28px;
+}
+
+
+.about__label-text{
+	margin-bottom: 36px;
 }
 
 /* Features
 --------------------------------*/
 .features {
+	padding-top:77px;
+	padding-bottom:164px;
 	background-color: var(--color-bg-dark);
 }
 
+.features__heading{
+	color: #ffffff;
+	margin-bottom: 29px;
+}
+
+.features__lead{
+	color: #ffffff;
+	margin-bottom: 29px;
+}
+
+.features__item{
+	display: inline-flex;
+	gap: 16px;
+	margin-bottom: 16px;
+	justify-content: center;
+	align-items: center;
+}
+
+.features__text{
+	color: var(--color-text-gray-64);
+}
+
+/* Get Started
+--------------------------------*/
+.get-started{
+	background-color: var(--color-bg-pink);
+	padding-top: 137px;
+
+}
+
+.get-started__inner{
+	padding-inline: 51px;
+}
+
+.get-started__text{
+	margin-bottom: 13px;
+}
+
+.get-started__heading{
+	margin-bottom: 23px;
+}
+
+.get-started__button{
+	margin-bottom: 60px;
+}
+
+.get-started__desc{
+	color: var(--color-text-dark-gray-64);
+	margin-bottom: 29px;
+}
 
 
 /* Testimonials
 --------------------------------*/
-.testimonials {}
+.testimonials {
+	padding-top: 130px;
+	padding-bottom: 112px;
+	background-color:var(--color-bg-light) ;
+}
+
+.testimonials__list{
+	display: grid;
+  	gap: 16px;            /* カンプのカード間 */
+}
+
+
 
 /* FAQ
 --------------------------------*/
@@ -532,7 +648,7 @@ h4 {
 
 /* PC
 --------------------------------*/
-@media (min-width: 769px) {         /*1440？いくつにするか後で判断*/
+@media (min-width: 769px) {         
 	/* Utility
 	--------------------------------*/
 	.u-sp-only {
@@ -567,6 +683,36 @@ h4 {
 		display: flex;
 		gap: 24px;
 	}
+
+	/* Hero
+	--------------------------------*/
+	
+	/* Service
+	--------------------------------*/
+
+	/* Portfolio
+	--------------------------------*/
+
+	/* About
+	--------------------------------*/
+
+	/* Features
+	--------------------------------*/
+
+	/* Testimonials
+	--------------------------------*/
+
+	/* FAQ
+	--------------------------------*/
+
+	/* Blog
+	--------------------------------*/
+
+	/* Contact
+	--------------------------------*/
+
+	/* Footer
+	--------------------------------*/
 }
 
 
