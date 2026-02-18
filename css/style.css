@@ -10,7 +10,8 @@
 	--color-text-gray-64: #ffffffa3;
 	--color-text-dark: #391400;
 	--color-text-dark-gray-64: #391400a3;
-	--color-accent: #EF6D58;
+	--color-accent: #ef6d58;
+	--color-border: #f3d1bf;
 }
 
 /* Base
@@ -77,13 +78,20 @@ h4 {
 
 /* Text (Typography)
 --------------------------------*/
-.t-h3-text{
+.t-h3-text {
 	font-size: 2.5rem;		
 	line-height: 1.2;
 	font-weight: 800;	    
 	color: var(--color-text-dark);
 	margin-top: 45px;
 	margin-bottom: 13px;
+}
+
+.t-h4-text {
+	font-size: 1.5rem;	/* 24px */
+	line-height: 1.33;	/* 32 ÷ 24 */
+	font-weight: 700;
+	color: var(--color-text-dark);
 }
 
 .t-accent-text {
@@ -401,14 +409,13 @@ h4 {
 
 .service__list{
 	text-align: left;
-	border: 1px solid #f3d1bf;
 	border-radius: 6px;
 	margin-bottom: 44px;
 }
 
 .service__item{
 	padding: 48px 28px;
-	border-bottom: 1px solid #f3d1bf;
+	border: 1px solid var(--color-border);
 }
 
 .service__head{
@@ -446,6 +453,7 @@ h4 {
 	background-color: var(--color-bg-dark);
 	padding-top: 76px;
 	padding-bottom: 64px;
+	
 }
 
 .portfolio__title{
@@ -462,15 +470,20 @@ h4 {
 	margin-bottom: 48px;
 }
 
-.portfolio__grid{
+.portfolio__list{
+	/* display: grid; */
 	margin: 0 auto;
+	/*親要素でボーダーをレスポンシブ含めて制御*/
+	border: 1px solid #3a3c56;
+	width: fit-content;
 }
-
+.portfolio__list > * + * {
+	border-top: 1px solid #3a3c56;
+}
 .portfolio__item{
 	padding: 16px 18px;
-	border: 1px solid #3a3c56;
 	max-width: 448px;
-	margin: 0 auto;
+	background:var(--color-bg-dark); /*パディング領域の色背景色に上書き*/
 }
 
 /* リンク＝カードの箱にする */
@@ -532,20 +545,18 @@ h4 {
 	margin-bottom: 96px;
 }
 
-.about__stats{
-	border: 1px solid #f3d1bf;
+.about__stats{                    
+	border: 1px solid var(--color-border);
 	border-radius: 6px;
+}
+
+.about__stats > * + *{
+	border-top: 1px solid var(--color-border);
 }
 
 .about__card{
 	display: flex;
-	width: 100%;
-	height: auto;
 	gap: 29px;
-}
-
-.about__card + .about__card{
-	border-top:1px solid #f3d1bf;
 }
 
 .about__icon{
@@ -566,6 +577,10 @@ h4 {
 	background-color: var(--color-bg-dark);
 }
 
+.features__title{
+	margin-bottom: 17px;
+}
+
 .features__heading{
 	color: #ffffff;
 	margin-bottom: 29px;
@@ -577,10 +592,9 @@ h4 {
 }
 
 .features__item{
-	display: inline-flex;
+	display: flex;
 	gap: 16px;
 	margin-bottom: 16px;
-	justify-content: center;
 	align-items: center;
 }
 
@@ -626,12 +640,37 @@ h4 {
 	background-color:var(--color-bg-light) ;
 }
 
-.testimonials__list{
-	display: grid;
-  	gap: 16px;            /* カンプのカード間 */
+.testimonials__title{
+	margin-bottom: 17px;
 }
 
+.testimonials__heading{
+	margin-bottom: 35px;
+}
 
+.testimonials__list{
+	display: grid;
+	border: 1px solid var()
+}
+
+.testimonials__rating{
+	margin-bottom: 36px;
+}
+
+.testimonials__text{
+	color: var(--color-text-dark-gray-64);
+	margin-bottom: 64px;
+}
+
+.testimonials__author{
+	display: flex;
+	gap: 24px;
+	align-items: center;
+}
+
+.testimonials__name{
+	margin-bottom: 3px;
+}
 
 /* FAQ
 --------------------------------*/
@@ -695,7 +734,9 @@ h4 {
 
 	/* About
 	--------------------------------*/
-
+	.about__stats{
+    flex-direction:row;
+	}
 	/* Features
 	--------------------------------*/
 
