@@ -12,6 +12,7 @@
 	--color-text-dark-gray-64: #391400a3;
 	--color-accent: #ef6d58;
 	--color-border: #f3d1bf;
+	--color-border-dark: #3a3c56;
 }
 
 /* Base
@@ -53,7 +54,7 @@ h2 {
 	font-weight: 800;
 }
 
-h3 {
+h3 {/*sp版の場合h4になるのでフォントウエイト*/
 	font-size: 2.5rem;		/* 40px */
 	line-height: 1.2;
 	font-weight: 800;	    /* 48 ÷ 40 */
@@ -148,6 +149,12 @@ h4 {
 	color: var(--color-text-dark);
 }
 
+.c-button--white{
+	color: var(--color-text-dark);
+	background-color: #ffffff;
+	box-shadow: 0px 3px 9px 0px #39140014;
+}
+
 
 .c-button--dark {
 	background-color: transparent;
@@ -239,6 +246,17 @@ h4 {
 --------------------------------*/
 .u-sp-only {
 	display: inline;
+}
+
+.u-visually-hidden {
+  	position: absolute;   /* レイアウトから外す */
+  	width: 1px;           /* ほぼ見えなくする */
+	height: 1px;
+  	margin: -1px;         /* 画面外に押し出す */
+  	overflow: hidden;     /* はみ出し隠す */
+  	clip: rect(0,0,0,0);  /* 完全に切り抜く */
+  	white-space: nowrap;  /* 改行防止 */
+  	border: 0;            /* 枠消す */
 }
 
 /* color utilities
@@ -474,11 +492,11 @@ h4 {
 	/* display: grid; */
 	margin: 0 auto;
 	/*親要素でボーダーをレスポンシブ含めて制御*/
-	border: 1px solid #3a3c56;
+	border: 1px solid var(--color-border-dark);
 	width: fit-content;
 }
 .portfolio__list > * + * {
-	border-top: 1px solid #3a3c56;
+	border-top: 1px solid var(--color-border-dark);
 }
 .portfolio__item{
 	padding: 16px 18px;
@@ -637,7 +655,8 @@ h4 {
 .testimonials {
 	padding-top: 130px;
 	padding-bottom: 112px;
-	background-color:var(--color-bg-light) ;
+	background-color:var(--color-bg-light);
+	text-align: center;
 }
 
 .testimonials__title{
@@ -650,7 +669,21 @@ h4 {
 
 .testimonials__list{
 	display: grid;
-	border: 1px solid var()
+	text-align: left;
+	border: 1px solid var(--color-border);
+	border-radius: 7px;
+}
+
+.testimonials__list > * + * {
+	border-top: 1px solid var(--color-border);
+}
+
+.testimonials__item{
+	padding: 48px 28px 35px 28px;
+}
+
+.testimonials__item:nth-child(2){
+	background-color: #ffffff;
 }
 
 .testimonials__rating{
@@ -672,14 +705,130 @@ h4 {
 	margin-bottom: 3px;
 }
 
+.testimonials__role{
+	color: var(--color-text-dark)
+}
+
+.testimonials__cta{
+	margin-top: 48px;
+}
+
 /* FAQ
 --------------------------------*/
-.faq {}
+.faq {
+	background-color: var(--color-bg-dark);
+	padding-top: 92px;
+	padding-bottom: 98px;
+}
+
+.faq__title{
+	margin-bottom:17px;
+}
+
+.faq__heading{
+	color: #ffffff;
+	margin-bottom: 15px;
+}
+
+.faq__lead{
+	margin-bottom: 32px;
+}
+
+.faq__contact{
+	display: inline-block;
+	color: #ffffff;
+	margin-bottom: 36px;
+}
+
+.faq__list{
+	border: 1px solid var(--color-border-dark);
+	margin-bottom: 118px;
+}
+
+.faq__item{
+	padding: 40px 28px;
+}
+
+.faq__list > * + * {
+	border-top: 1px solid var(--color-border-dark);
+}
+
+.faq__question {
+	display: flex;
+	list-style: none;
+	cursor: pointer;
+	gap: 15px;
+}
+
+.faq__question::marker {
+	content: "";        /*safari等でlist-style: none;適用されない場合があるため*/
+}
+
+.faq__icon {
+	margin-left: auto;
+	transition: transform 0.3s ease;
+}
+
+.faq__item[open] {
+	background-color: #ffffff;
+}
+
+.faq__item[open] .faq__question-text{
+	color: var(--color-text-dark);
+}
+
+.faq__item[open] .faq__icon {
+	transform: rotate(180deg);
+}
+
+.faq__question-text{
+	color: #ffffff;
+	margin-bottom: 19px;
+}
+
+.faq__answer{
+	color: var(--color-text-dark-gray-64);
+}
+
+.faq__logos{
+	display:flex;
+	flex-wrap: wrap;
+	margin: 0px 29px 44px;
+	gap: 42px;
+	align-items: center;
+	justify-content: center;
+}
 
 /* Blog
 --------------------------------*/
-.blog {}
+.blog {
+	background-color:var(--color-bg-light);
+	padding-top: 92px;
+	padding-bottom: 112px;
+}
 
+.blog__title{
+	margin-bottom: 17px;
+}
+
+.blog__heading{
+	margin-bottom: 35px;
+}
+
+.blog-card__date{
+	margin-bottom: 52px;
+}
+
+.blog-border{
+	border: 1px solid var(--color-border);
+}
+
+
+.newsletter__form{
+	display:flex;
+	flex-direction:column;
+	gap:12px;
+}
 /* Contact
 --------------------------------*/
 .contact {}
