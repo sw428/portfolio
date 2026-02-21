@@ -470,62 +470,75 @@
 			<div class="l-inner">
 				<p class="blog__title t-accent-text">Our Blog</p>
 				<h3 class="blog__heading">Latest Blog Articles</h3>
-				<div>
+				<div class="blog__button">
 					<a href="#top" class="c-button c-button--white c-button--w170">Discover All</a>
 				</div>
 
 				<div class="blog__list">
 					<article class="blog-card">
-						<a class="blog-card__link" href="#">
-							<div class="blog-card__media">
+						<div class="blog-card__media">
+							<a class="blog-card__link" href="#">
 								<img class="blog-card__img" src="img/blog/Stories.jpg" alt="">
-							</div>
+							</a>
+						</div>
 
-						<p class="blog-card__category">Stories</p>
-						<h4 class="blog-card__title">Agency is a business you hire to outsource</h4>
+						<p class="blog-card__category t-text-big">Stories</p>
+						<h4 class="blog-card__title">
+							<a class="blog-card__link" href="#">
+								Agency is a business you hire to outsource
+							</a>
+						</h4>
 						<time class="blog-card__date" datetime="2021-11-05">5 Nov, 2021</time>
-						</a>
 					</article>
 
 					<article class="blog-card">
-						<a class="blog-card__link" href="#">
-							<div class="blog-card__media">
+						<div class="blog-card__media">
+							<a class="blog-card__link" href="#">
 								<img class="blog-card__img" src="img/blog/design.jpg" alt="">
-							</div>
+							</a>
+						</div>
 
-						<p class="blog-card__category">Design</p>
-						<h4 class="blog-card__title">Outsource your digital marketing efforts</h4>
+						<p class="blog-card__category t-text-big">Design</p>
+						<h4 class="blog-card__title">
+							<a class="blog-card__link" href="#">
+								Outsource your digital marketing efforts
+							</a>
+						</h4>
 						<time class="blog-card__date" datetime="2021-11-05">29 Oct, 2021</time>
-						</a>
 					</article>
 
 					<article class="blog-card">
-						<a class="blog-card__link" href="#">
-							<div class="blog-card__media">
+						<div class="blog-card__media">
+							<a class="blog-card__link" href="#">
 								<img class="blog-card__img" src="img/blog/marketing.jpg" alt="">
-							</div>
+							</a>
+						</div>
 
-						<p class="blog-card__category">Stories</p>
-						<h4 class="blog-card__title">Your business with a variety of digital</h4>
+						<p class="blog-card__category t-text-big">Marketing</p>
+						<h4 class="blog-card__title">
+							<a class="blog-card__link" href="/blog">
+								Your business with a variety of digital
+							</a>
+						</h4>
 						<time class="blog-card__date" datetime="2021-11-05">21 Oct, 2021</time>
-						</a>
 					</article>
 				</div>
 				
-				<h4>Newsletter</h4>
-				<p>A digital agency is a business you hire to outsource</p>
-				<form class="newsletter__form" action="#" method="post">
-					<label class="u-visually-hidden" for="email">
-						Email address
-					</label>
-
-					<div class="newsletter__form">
-						<input class="newsletter__input" type="email" id="email" name="email" placeholder="Your email" required>
-						<button class="newsletter__button" type="submit">
-							SUBSCRIBE
-						</button>
-					</div>
-				</form>
+				<div class="newsletter">
+					<h4 class="newsletter__title">Newsletter</h4>
+					<p class="newsletter__text t-text">A digital agency is a business you hire to outsource</p>
+					<form class="newsletter__form" action="#" method="post">
+						<label class="u-visually-hidden" for="email">
+							Email address
+						</label>
+						<div class="newsletter__form">
+							<input class="newsletter__field" type="email" id="email" name="email" placeholder="Your email" required>
+							<button class="newsletter__button" type="submit">
+								SUBSCRIBE
+							</button>
+						</div>
+					</form>
+				</div>
 			</div>
 		</section>
 
