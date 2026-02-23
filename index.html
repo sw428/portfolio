@@ -451,7 +451,6 @@
 							</summary>
 							<div class="faq__answer">
 								<p>
-									Marketing efforts
 								</p>
 							</div>
 						</details>
@@ -528,12 +527,12 @@
 					<h4 class="newsletter__title">Newsletter</h4>
 					<p class="newsletter__text t-text">A digital agency is a business you hire to outsource</p>
 					<form class="newsletter__form" action="#" method="post">
-						<label class="u-visually-hidden" for="email">
+						<label class="u-visually-hidden" for="newsletter-email">
 							Email address
 						</label>
 						<div class="newsletter__form">
-							<input class="newsletter__field" type="email" id="email" name="email" placeholder="Your email" required>
-							<button class="newsletter__button" type="submit">
+							<input class="newsletter__field c-input" type="email" id="newsletter-email" name="email" placeholder="Your email" required>
+							<button class="newsletter__button c-button c-button--white" type="submit">
 								SUBSCRIBE
 							</button>
 						</div>
@@ -544,8 +543,78 @@
 
 		<section class="contact">
 			<div class="l-inner">
+				<div class="contact-card">
+					<div class="contact-card__inner">
+						<h3 class="contact-card__title t-h4-text">Get In Touch</h3>
+						<form class="contact-form" action="#" method="post">
+							<!-- email -->
+							<div class="contact-form__fields">
+								<div class="contact-form__field">
+									<label for="contact-email" class="u-visually-hidden">Email address</label>
+									<input id="contact-email" name="email" class="c-input c-control" type="email" placeholder="Your email" required>
+								</div>
+								<!-- subject -->
+								<div class="contact-form__field">
+									<label for="subject" class="u-visually-hidden">Subject</label>
+									<select id="subject" name="subject" class="c-input c-input--select c-control">
+										<option value="">Subject</option>
+										<option>Design</option>
+										<option>Development</option>
+									</select>
+								</div>
+								<!-- message -->
+								<div class="contact-form__field">
+									<label for="message" class="u-visually-hidden">Message</label>
+									<textarea id="message" name="message" class="c-input c-input--textarea c-control" placeholder="Message"
+										required></textarea>
+								</div>
+							</div>
+							<!-- button -->
+							<div class="contact-form__actions">
+								<button class="contact-form__submit c-button c-button--primary c-button--w154" type="submit">
+									SUBMIT NOW
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+
 				<p class="contact__title t-accent-text">Contact</p>
-				<h3 class="contact__heading"></h3>
+				<h3 class="contact__heading">Contact Me</h3>
+				<p class="contact__lead">
+					A digital agency is a business you hire to
+					outsource your digital marketing efforts,
+					instead of handling in-house.
+				</p>
+				<div class="contact-info">
+					<ul class="contact-info__list">
+						<li class="contact-info__item">
+							<span class="contact-info__icon c-circle c-circle--sm">
+								<img src="img/icon-location.svg" alt="" aria-hidden="true">
+							</span>
+							<address class="contact-info__text">
+								2247 Lunetta Street, TX<br>
+								76301
+							</address>
+						</li>
+						<li class="contact-info__item">
+							<span class="contact-info__icon c-circle c-circle--sm">
+								<img src="img/icon-phone.svg" alt="" aria-hidden="true">
+							</span>
+							<a href="tel:+12345678900" class="contact-info__link">
+								+1 (234) 567-89-00
+							</a>
+						</li>
+						<li class="contact-info__item">
+							<span class="contact-info__icon c-circle c-circle--sm">
+								<img src="img/icon-mail.svg" alt="" aria-hidden="true">
+							</span>
+							<a href="mailto:info@agency.com" class="contact-info__link">
+								info@agency.com
+							</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</section>
 	</main>
