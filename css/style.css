@@ -988,7 +988,35 @@ h4 {
 
 .contact-info__text,
 .contact-info__link{
-	margin-top: 10px;
+	margin-top: 10px;  /*フレックススタートによるずれ調整*/
+}
+
+/* final-cta
+--------------------------------*/
+.final-cta{
+	padding-top: 96px;
+	background-color: var(--color-bg-light);
+}
+
+.final-cta__visual{
+	margin-bottom: 9px;
+}
+
+.final-cta__name{
+	margin-bottom: 17px;
+}
+
+.final-cta__heading{
+	margin-bottom: 15px;
+}
+
+.final-cta__lead{
+	color: var(--color-text-dark-gray-64);
+	margin-bottom: 16px;
+}
+
+.final-cta__actions{
+	padding-bottom: 124px;
 }
 
 /* PC
