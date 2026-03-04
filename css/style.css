@@ -430,10 +430,9 @@ h4 {
 --------------------------------*/
 .hero {
 	background: var(--color-bg-dark);
-	/* flex-direction: column; */
-	/* align-items: flex-start; */
 	padding-top: 32px;
 	padding-bottom: 48px;
+	overflow-x: hidden;
 }
 
 .hero__avatar {
@@ -521,6 +520,11 @@ h4 {
 	padding-top: 76px;
 	padding-bottom: 64px;
 	
+}
+
+.portfolio-inner{
+	max-width: 376px;
+	margin: 0 auto;
 }
 
 .portfolio__title{
@@ -1019,6 +1023,81 @@ h4 {
 	padding-bottom: 124px;
 }
 
+.final-cta__grid{
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	width: fit-content;
+	margin: 0 auto;
+}
+
+.final-cta__item {
+	width:100%;
+}
+
+/* footer
+--------------------------------*/
+.footer{
+	background-color: var(--color-bg-dark);
+	text-align: center;
+	padding-top: 105px;
+	padding-bottom: 52px;
+}
+
+.footer__logo{
+	color: var(--color-text-white);
+	margin-bottom: 52px;
+}
+
+.footer__menu{
+	margin-bottom: 48px;
+}
+
+.footer__title{
+	margin-bottom: 16px;
+}
+
+.footer__services{
+	margin-bottom: 51px;
+}
+
+.footer__social-list {
+	display: flex;
+	gap: 8px;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer__social{
+	margin-bottom: 64px;
+}
+
+.footer__bottom{
+	padding-top: 43px;
+	border-top: 1px solid var(--color-border-dark);
+}
+
+.footer__links{
+	display: flex;
+	justify-content: space-between;
+	margin-inline: 50px;
+}
+
+.footer__copyright{
+	margin-bottom: 32px;
+}
+
+.footer__bottom-link{
+	color: var(--color-text-white);
+}
+
+/* 480px以上
+--------------------------------*/
+@media (min-width: 480px) {
+	.hero__heading{
+		margin-bottom: 0px;
+	}
+}
+
 /* PC
 --------------------------------*/
 @media (min-width: 768px) {         
@@ -1056,9 +1135,6 @@ h4 {
 		display: flex;
 		gap: 24px;
 	}
-
-	
-
 	/* Hero
 	--------------------------------*/
 	
@@ -1088,6 +1164,18 @@ h4 {
 	/* Contact
 	--------------------------------*/
 
+	/* final-cta
+	--------------------------------*/
+	.final-cta__grid{
+		display: flex;
+	}
+	
+	.final-cta__item {
+		flex: 1 1 0;
+		max-width: 240px;
+		width: 100%;
+
+	}
 	/* Footer
 	--------------------------------*/
 }

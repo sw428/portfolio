@@ -141,10 +141,12 @@
 
 		<section class="portfolio">
 			<div class="l-inner">
-				<p class="portfolio__title t-accent-text">Portfolio</p>
-				<h3 class="portfolio__heading">Latest Work</h3>
-				<div>
-					<a href="#top" class="portfolio__button c-button c-button--dark c-button--w170">Explore More</a>
+				<div class="portfolio-inner">
+					<p class="portfolio__title t-accent-text">Portfolio</p>
+					<h3 class="portfolio__heading">Latest Work</h3>
+					<div>
+						<a href="#top" class="portfolio__button c-button c-button--dark c-button--w170">Explore More</a>
+					</div>
 				</div>
 			</div>
 			<div class="portfolio__list">
@@ -644,14 +646,81 @@
 					</div>
 				</div>
 			</div>
-			<div>
-				<img src="" alt="">
-			</div>
+			<ul class="final-cta__grid">
+				<li><img class="final-cta__item" src="img/cta/grid-01.jpg" alt=""></li>
+				<li><img class="final-cta__item" src="img/cta/grid-02.jpg" alt=""></li>
+				<li><img class="final-cta__item" src="img/cta/grid-03.jpg" alt=""></li>
+				<li><img class="final-cta__item" src="img/cta/grid-04.jpg" alt=""></li>
+				<li><img class="final-cta__item" src="img/cta/grid-05.jpg" alt=""></li>
+				<li><img class="final-cta__item" src="img/cta/grid-06.jpg" alt=""></li>
+			</ul>
 		</section>
 	</main>
 
-	<footer>
+	
+	<footer class="footer">
+		<div class="l-inner footer__inner">
+			<!-- brand -->
+				<h4 class="footer__logo">Personal</h4>
+			<!-- nav groups -->
+			<div class="footer__groups">
+				<!-- MENU -->
+				<nav class="footer__menu" aria-label="Footer menu">
+					<h5 class="footer__title t-accent-text">Menu</h5>
+					<ul class="footer__list">
+						<li class="footer__item"><a class="footer__link t-text" href="#about">About</a></li>
+						<li class="footer__item"><a class="footer__link t-text" href="#services">Services</a></li>
+						<li class="footer__item"><a class="footer__link t-text" href="#blog">Blog</a></li>
+						<li class="footer__item"><a class="footer__link t-text" href="#contact">Contact</a></li>
+					</ul>
+				</nav>
 
+				<!-- SERVICE -->
+				<nav class="footer__services" aria-label="Footer services">
+					<h5 class="footer__title t-accent-text">Service</h5>
+					<ul class="footer__list">
+						<li class="footer__item"><a class="footer__link t-text" href="#services">Design</a></li>
+						<li class="footer__item"><a class="footer__link t-text" href="#services">Development</a></li>
+						<li class="footer__item"><a class="footer__link t-text" href="#services">Marketing</a></li>
+						<li class="footer__item"><a class="footer__link t-text" href="#services">See More</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="footer__social" aria-label="Social links">
+				<ul class="footer__social-list">
+					<li class="footer__social-item">
+						<a class="footer__social-link c-circle c-circle--48" href="#" aria-label="Facebook">
+							<img src="img/icon-facebook.svg" alt="" aria-hidden="true">
+						</a>
+					</li>
+					<li class="footer__social-item">
+						<a class="footer__social-link c-circle c-circle--48" href="#" aria-label="Twitter">
+							<img src="img/icon-twitter.svg" alt="" aria-hidden="true">
+						</a>
+					</li>
+					<li class="footer__social-item">
+						<a class="footer__social-link c-circle c-circle--48" href="#" aria-label="Instagram">
+							<img src="img/icon-instagram.svg" alt="" aria-hidden="true">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="footer__bottom">
+			<div class="footer__meta">
+				<p class="footer__copyright t-text">
+					Copyright © 2022 Laaqiq.<br>
+					All Rights Reserved.
+				</p>
+			</div>
+				<!-- bottom links -->
+			<div class="footer__links">
+				<a class="footer__bottom-link t-text" href="#">Terms of Use</a>
+				<a class="footer__bottom-link t-text" href="#">Privacy Policy</a>
+			</div>
+		</div>
 	</footer>
 	<script src="js/main.js"></script>
 </body>
