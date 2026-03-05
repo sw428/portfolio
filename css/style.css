@@ -62,8 +62,8 @@ h2 {
 
 h3 {/*sp版の場合h4になるのでフォントウエイト*/
 	font-size: 2.5rem;		/* 40px */
-	line-height: 1.2;
-	font-weight: 800;	    /* 48 ÷ 40 */
+	line-height: 1.2;       /* 48 ÷ 40 */
+	font-weight: 800;	    
 	color: var(--color-text-dark);
 }
 
@@ -77,9 +77,8 @@ h4 {
 /* Layout
 --------------------------------*/
 .l-inner {
-	width: 100%;
-	padding: 0 23px;
-	max-width: 1170px;
+	width: min(100%, 1440px);
+	padding-inline: clamp(23.00px, calc(16.67vw + -105.00px), 135.00px); /* 適用範囲: 768px ～ 1440px */
 	margin: 0 auto;
 }
 
@@ -136,7 +135,6 @@ h4 {
 	justify-content: center;
 	align-items: center;
 	height: 48px;
-
 	padding-top: 3px;      /*ディセンダー分と余白の差分ずれるため*/
 	border-radius: 7px;
 	font-weight: 900;
@@ -342,14 +340,18 @@ h4 {
 	padding-top: 16px;
 }
 .header__brand{
-	display: inline-flex;   /* 行レイアウトがaタグ(インライン要素)によるinline formatting context判断によるベースライン形成(縦に4px追加)防止の為のflex formatting context切り替え(親のflexとは無関係)*/
+	display: inline-flex;   /* 行レイアウトがaタグ(インライン要素)によるinline formatting context判断によるベースライン形成(縦に4px追加)防止の為のflex formatting context切り替え(親のflexとは無関係) */
+	flex-shrink: 0;         /* フレックスは初期値0 1 autoで縮むのでそれを防ぐため */
 }
+
 
 .header__controls{
 	display: flex;
 	align-items: center;
-	justify-content: space-between; 
+	justify-content: space-between;
 }
+
+
 
 /* toggle button
 --------------------------------*/
@@ -426,6 +428,9 @@ h4 {
 	right: 16px;
 }
 
+.nav__actions {
+	display: none;
+}
 /* Hero
 --------------------------------*/
 .hero {
@@ -1078,8 +1083,8 @@ h4 {
 
 .footer__links{
 	display: flex;
-	justify-content: space-between;
-	margin-inline: 50px;
+	justify-content: center;
+	gap: 68px;
 }
 
 .footer__copyright{
@@ -1112,6 +1117,12 @@ h4 {
 		display: none;
 	}
 
+	.header__controls {
+		display: grid;
+		align-items: center;
+		grid-template-columns: auto 1fr auto;
+	}
+
 	.header__nav {
 		display: block;
 		position: static;
@@ -1133,7 +1144,12 @@ h4 {
 	.header__nav-list {
 		color: var(--color-text-white);
 		display: flex;
-		gap: 24px;
+		justify-content: space-around;
+
+	}
+	
+	.nav__actions {
+		display: inline-flex;
 	}
 	/* Hero
 	--------------------------------*/
