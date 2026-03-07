@@ -21,7 +21,7 @@
 					<img src="img/logo.svg" class="header__logo">
 				</a>
 				<!-- ハンバーガー -->
-				<button class="header__toggle" aria-label="メニューを開く">
+				<button class="header__toggle" 	type="button" aria-label="メニューを開く" aria-controls="global-nav" aria-expanded="false">
 					<span class="header__line"></span>
 					<span class="header__line"></span>
 					<span class="header__line"></span>
@@ -37,9 +37,9 @@
 						</ul>
 					</div>
 				</nav>
-				<div class="nav__actions">
-					<a href="#contact" class="nav__button c-button c-button--primary c-button--w154">
-						Contact Me
+				<div class="header__actions">
+					<a href="#contact" class="nav__button c-button c-button--dark c-button--w138">
+						Contact
 					</a>
 				</div>
 			</div>
@@ -48,23 +48,25 @@
 
 	<main>
 		<section class="hero">
-			<div class="l-inner">
-				<div>
-					<img class="hero__avatar" src="img/photo-hero.png" alt="">
+			<div class="l-inner hero__inner">
+				<div class="hero__img">
+					<img class="hero__avatar" src="img/hero/avatar.png" alt="">
 				</div>
-				<p class="hero__title t-accent-text">Gabriel Pires</p>
-				<h2 class="hero__heading">
-					The Simple,<br>
-					Clean<span class="u-sp-only"><br></span>
-					Design
-				</h2>
-				<p class="hero__lead t-text">
-					Agency provides a full service range
-					including technical skills, design,
-					business understanding.
-				</p>
-				<div>
-					<a href="#top" class="c-button c-button--primary c-button--w154">See My Work</a>
+				<div class="hero__content">
+					<p class="hero__title t-accent-text">Gabriel Pires</p>
+					<h1 class="hero__heading t-h1-text">
+						The Simple,<br>
+						Clean<span class="u-sp-only"><br></span>
+						Design
+					</h1>
+					<p class="hero__lead t-text">
+						Agency provides a full service range
+						including technical skills, design,
+						business understanding.
+					</p>
+					<div>
+						<a href="#top" class="c-button c-button--primary c-button--w154">See My Work</a>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -73,7 +75,7 @@
 			<div class="l-inner service__inner">
 				<div class="service__header">
 					<p class="service__title t-accent-text">Service</p>
-					<h3 class="service__heading">How I Can Help You With</h3>
+					<h2 class="service__heading t-h2-text">How I Can Help<br/> You With</h2>
 				</div>
 				<div class="service__list">
 					<!-- item 1 -->
@@ -81,9 +83,9 @@
 						<div class="service__body">
 							<div class="service__head">
 								<div class="service__icon c-circle c-circle--md">
-									<img src="img/icon-design.svg" alt="" />
+									<img src="img/icon-design.svg" alt=""/>
 								</div>
-								<h4>Design</h4>
+								<h4 class="t-h4-text">Design</h4>
 							</div>
 							<p class="service__text t-text">
 								Agency is a business you hire to
@@ -112,7 +114,7 @@
 								<div class="service__icon c-circle c-circle--md">
 									<img src="img/icon-development.svg" alt="" />
 								</div>
-								<h4>Development</h4>
+								<h4 class="t-h4-text">Development</h4>
 							</div>
 
 							<p class="service__text t-text">
@@ -146,11 +148,13 @@
 
 		<section class="portfolio">
 			<div class="l-inner">
-				<div class="portfolio-inner">
+				<div class="portfolio__inner">
 					<p class="portfolio__title t-accent-text">Portfolio</p>
-					<h3 class="portfolio__heading">Latest Work</h3>
-					<div>
-						<a href="#top" class="portfolio__button c-button c-button--dark c-button--w170">Explore More</a>
+					<div class="portfolio__header">
+						<h2 class="portfolio__heading t-h2-text">Latest Work</h2>
+						<div>
+							<a href="#top" class="portfolio__button c-button c-button--dark c-button--w170">Explore More</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -158,7 +162,7 @@
 				<figure class="portfolio__item">
 					<a href="#" class="portfolio__link">
 						<!-- 画像 -->
-						<img class="portfolio__img" src="img/photo-design.jpg" alt="">
+						<img class="portfolio__img" src="img/portfolio/photo-design.jpg" alt="">
 						<!-- overlay -->
 						<figcaption class="portfolio__caption">
 							<!-- ラベル -->
@@ -166,29 +170,29 @@
 								<span class="portfolio__badge-label t-text">Design</span>
 							</span>
 							<!-- タイトル -->
-							<h3 class="portfolio-item__title">SOFA</h3>
+							<h3 class="portfolio__item-title t-h3-text">SOFA</h3>
 						</figcaption>
 					</a>
 				</figure>
 				<figure class="portfolio__item">
 					<a href="#" class="portfolio__link">
-						<img class="portfolio__img" src="img/photo-branding.jpg" alt="">
+						<img class="portfolio__img" src="img/portfolio/photo-branding.jpg" alt="">
 						<figcaption class="portfolio__caption">
 							<span class="portfolio__badge c-badge">
 								<span class="portfolio__badge-label">Branding</span>
 							</span>
-							<h3 class="portfolio-item__title">KeyBoard</h3>
+							<h3 class="portfolio__item-title t-h3-text">KeyBoard</h3>
 						</figcaption>
 					</a>
 				</figure>
 				<figure class="portfolio__item">
 					<a href="#" class="portfolio__link">
-						<img class="portfolio__img" src="img/photo-illustration.jpg" alt="">
+						<img class="portfolio__img" src="img/portfolio/photo-illustration.jpg" alt="">
 						<figcaption class="portfolio__caption">
 							<span class="portfolio__badge c-badge">
 								<span class="portfolio__badge-label">Illustration</span>
 							</span>
-							<h3 class="portfolio-item__title">Work Media</h3>
+							<h3 class="portfolio__item-title t-h3-text">Work Media</h3>
 						</figcaption>
 					</a>
 				</figure>
@@ -197,20 +201,24 @@
 
 		<section class="about">
 			<div class="l-inner">
-				<div>
-					<img src="img/photo-avatar.png" alt="">
-				</div>
-				<p class="about__title t-accent-text">Gabriel Pires</p>
-				<h3 class="about__heading">Professional Web Designer</h3>
-				<p class="about__lead t-text-big">Provides a full service range</p>
-				<p class="about__text t-text">
-					Ability to put themselves in the
-					merchant's shoes. It is meant to
-					partner on the long run, and work as an extension
-					of the merchant's team.
-				</p>
-				<div class="about__cta">
-					<a href="#top" class="c-button c-button--secondary c-button--w138">About Me</a>
+				<div class="about__inner">
+					<div class="about__media">
+						<img class="about__img" src="img/photo-avatar.png" alt="">
+					</div>
+					<div class="about__content">
+						<p class="about__title t-accent-text">Gabriel Pires</p>
+						<h2 class="about__heading t-h2-text">Professional Web Designer</h2>
+						<p class="about__lead t-text-big">Provides a full service range</p>
+						<p class="about__text t-text">
+							Ability to put themselves in the
+							merchant's shoes. It is meant to
+							partner on the long run, and work as an extension
+							of the merchant's team.
+						</p>
+						<div class="about__cta">
+							<a href="#top" class="c-button c-button--secondary c-button--w138">About Me</a>
+						</div>
+					</div>
 				</div>
 
 				<div class="about__stats">
@@ -241,39 +249,41 @@
 
 		<section class="features">
 			<div class="l-inner">
-				<div class="features__visual">
-					<img src="img/photo-features.png" alt="">
-				</div>
-				<div class="features__body">
-					<p class="features__title t-accent-text">Features</p>
-					<h3 class="features__heading">Give Your Site A New Look</h3>
-					<p class="features__lead t-text-big">
-						Service range including technical
-						skills, design, business
-						understanding.
-					</p>
-					<ul class="features__list">
-						<li class="features__item">
-							<span class="features__icon c-circle c-circle--sm">
-								<img src="img/icon-check.svg" alt="">
-							</span>
-							<span class="features__text">Range including technical skills</span>
-						</li>
-						
-						<li class="features__item">
-							<span class="features__icon c-circle c-circle--sm">
-								<img src="img/icon-check.svg" alt="">
-							</span>
-						<span class="features__text">Business understanding</span>
-						</li>
-						
-						<li class="features__item">
-							<span class="features__icon c-circle c-circle--sm">
-								<img src="img/icon-check.svg" alt="">
-							</span>
-						<span class="features__text">Partner on the long run</span>
-						</li>
-					</ul>
+				<div class="features__inner">
+					<div class="features__visual">
+						<img  class="features__img" src="img/photo-features.png" alt="">
+					</div>
+					<div class="features__body">
+						<p class="features__title t-accent-text">Features</p>
+						<h2 class="features__heading t-h2-text">Give Your Site A New Look</h2>
+						<p class="features__lead t-text-big">
+							Service range including technical
+							skills, design, business
+							understanding.
+						</p>
+						<ul class="features__list">
+							<li class="features__item">
+								<span class="features__icon c-circle c-circle--sm">
+									<img src="img/icon-check.svg" alt="">
+								</span>
+								<span class="features__text">Range including technical skills</span>
+							</li>
+					
+							<li class="features__item">
+								<span class="features__icon c-circle c-circle--sm">
+									<img src="img/icon-check.svg" alt="">
+								</span>
+							<span class="features__text">Business understanding</span>
+							</li>
+					
+							<li class="features__item">
+								<span class="features__icon c-circle c-circle--sm">
+									<img src="img/icon-check.svg" alt="">
+								</span>
+							<span class="features__text">Partner on the long run</span>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -281,7 +291,7 @@
 		<section class="get-started">
 			<div class="get-started__inner">
 				<p class="get-started__text t-accent-text">Get Started</p>
-				<h4 class="get-started__heading">I Help Companies Move Faster</h4>
+				<h4 class="get-started__heading t-h4-text">I Help Companies Move Faster</h4>
 				<div class="get-started__button">
 					<a href="#top" class="c-button c-button--primary c-button--w154">Contact Me</a>
 				</div>
@@ -291,15 +301,15 @@
 					on the long run.
 				</p>
 			</div>
-			<div class="get-started__image">
-				<img src="img/photo-get-started-illustration.png" alt="">
+			<div>
+				<img class="get-started__image" src="img/photo-get-started-illustration.png" alt="">
 			</div>
 		</section>
 
 		<section class="testimonials">
 			<div class="l-inner">
 				<p class="testimonials__title t-accent-text">Testimonials</p>
-				<h3 class="testimonials__heading">What My Clients Saying</h3>
+				<h2 class="testimonials__heading t-h2-text">What My Clients Saying</h2>
 				<!-- list -->
 				<div class="testimonials__list">
 					<!-- item -->
@@ -387,7 +397,7 @@
 		<section class="faq">
 			<div class="l-inner">
 				<p class="faq__title t-accent-text">FAQ</p>
-				<h3 class="faq__heading">Frequently Asked Questions</h3>
+				<h3 class="faq__heading t-h3-text">Frequently Asked Questions</h3>
 				<p class="faq__lead t-text">A digital agency is a business you hire to
 					outsource your digital marketing efforts,
 					instead of handling in-house.
@@ -462,20 +472,20 @@
 							</div>
 						</details>
 					</div>
+					<ul class="faq__logos">
+						<li class="faq__logo"><img src="img/logo-digitalside.svg" alt="Digitalside"></li>
+						<li class="faq__logo"><img src="img/logo-vortex.svg" alt="Vortex"></li>
+						<li class="faq__logo"><img src="img/logo-travel-explorer.svg" alt="Travel Explorer"></li>
+						<li class="faq__logo"><img src="img/logo-fuzion.svg" alt="Fuzion"></li>
+						<li class="faq__logo"><img src="img/logo-mediafury.svg" alt="MediaFury"></li>
+					</ul>
 				</div>
-				<ul class="faq__logos">
-					<li class="faq__logo"><img src="img/logo-digitalside.svg" alt="Digitalside"></li>
-					<li class="faq__logo"><img src="img/logo-vortex.svg" alt="Vortex"></li>
-					<li class="faq__logo"><img src="img/logo-travel-explorer.svg" alt="Travel Explorer"></li>
-					<li class="faq__logo"><img src="img/logo-fuzion.svg" alt="Fuzion"></li>
-					<li class="faq__logo"><img src="img/logo-mediafury.svg" alt="MediaFury"></li>
-				</ul>
 		</section>
 
 		<section class="blog">
 			<div class="l-inner">
 				<p class="blog__title t-accent-text">Our Blog</p>
-				<h3 class="blog__heading">Latest Blog Articles</h3>
+				<h2 class="blog__heading t-h2-text">Latest Blog Articles</h2>
 				<div class="blog__button">
 					<a href="#top" class="c-button c-button--white c-button--w170">Discover All</a>
 				</div>
@@ -489,7 +499,7 @@
 						</div>
 
 						<p class="blog-card__category t-text-big">Stories</p>
-						<h4 class="blog-card__title">
+						<h4 class="blog-card__title t-h4-text">
 							<a class="blog-card__link" href="#">
 								Agency is a business you hire to outsource
 							</a>
@@ -505,7 +515,7 @@
 						</div>
 
 						<p class="blog-card__category t-text-big">Design</p>
-						<h4 class="blog-card__title">
+						<h4 class="blog-card__title t-h4-text">
 							<a class="blog-card__link" href="#">
 								Outsource your digital marketing efforts
 							</a>
@@ -521,7 +531,7 @@
 						</div>
 
 						<p class="blog-card__category t-text-big">Marketing</p>
-						<h4 class="blog-card__title">
+						<h4 class="blog-card__title t-h4-text">
 							<a class="blog-card__link" href="/blog">
 								Your business with a variety of digital
 							</a>
@@ -531,13 +541,13 @@
 				</div>
 				
 				<div class="newsletter">
-					<h4 class="newsletter__title">Newsletter</h4>
+					<h4 class="newsletter__title t-h4-text">Newsletter</h4>
 					<p class="newsletter__text t-text">A digital agency is a business you hire to outsource</p>
 					<form class="newsletter__form" action="#" method="post">
 						<label class="u-visually-hidden" for="newsletter-email">
 							Email address
 						</label>
-						<div class="newsletter__form">
+						<div class="newsletter__fields">
 							<input class="newsletter__field c-input" type="email" id="newsletter-email" name="email" placeholder="Your email" required>
 							<button class="newsletter__button c-button c-button--white" type="submit">
 								SUBSCRIBE
@@ -552,7 +562,7 @@
 			<div class="l-inner">
 				<div class="contact-card">
 					<div class="contact-card__inner">
-						<h3 class="contact-card__title t-h4-text">Get In Touch</h3>
+						<h4 class="contact-card__title t-h4-text">Get In Touch</h4>
 						<form class="contact-form" action="#" method="post">
 							<!-- email -->
 							<div class="contact-form__fields">
@@ -587,7 +597,7 @@
 				</div>
 
 				<p class="contact__title t-accent-text">Contact</p>
-				<h3 class="contact__heading">Contact Me</h3>
+				<h2 class="contact__heading t-h2-text">Contact Me</h2>
 				<p class="contact__lead t-text">
 					A digital agency is a business you hire to
 					outsource your digital marketing efforts,
@@ -634,11 +644,11 @@
 					<p class="final-cta__name t-accent-text">
 						Gabriel Pires
 					</p>
-					<h3 class="final-cta__heading">
+					<h2 class="final-cta__heading t-h2-text">
 						Help To Build<br>
 						Your Dream<br>
 						Project
-					</h3>
+					</h2>
 					<p class="final-cta__lead t-text">
 						A digital agency is a business you hire to
 						outsource your digital marketing efforts,
@@ -665,7 +675,7 @@
 	<footer class="footer">
 		<div class="l-inner footer__inner">
 			<!-- brand -->
-				<h4 class="footer__logo">Personal</h4>
+				<h4 class="footer__logo t-h4-text">Personal</h4>
 			<!-- nav groups -->
 			<div class="footer__groups">
 				<!-- MENU -->
@@ -691,25 +701,25 @@
 				</nav>
 			</div>
 
-			<div class="footer__social" aria-label="Social links">
+			<nav class="footer__social" aria-label="Social links">
 				<ul class="footer__social-list">
 					<li class="footer__social-item">
 						<a class="footer__social-link c-circle c-circle--48" href="#" aria-label="Facebook">
-							<img src="img/icon-facebook.svg" alt="" aria-hidden="true">
+							<img src="img/footer/facebook.svg" alt="" aria-hidden="true">
 						</a>
 					</li>
 					<li class="footer__social-item">
 						<a class="footer__social-link c-circle c-circle--48" href="#" aria-label="Twitter">
-							<img src="img/icon-twitter.svg" alt="" aria-hidden="true">
+							<img src="img/footer/twitter.svg" alt="" aria-hidden="true">
 						</a>
 					</li>
 					<li class="footer__social-item">
 						<a class="footer__social-link c-circle c-circle--48" href="#" aria-label="Instagram">
-							<img src="img/icon-instagram.svg" alt="" aria-hidden="true">
+							<img src="img/footer/instagram.svg" alt="" aria-hidden="true">
 						</a>
 					</li>
 				</ul>
-			</div>
+			</nav>
 		</div>
 
 		<div class="footer__bottom">
