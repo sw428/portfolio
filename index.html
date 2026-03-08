@@ -38,7 +38,7 @@
 					</div>
 				</nav>
 				<div class="header__actions">
-					<a href="#contact" class="nav__button c-button c-button--dark c-button--w138">
+					<a href="#contact" class="header__button c-button c-button--dark c-button--w138">
 						Contact
 					</a>
 				</div>
@@ -268,14 +268,12 @@
 								</span>
 								<span class="features__text">Range including technical skills</span>
 							</li>
-					
 							<li class="features__item">
 								<span class="features__icon c-circle c-circle--sm">
 									<img src="img/icon-check.svg" alt="">
 								</span>
 							<span class="features__text">Business understanding</span>
 							</li>
-					
 							<li class="features__item">
 								<span class="features__icon c-circle c-circle--sm">
 									<img src="img/icon-check.svg" alt="">
@@ -290,26 +288,30 @@
 
 		<section class="get-started">
 			<div class="get-started__inner">
-				<p class="get-started__text t-accent-text">Get Started</p>
-				<h4 class="get-started__heading t-h4-text">I Help Companies Move Faster</h4>
-				<div class="get-started__button">
-					<a href="#top" class="c-button c-button--primary c-button--w154">Contact Me</a>
+				<div class="get-started__layout">
+					<div class="get-started__content">
+						<p class="get-started__text t-accent-text">Get Started</p>
+						<h4 class="get-started__heading t-h4-text">I Help Companies Move Faster</h4>
+						<div class="get-started__button">
+							<a href="#top" class="c-button c-button--primary c-button--w154">Contact Me</a>
+						</div>
+					</div>
+					<p class="get-started__desc t-text">
+						Put themselves in the merchant's
+						shoes. It is meant to partner
+						on the long run.
+					</p>
+					<div class="get-started__media">
+						<img class="get-started__image" src="img/photo-get-started-illustration.png" alt="">
+					</div>
 				</div>
-				<p class="get-started__desc t-text">
-					Put themselves in the merchant's
-					shoes. It is meant to partner
-					on the long run.
-				</p>
-			</div>
-			<div>
-				<img class="get-started__image" src="img/photo-get-started-illustration.png" alt="">
 			</div>
 		</section>
 
 		<section class="testimonials">
 			<div class="l-inner">
 				<p class="testimonials__title t-accent-text">Testimonials</p>
-				<h2 class="testimonials__heading t-h2-text">What My Clients Saying</h2>
+				<h2 class="testimonials__heading t-h2-text">What My<br> Clients Saying</h2>
 				<!-- list -->
 				<div class="testimonials__list">
 					<!-- item -->
@@ -396,14 +398,17 @@
 
 		<section class="faq">
 			<div class="l-inner">
-				<p class="faq__title t-accent-text">FAQ</p>
-				<h3 class="faq__heading t-h3-text">Frequently Asked Questions</h3>
-				<p class="faq__lead t-text">A digital agency is a business you hire to
-					outsource your digital marketing efforts,
-					instead of handling in-house.
-				</p>
-				<a href="#contact" class="faq__contact">Contact Me</a>
-				
+				<div class="faq__inner">
+					<div class="faq__header">
+						<p class="faq__title t-accent-text">FAQ</p>
+						<h3 class="faq__heading t-h3-text">Frequently Asked Questions
+						</h3>
+						<p class="faq__lead t-text">A digital agency is a business you hire to
+							outsource your digital marketing efforts,
+							instead of handling in-house.
+						</p>
+						<a href="#contact" class="faq__contact">Contact Me</a>
+					</div>
 					<div class="faq__list">
 						<details class="faq__item">
 							<summary class="faq__question">
@@ -438,7 +443,6 @@
 							</summary>
 							<div class="faq__answer">
 								<p>
-
 								</p>
 							</div>
 						</details>
@@ -453,14 +457,13 @@
 							</summary>
 							<div class="faq__answer">
 								<p>
-									
 								</p>
 							</div>
 						</details>
 						<details class="faq__item">
 							<summary class="faq__question">
 								<span class="faq__question-text t-h4-text">
-									Can provide your business							
+									Can provide your business
 								</span>
 								<span class="faq__icon c-circle c-circle--sm">
 									<img src="img/icon-chevron.svg" alt="">
@@ -472,22 +475,27 @@
 							</div>
 						</details>
 					</div>
-					<ul class="faq__logos">
-						<li class="faq__logo"><img src="img/logo-digitalside.svg" alt="Digitalside"></li>
-						<li class="faq__logo"><img src="img/logo-vortex.svg" alt="Vortex"></li>
-						<li class="faq__logo"><img src="img/logo-travel-explorer.svg" alt="Travel Explorer"></li>
-						<li class="faq__logo"><img src="img/logo-fuzion.svg" alt="Fuzion"></li>
-						<li class="faq__logo"><img src="img/logo-mediafury.svg" alt="MediaFury"></li>
-					</ul>
 				</div>
+				<ul class="faq__logos">
+					<li class="faq__logo"><img src="img/logo-digitalside.svg" alt="Digitalside"></li>
+					<li class="faq__logo"><img src="img/logo-vortex.svg" alt="Vortex"></li>
+					<li class="faq__logo"><img src="img/logo-travel-explorer.svg" alt="Travel Explorer"></li>
+					<li class="faq__logo"><img src="img/logo-fuzion.svg" alt="Fuzion"></li>
+					<li class="faq__logo"><img src="img/logo-mediafury.svg" alt="MediaFury"></li>
+				</ul>
+			</div>
 		</section>
 
 		<section class="blog">
-			<div class="l-inner">
-				<p class="blog__title t-accent-text">Our Blog</p>
-				<h2 class="blog__heading t-h2-text">Latest Blog Articles</h2>
-				<div class="blog__button">
-					<a href="#top" class="c-button c-button--white c-button--w170">Discover All</a>
+			<div class="l-inner">				
+				<div class="blog__header">
+					<div>
+						<p class="blog__title t-accent-text">Our Blog</p>
+						<h2 class="blog__heading t-h2-text">Latest Blog Articles</h2>
+					</div>
+					<div class="blog__button">
+						<a href="#top" class="c-button c-button--white c-button--w170">Discover All</a>
+					</div>
 				</div>
 
 				<div class="blog__list">
@@ -507,37 +515,36 @@
 						<time class="blog-card__date" datetime="2021-11-05">5 Nov, 2021</time>
 					</article>
 
-					<article class="blog-card">
-						<div class="blog-card__media">
-							<a class="blog-card__link" href="#">
-								<img class="blog-card__img" src="img/blog/design.jpg" alt="">
-							</a>
-						</div>
-
-						<p class="blog-card__category t-text-big">Design</p>
-						<h4 class="blog-card__title t-h4-text">
-							<a class="blog-card__link" href="#">
-								Outsource your digital marketing efforts
-							</a>
-						</h4>
-						<time class="blog-card__date" datetime="2021-11-05">29 Oct, 2021</time>
-					</article>
-
-					<article class="blog-card">
-						<div class="blog-card__media">
-							<a class="blog-card__link" href="#">
-								<img class="blog-card__img" src="img/blog/marketing.jpg" alt="">
-							</a>
-						</div>
-
-						<p class="blog-card__category t-text-big">Marketing</p>
-						<h4 class="blog-card__title t-h4-text">
-							<a class="blog-card__link" href="/blog">
-								Your business with a variety of digital
-							</a>
-						</h4>
-						<time class="blog-card__date" datetime="2021-11-05">21 Oct, 2021</time>
-					</article>
+					<div class="blog__side">
+						<article class="blog-card">
+							<div class="blog-card__media">
+								<a class="blog-card__link" href="#">
+									<img class="blog-card__img" src="img/blog/design.jpg" alt="">
+								</a>
+							</div>
+							<p class="blog-card__category t-text-big">Design</p>
+							<h4 class="blog-card__title t-h4-text">
+								<a class="blog-card__link" href="#">
+									Outsource your digital marketing efforts
+								</a>
+							</h4>
+							<time class="blog-card__date" datetime="2021-11-05">29 Oct, 2021</time>
+						</article>
+						<article class="blog-card">
+							<div class="blog-card__media">
+								<a class="blog-card__link" href="#">
+									<img class="blog-card__img" src="img/blog/marketing.jpg" alt="">
+								</a>
+							</div>
+							<p class="blog-card__category t-text-big">Marketing</p>
+							<h4 class="blog-card__title t-h4-text">
+								<a class="blog-card__link" href="/blog">
+									Your business with a variety of digital
+								</a>
+							</h4>
+							<time class="blog-card__date" datetime="2021-11-05">21 Oct, 2021</time>
+						</article>
+					</div>
 				</div>
 				
 				<div class="newsletter">
