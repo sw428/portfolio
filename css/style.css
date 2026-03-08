@@ -121,7 +121,7 @@ ul {
 	align-items: center;
 	height: 48px;
 	padding-top: 3px;      /*ディセンダー分と余白の差分ずれるため*/
-	border-radius: 7px;
+	border-radius: 6px;
 	font-weight: 900;
 	font-size: 14px;
 	text-transform: uppercase;
@@ -243,7 +243,7 @@ ul {
 	line-height: 2;				/* 32 ÷ 16 */
 	letter-spacing: 0px;
 	color: var(--color-text-dark);
-	border-radius:7px;
+	border-radius:6px;
 	background:var(--color-white);
 }
 
@@ -344,7 +344,7 @@ ul {
 	height: 48px;
 	background: none;
 	border: 1px solid var(--color-text-gray-30);
-	border-radius: 8px;
+	border-radius: 6px;
 	cursor: pointer;
 	position: relative;		/* z-index を効かせる */
 	z-index: 1001;			/* overlay より上 */
@@ -703,8 +703,12 @@ ul {
 	margin-bottom: 29px;
 }
 
+.get-started__media{
+	margin-left: -51px;
+}
+
 .get-started__image{
-	margin: 0 auto;
+	max-width: 375px;
 }
 
 /* Testimonials
@@ -725,10 +729,9 @@ ul {
 }
 
 .testimonials__list{
-	display: grid;
 	text-align: left;
 	border: 1px solid var(--color-border);
-	border-radius: 7px;
+	border-radius: 6px;
 }
 
 .testimonials__list > * + * {
@@ -832,6 +835,7 @@ ul {
 
 .faq__item[open] .faq__question-text{
 	color: var(--color-text-dark);
+	margin-bottom: 19px;
 }
 
 .faq__item[open] .faq__icon {
@@ -840,7 +844,6 @@ ul {
 
 .faq__question-text{
 	color: var(--color-white);
-	margin-bottom: 19px;
 }
 
 .faq__answer{
@@ -925,8 +928,6 @@ ul {
 	gap:16px;
 }
 
-
-
 /* Contact
 --------------------------------*/
 .contact {
@@ -939,7 +940,7 @@ ul {
 	background-color: var(--color-white);
 	padding-top: 57px;
 	padding-bottom: 48px;
-	border-radius: 7px;
+	border-radius: 6px;
 	margin-bottom: 60px;
 }
 
@@ -1201,7 +1202,6 @@ ul {
 
 	.about__inner{
 		display: flex;
-		/* 768px ～ 1440px */
 		gap:clamp(40.00px, calc(19.49vw + -109.71px), 171.00px);
 	}
 
@@ -1251,15 +1251,60 @@ ul {
 		max-width: 470px;
 		flex: 1;
 	}
-	/* Testimonials
+
+	/* get started
 	--------------------------------*/
+	.get-started__inner{
+		max-width: none;
+		padding-inline: clamp(51.00px, calc(12.50vw + -45.00px), 135.00px);
+	}
+
+	.get-started__layout{
+		display: flex;
+		align-items: center;
+		max-width: none;
+	}
+
+	.get-started__content{
+		margin-right: clamp(20.00px, calc(24.26vw + -166.29px), 183.00px);
+	}
+
+	.get-started__desc{
+		max-width: 370px;
+	}
+
+	.get-started__media{
+		margin-left: 0px;
+		margin-right: -41px;
+	}
 
 	/* FAQ
 	--------------------------------*/
+	.faq{
+		padding-top: 140px;
+		padding-bottom: 123px;
+	}
+
+	.faq__inner{
+		display: grid;
+		grid-template-columns: auto 1fr;
+		gap: clamp(20.00px, calc(16.37vw + -105.71px), 130.00px);
+	}
+
+	.faq__header{
+		max-width: 470px;
+	}
 
 	/* Blog
 	--------------------------------*/
+	.blog__header{
+		display: flex;
+	}
 
+	.blog__list{
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+	}
 	/* Contact
 	--------------------------------*/
 
@@ -1274,7 +1319,6 @@ ul {
 		flex: 1 1 0;
 		max-width: 240px;
 		width: 100%;
-
 	}
 	/* Footer
 	--------------------------------*/
@@ -1299,13 +1343,59 @@ ul {
 		display: flex;
 	}
 
-	.portfolio__list > * + *{
+	.portfolio__list > * + * {
 		border-left: 1px solid var(--color-border-dark);
 		border-top: none;
 	}
 
 	.portfolio__item{
 		max-width: 464px;
+	}
+
+	/* Testimonials
+	--------------------------------*/
+	.testimonials{
+		padding-top: 108px;
+		padding-bottom: 96px;
+	}
+
+	.testimonials__heading{
+		margin-bottom: 64px;
+	}
+
+	.testimonials__list {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		align-items: start;
+		border: none;
+	}
+
+	.testimonials__list> * + * {
+		border-top: none;
+	}
+
+	.testimonials__item {
+		border: 1px solid var(--color-border);
+		border-radius: 6px;
+	}
+
+	.testimonials__item:nth-child(1) {
+		border-right: none;
+		border-radius: 6px 0 0 6px;
+	}
+
+	.testimonials__item:nth-child(2) {
+		min-height: 464px;
+		border-radius: 0 0 6px 6px;
+	}
+
+	.testimonials__item:nth-child(3) {
+		border-left: none;
+		border-radius: 0 6px 6px 0;
+	}
+
+	.testimonials__cta{
+		margin-top: 64px;
 	}
 }
 
