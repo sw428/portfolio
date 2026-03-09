@@ -49,7 +49,7 @@ ul {
 
 /* Layout
 --------------------------------*/
-.l-inner {
+.l-inner{
 	width: min(100%, 550px);
 	padding-inline: 23px;
 	margin: 0 auto;
@@ -863,7 +863,6 @@ ul {
 .blog {
 	background-color:var(--color-bg-light);
 	padding-top: 92px;
-	padding-bottom: 112px;
 }
 
 .blog__title{
@@ -1102,7 +1101,6 @@ ul {
 /* PC
 --------------------------------*/
 @media (min-width: 768px) {  
-	
 	.l-inner {
 		width: min(100%, 1440px);
 		padding-inline: clamp(23px, calc(16.67vw + -105px), 135px);
@@ -1295,16 +1293,93 @@ ul {
 		max-width: 470px;
 	}
 
-	/* Blog
+	/* blog
 	--------------------------------*/
-	.blog__header{
-		display: flex;
+	.blog {
+		padding-top: 92px;
 	}
 
-	.blog__list{
-		display: grid;
-		grid-template-columns: 2fr 1fr;
+	.blog__header {
+		display: flex;
+		justify-content: space-between;
 	}
+
+	.blog__heading {
+		margin-bottom: 64px;
+	}
+
+	.blog__button {
+		align-self: end;
+		margin-bottom: 80px;
+	}
+
+	.blog__list {
+		display: grid;
+		margin-bottom: 68px;
+		grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+		gap: 130px
+	}
+
+	.blog-card__link {
+		display: block;
+	}
+
+	.blog-card__img {
+		width: 100%;
+		max-width: 770px;
+	}
+
+	.blog-card--featured .blog-card__title {
+		font-size: 2.5rem;
+		line-height: 1.2;
+		font-weight: 800;
+	}
+
+	.blog__side {
+		justify-self: end;
+		max-width: 270px;
+	}
+
+	.blog-card--top .blog-card__title {
+		margin-bottom: -8px;
+	}
+
+	.blog-card--top {
+		margin-bottom: 36px;
+	}
+
+	.newsletter {
+		margin-bottom: 0px;
+		padding-top: 56px;
+		padding-bottom: 84px;
+	}
+
+	.newsletter__inner {
+		display: flex;
+		justify-content: space-between;
+		gap: 197px;
+	}
+
+	.newsletter__form {
+		flex: 1;
+	}
+
+	.newsletter__fields {
+		display: flex;
+		flex-direction: row;
+		margin-top: 7px;
+		flex-wrap: wrap;
+	}
+
+	.newsletter__field {
+		width: 370px;
+	}
+
+	.newsletter__button {
+		width: 170px;
+	}
+
+
 	/* Contact
 	--------------------------------*/
 
@@ -1397,5 +1472,7 @@ ul {
 	.testimonials__cta{
 		margin-top: 64px;
 	}
+
+
 }
 
