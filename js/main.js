@@ -63,3 +63,48 @@ document.querySelectorAll(".service__toggle").forEach((btn) => {
 	detail.hidden = !isOpen;
 });
 });
+
+
+/* スクロールずれ
+--------------------------------*/
+let resizeTimer = null;
+let anchorElement = null;
+let anchorTopBefore = 0;
+
+function getAnchorElement() {
+  const sections = document.querySelectorAll("main section[id]");
+  let closest = null;
+  let minDistance = Infinity;
+
+  for (const section of sections) {
+    const rect = section.getBoundingClientRect();
+    const distance = Math.abs(rect.top);
+
+    if (distance < minDistance) {
+      minDistance = distance;
+      closest = section;
+    }
+  }
+
+  return closest;
+}
+
+window.addEventListener("resize", () => {
+
+  anchorElement = getAnchorElement();
+  if (!anchorElement) return;
+
+  anchorTopBefore = anchorElement.getBoundingClientRect().top;
+
+  clearTimeout(resizeTimer);
+
+  resizeTimer = setTimeout(() => {
+
+    const anchorTopAfter = anchorElement.getBoundingClientRect().top;
+    const diff = anchorTopAfter - anchorTopBefore;
+
+    window.scrollBy(0, diff);
+
+  },150);
+
+});

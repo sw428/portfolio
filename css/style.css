@@ -558,6 +558,7 @@ ul {
 
 .portfolio__img{
 	width: 100%;
+	object-fit: cover;
 }
 
 /* overlay */
@@ -1088,6 +1089,10 @@ ul {
 
 .footer__bottom-link{
 	color: var(--color-white);
+}
+
+.footer__url {
+	color: var(--color-accent);
 }
 
 /* 480px以上
