@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="description" content="ポートフォリオサイト">
@@ -8,7 +9,9 @@
 	<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;800;900&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;800;900&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap"
+		rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -18,10 +21,11 @@
 			<div class="header__controls">
 				<!-- ロゴ -->
 				<a href="#top" class="header__brand">
-					<img src="img/logo.svg" class="header__logo">
+					<img src="img/logo.svg" class="header__logo" alt="Personal">
 				</a>
 				<!-- ハンバーガー -->
-				<button class="header__toggle" 	type="button" aria-label="メニューを開く" aria-controls="global-nav" aria-expanded="false">
+				<button class="header__toggle" type="button" aria-label="メニューを開く" aria-controls="global-nav"
+					aria-expanded="false">
 					<span class="header__line"></span>
 					<span class="header__line"></span>
 					<span class="header__line"></span>
@@ -50,7 +54,7 @@
 		<section class="hero">
 			<div class="l-inner hero__inner">
 				<div class="hero__img">
-					<img class="hero__avatar" src="img/hero/avatar.png" alt="">
+					<img class="hero__avatar" src="img/hero/avatar.png" alt="Gabriel Pires">
 				</div>
 				<div class="hero__content">
 					<p class="hero__title t-accent-text">Gabriel Pires</p>
@@ -70,12 +74,12 @@
 				</div>
 			</div>
 		</section>
-		
+
 		<section class="service">
 			<div class="l-inner service__inner">
 				<div class="service__header">
 					<p class="service__title t-accent-text">Service</p>
-					<h2 class="service__heading t-h2-text">How I Can Help<br/> You With</h2>
+					<h2 class="service__heading t-h2-text">How I Can Help<br /> You With</h2>
 				</div>
 				<div class="service__list">
 					<!-- item 1 -->
@@ -83,7 +87,7 @@
 						<div class="service__body">
 							<div class="service__head">
 								<div class="service__icon c-circle c-circle--md">
-									<img src="img/icon-design.svg" alt=""/>
+									<img src="img/icon-design.svg" alt="">
 								</div>
 								<h4 class="t-h4-text">Design</h4>
 							</div>
@@ -93,16 +97,16 @@
 								efforts, instead of handling in-house.
 							</p>
 						</div>
-						<button class="service__toggle" type="button">
+						<button class="service__toggle" type="button" aria-expanded="false" aria-controls="service-detail-1">
 							<span class="c-circle-button">
 								<span class="c-circle-button__icon"></span>
 							</span>
 							<span class="service__toggle-text t-text">Learn more</span>
 						</button>
-						
+
 						<div class="service__detail" id="service-detail-1" hidden>
 							<p class="service__detail-text">
-							<!-- 後で詳細を入れる -->
+								<!-- 後で詳細を入れる -->
 							</p>
 						</div>
 					</article>
@@ -110,13 +114,13 @@
 					<!-- item 2 -->
 					<article class="service__item">
 						<div class="service__body">
-							<div class="service__head">
+							
+<div class="service__head">
 								<div class="service__icon c-circle c-circle--md">
-									<img src="img/icon-development.svg" alt="" />
+									<img src="img/icon-development.svg" alt="">
 								</div>
 								<h4 class="t-h4-text">Development</h4>
 							</div>
-
 							<p class="service__text t-text">
 								Hire to outsource your digital
 								marketing efforts, instead of
@@ -125,7 +129,7 @@
 							</p>
 						</div>
 
-						<button class="service__toggle" type="button">
+						<button class="service__toggle" type="button" aria-expanded="false" aria-controls="service-detail-2">
 							<span class="c-circle-button">
 								<span class="c-circle-button__icon"></span>
 							</span>
@@ -134,7 +138,7 @@
 
 						<div class="service__detail" id="service-detail-2" hidden>
 							<p class="service__detail-text">
-							<!-- 後で詳細を入れる -->
+								<!-- 後で詳細を入れる -->
 							</p>
 						</div>
 					</article>
@@ -153,7 +157,8 @@
 					<div class="portfolio__header">
 						<h2 class="portfolio__heading t-h2-text">Latest Work</h2>
 						<div>
-							<a href="#top" class="portfolio__button c-button c-button--dark c-button--w170">Explore More</a>
+							<a href="#top" class="portfolio__button c-button c-button--dark c-button--w170">Explore
+								More</a>
 						</div>
 					</div>
 				</div>
@@ -162,7 +167,7 @@
 				<figure class="portfolio__item">
 					<a href="#" class="portfolio__link">
 						<!-- 画像 -->
-						<img class="portfolio__img" src="img/portfolio/photo-design.jpg" alt="">
+						<img class="portfolio__img" src="img/portfolio/photo-design.jpg" alt="デザイン制作">
 						<!-- overlay -->
 						<figcaption class="portfolio__caption">
 							<!-- ラベル -->
@@ -176,7 +181,7 @@
 				</figure>
 				<figure class="portfolio__item">
 					<a href="#" class="portfolio__link">
-						<img class="portfolio__img" src="img/portfolio/photo-branding.jpg" alt="">
+						<img class="portfolio__img" src="img/portfolio/photo-branding.jpg" alt="ブランディング制作">
 						<figcaption class="portfolio__caption">
 							<span class="portfolio__badge c-badge">
 								<span class="portfolio__badge-label">Branding</span>
@@ -187,7 +192,7 @@
 				</figure>
 				<figure class="portfolio__item">
 					<a href="#" class="portfolio__link">
-						<img class="portfolio__img" src="img/portfolio/photo-illustration.jpg" alt="">
+						<img class="portfolio__img" src="img/portfolio/photo-illustration.jpg" alt="イラスト制作">
 						<figcaption class="portfolio__caption">
 							<span class="portfolio__badge c-badge">
 								<span class="portfolio__badge-label">Illustration</span>
@@ -203,7 +208,7 @@
 			<div class="l-inner">
 				<div class="about__inner">
 					<div class="about__media">
-						<img class="about__img" src="img/photo-avatar.png" alt="">
+						<img class="about__img" src="img/photo-avatar.png" alt="Gabriel Pires">
 					</div>
 					<div class="about__content">
 						<p class="about__title t-accent-text">Gabriel Pires</p>
@@ -228,8 +233,9 @@
 							<img src="img/project.svg" alt="">
 						</div>
 						<div>
-						<p class="about__num t-h3-text">42%</p>
-						<p class="about__label-text t-text-big">Years of<span class="u-sp-only"><br></span>experience</p>
+							<p class="about__num t-h3-text">42%</p>
+							<p class="about__label-text t-text-big">Years of<span
+									class="u-sp-only"><br></span>experience</p>
 						</div>
 					</div>
 
@@ -251,7 +257,7 @@
 			<div class="l-inner">
 				<div class="features__inner">
 					<div class="features__visual">
-						<img  class="features__img" src="img/photo-features.png" alt="">
+						<img class="features__img" src="img/photo-features.png" alt="サービス紹介の画像">
 					</div>
 					<div class="features__body">
 						<p class="features__title t-accent-text">Features</p>
@@ -272,13 +278,13 @@
 								<span class="features__icon c-circle c-circle--sm">
 									<img src="img/icon-check.svg" alt="">
 								</span>
-							<span class="features__text">Business understanding</span>
+								<span class="features__text">Business understanding</span>
 							</li>
 							<li class="features__item">
 								<span class="features__icon c-circle c-circle--sm">
 									<img src="img/icon-check.svg" alt="">
 								</span>
-							<span class="features__text">Partner on the long run</span>
+								<span class="features__text">Partner on the long run</span>
 							</li>
 						</ul>
 					</div>
@@ -302,7 +308,7 @@
 						on the long run.
 					</p>
 					<div class="get-started__media">
-						<img class="get-started__image" src="img/photo-get-started-illustration.png" alt="">
+						<img class="get-started__image" src="img/photo-get-started-illustration.png" alt="サービス紹介のイラスト">
 					</div>
 				</div>
 			</div>
@@ -330,13 +336,13 @@
 						<!-- 投稿者 -->
 						<div class="testimonials__author">
 							<div class="testimonials__avatar">
-								<img src="img/photo-client1.png" alt="">
+								<img src="img/photo-client1.png" alt="Graham Griffiths">
 							</div>
 							<div class="testimonials__meta">
 								<p class="testimonials__name t-h4-text">Graham Griffiths</p>
 								<p class="testimonials__role t-text">Twitor</p>
 							</div>
-						</div>	
+						</div>
 					</article>
 
 					<!-- item2 -->
@@ -357,13 +363,13 @@
 						<!-- 投稿者 -->
 						<div class="testimonials__author">
 							<div class="testimonials__avatar">
-								<img src="img/photo-client2.png" alt="">
+								<img src="img/photo-client2.png" alt="Alan Martí">
 							</div>
 							<div class="testimonials__meta">
 								<p class="testimonials__name t-h4-text">Alan Martí</p>
 								<p class="testimonials__role t-text">Meta Inc.</p>
 							</div>
-						</div>	
+						</div>
 					</article>
 
 					<!-- item3 -->
@@ -381,13 +387,13 @@
 						<!-- 投稿者 -->
 						<div class="testimonials__author">
 							<div class="testimonials__avatar">
-								<img src="img/photo-client3.png" alt="">
+								<img src="img/photo-client3.png" alt="Richardo Kann">
 							</div>
 							<div class="testimonials__meta">
 								<p class="testimonials__name t-h4-text">Richardo Kann</p>
 								<p class="testimonials__role t-text">Photogram</p>
 							</div>
-						</div>	
+						</div>
 					</article>
 				</div>
 				<div class="testimonials__cta">
@@ -487,7 +493,7 @@
 		</section>
 
 		<section class="blog">
-			<div class="l-inner blog__inner">				
+			<div class="l-inner blog__inner">
 				<div class="blog__header">
 					<div>
 						<p class="blog__title t-accent-text">Our Blog</p>
@@ -502,7 +508,7 @@
 					<article class="blog-card blog-card--featured">
 						<div class="blog-card__media">
 							<a class="blog-card__link" href="#">
-								<img class="blog-card__img" src="img/blog/Stories.jpg" alt="">
+								<img class="blog-card__img" src="img/blog/Stories.jpg" alt="記事画像">
 							</a>
 						</div>
 
@@ -519,21 +525,21 @@
 						<article class="blog-card blog-card--top">
 							<div class="blog-card__media">
 								<a class="blog-card__link" href="#">
-									<img class="blog-card__img" src="img/blog/design.jpg" alt="">
+									<img class="blog-card__img" src="img/blog/design.jpg" alt="記事画像">
 								</a>
 							</div>
 							<p class="blog-card__category t-text-big">Design</p>
 							<h4 class="blog-card__title t-h4-text">
-								<a class="blog-card--link" href="#">
+								<a class="blog-card__link" href="#">
 									Outsource your digital marketing efforts
 								</a>
 							</h4>
-								<time class="blog-card__date" datetime="2021-11-05">29 Oct, 2021</time>
+							<time class="blog-card__date" datetime="2021-11-05">29 Oct, 2021</time>
 						</article>
 						<article class="blog-card blog-card--second">
 							<div class="blog-card__media">
 								<a class="blog-card__link" href="#">
-									<img class="blog-card__img" src="img/blog/marketing.jpg" alt="">
+									<img class="blog-card__img" src="img/blog/marketing.jpg" alt="記事画像">
 								</a>
 							</div>
 							<p class="blog-card__category t-text-big">Marketing</p>
@@ -546,7 +552,7 @@
 						</article>
 					</div>
 				</div>
-				
+
 				<div class="newsletter">
 					<div class="newsletter__inner">
 						<div>
@@ -558,7 +564,8 @@
 								Email address
 							</label>
 							<div class="newsletter__fields">
-								<input class="newsletter__field c-input" type="email" id="newsletter-email" name="email" placeholder="Your email" required>
+								<input class="newsletter__field c-input" type="email" id="newsletter-email" name="email"
+									placeholder="Your email" required>
 								<button class="newsletter__button c-button c-button--white" type="submit">
 									SUBSCRIBE
 								</button>
@@ -571,7 +578,7 @@
 
 		<section class="contact">
 			<div class="l-inner">
-				<div>
+				<div class="contact__inner">
 					<div class="contact-card">
 						<div class="contact-card__inner">
 							<h4 class="contact-card__title t-h4-text">Get In Touch</h4>
@@ -580,7 +587,8 @@
 								<div class="contact-form__fields">
 									<div class="contact-form__field">
 										<label for="contact-email" class="u-visually-hidden">Email address</label>
-										<input id="contact-email" name="email" class="c-input c-control" type="email" placeholder="Your email" required>
+										<input id="contact-email" name="email" class="c-input c-control" type="email"
+											placeholder="Your email" required>
 									</div>
 									<!-- subject -->
 									<div class="contact-form__field">
@@ -594,54 +602,58 @@
 									<!-- message -->
 									<div class="contact-form__field">
 										<label for="message" class="u-visually-hidden">Message</label>
-										<textarea id="message" name="message" class="c-input c-input--textarea c-control" placeholder="Message"
+										<textarea id="message" name="message"
+											class="c-input c-input--textarea c-control" placeholder="Message"
 											required></textarea>
 									</div>
 								</div>
 								<!-- button -->
 								<div class="contact-form__actions">
-									<button class="contact-form__submit c-button c-button--primary c-button--w154" type="submit">
+									<button class="contact-form__submit c-button c-button--primary c-button--w154"
+										type="submit">
 										SUBMIT NOW
 									</button>
 								</div>
 							</form>
 						</div>
 					</div>
-					<p class="contact__title t-accent-text">Contact</p>
-					<h2 class="contact__heading t-h2-text">Contact Me</h2>
-					<p class="contact__lead t-text">
-						A digital agency is a business you hire to
-						outsource your digital marketing efforts,
-						instead of handling in-house.
-					</p>
-					<div class="contact-info">
-						<ul class="contact-info__list">
-							<li class="contact-info__item">
-								<span class="contact-info__icon c-circle c-circle--48">
-									<img src="img/contact/icon-location.svg" alt="" aria-hidden="true">
-								</span>
-								<address class="contact-info__text t-text-big">
+					<div class="contact-content">
+						<p class="contact__title t-accent-text">Contact</p>
+						<h2 class="contact__heading t-h2-text">Contact Me</h2>
+						<p class="contact__lead t-text">
+							A digital agency is a business you hire to
+							outsource your digital marketing efforts,
+							instead of handling in-house.
+						</p>
+						<div class="contact-info">
+							<ul class="contact-info__list">
+								<li class="contact-info__item">
+									<span class="contact-info__icon c-circle c-circle--48">
+										<img src="img/contact/icon-location.svg" alt="" aria-hidden="true">
+									</span>
+									<address class="contact-info__text t-text-big">
 										2247 Lunetta Street, TX
 										76301
-								</address>
-							</li>
-							<li class="contact-info__item">
-								<span class="contact-info__icon c-circle c-circle--48">
-									<img src="img/contact/icon-phone.svg" alt="" aria-hidden="true">
-								</span>
-								<a href="tel:+12345678900" class="contact-info__link t-text-big">
-									+1 (234) 567-89-00
-								</a>
-							</li>
-							<li class="contact-info__item">
-								<span class="contact-info__icon c-circle c-circle--48">
-									<img src="img/contact/icon-mail.svg" alt="" aria-hidden="true">
-								</span>
-								<a href="mailto:info@agency.com" class="contact-info__link t-text-big">
-									info@agency.com
-								</a>
-							</li>
-						</ul>
+									</address>
+								</li>
+								<li class="contact-info__item">
+									<span class="contact-info__icon c-circle c-circle--48">
+										<img src="img/contact/icon-phone.svg" alt="" aria-hidden="true">
+									</span>
+									<a href="tel:+12345678900" class="contact-info__link t-text-big">
+										+1 (234) 567-89-00
+									</a>
+								</li>
+								<li class="contact-info__item">
+									<span class="contact-info__icon c-circle c-circle--48">
+										<img src="img/contact/icon-mail.svg" alt="" aria-hidden="true">
+									</span>
+									<a href="mailto:info@agency.com" class="contact-info__link t-text-big">
+										info@agency.com
+									</a>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -649,27 +661,29 @@
 
 		<section class="final-cta">
 			<div class="l-inner">
-				<div class="final-cta__visual">
-					<img src="img/cta/cta-avatar.png" alt="" class="final-cta__image">
-				</div>
-				<div class="final-cta__body">
-					<p class="final-cta__name t-accent-text">
-						Gabriel Pires
-					</p>
-					<h2 class="final-cta__heading t-h2-text">
-						Help To Build<br>
-						Your Dream<br>
-						Project
-					</h2>
-					<p class="final-cta__lead t-text">
-						A digital agency is a business you hire to
-						outsource your digital marketing efforts,
-						instead of handling in-house.
-					</p>
-					<div class="final-cta__actions">
-						<a href="#contact" class="final-cta__button c-button c-button--primary c-button--w154">
-							Contact Me
-						</a>
+				<div class="final-cta__inner">
+					<div class="final-cta__visual">
+						<img src="img/cta/cta-avatar.png" alt="Gabriel Pires" class="final-cta__image">
+					</div>
+					<div class="final-cta__body">
+						<p class="final-cta__name t-accent-text">
+							Gabriel Pires
+						</p>
+						<h2 class="final-cta__heading t-h2-text">
+							Help To Build<br>
+							Your Dream<br>
+							Project
+						</h2>
+						<p class="final-cta__lead t-text">
+							A digital agency is a business you hire to
+							outsource your digital marketing efforts,
+							instead of handling in-house.
+						</p>
+						<div class="final-cta__actions">
+							<a href="#contact" class="final-cta__button c-button c-button--primary c-button--w154">
+								Contact Me
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -686,31 +700,29 @@
 
 	<footer class="footer">
 		<div class="l-inner footer__inner">
-			<!-- brand -->
+			<div class="footer__content">
 				<h4 class="footer__logo t-h4-text">Personal</h4>
-			<!-- nav groups -->
-			<div class="footer__groups">
-				<!-- MENU -->
-				<nav class="footer__menu" aria-label="Footer menu">
-					<h5 class="footer__title t-accent-text">Menu</h5>
-					<ul class="footer__list">
-						<li class="footer__item"><a class="footer__link t-text" href="#about">About</a></li>
-						<li class="footer__item"><a class="footer__link t-text" href="#services">Services</a></li>
-						<li class="footer__item"><a class="footer__link t-text" href="#blog">Blog</a></li>
-						<li class="footer__item"><a class="footer__link t-text" href="#contact">Contact</a></li>
-					</ul>
-				</nav>
-
-				<!-- SERVICE -->
-				<nav class="footer__services" aria-label="Footer services">
-					<h5 class="footer__title t-accent-text">Service</h5>
-					<ul class="footer__list">
-						<li class="footer__item"><a class="footer__link t-text" href="#services">Design</a></li>
-						<li class="footer__item"><a class="footer__link t-text" href="#services">Development</a></li>
-						<li class="footer__item"><a class="footer__link t-text" href="#services">Marketing</a></li>
-						<li class="footer__item"><a class="footer__link t-text" href="#services">See More</a></li>
-					</ul>
-				</nav>
+				<div class="footer__groups">
+					<nav class="footer__menu" aria-label="Footer menu">
+						<h5 class="footer__title t-accent-text">Menu</h5>
+						<ul class="footer__list">
+							<li class="footer__item"><a class="footer__link t-text" href="#about">About</a></li>
+							<li class="footer__item"><a class="footer__link t-text" href="#services">Services</a></li>
+							<li class="footer__item"><a class="footer__link t-text" href="#blog">Blog</a></li>
+							<li class="footer__item"><a class="footer__link t-text" href="#contact">Contact</a></li>
+						</ul>
+					</nav>
+					<nav class="footer__services" aria-label="Footer services">
+						<h5 class="footer__title t-accent-text">Service</h5>
+						<ul class="footer__list">
+							<li class="footer__item"><a class="footer__link t-text" href="#services">Design</a></li>
+							<li class="footer__item"><a class="footer__link t-text" href="#services">Development</a>
+							</li>
+							<li class="footer__item"><a class="footer__link t-text" href="#services">Marketing</a></li>
+							<li class="footer__item"><a class="footer__link t-text" href="#services">See More</a></li>
+						</ul>
+					</nav>
+				</div>
 			</div>
 
 			<nav class="footer__social" aria-label="Social links">
@@ -737,11 +749,12 @@
 		<div class="footer__bottom">
 			<div class="footer__meta">
 				<p class="footer__copyright t-text">
-					Copyright &copy; 2022 Laaqiq.<br>
-					All Rights Reserved.
+					Copyright &copy; 2026 <br>
+					Design based on Figma Community template by Laaqiq
+					https://www.figma.com/community/file/1063415783897538948
 				</p>
 			</div>
-				<!-- bottom links -->
+			<!-- bottom links -->
 			<div class="footer__links">
 				<a class="footer__bottom-link t-text" href="#">Terms of Use</a>
 				<a class="footer__bottom-link t-text" href="#">Privacy Policy</a>
@@ -750,4 +763,5 @@
 	</footer>
 	<script src="js/main.js"></script>
 </body>
+
 </html>
