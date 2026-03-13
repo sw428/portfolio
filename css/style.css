@@ -47,7 +47,6 @@ a {
 ul {
 	list-style: none;
 }
-
 /* Layout
 --------------------------------*/
 .l-inner{
@@ -323,7 +322,7 @@ ul {
 	padding-top: 16px;
 }
 .header__brand{
-	display: inline-flex;   /* 行レイアウトがaタグ(インライン要素)によるinline formatting context判断によるベースライン形成(縦に4px追加)防止の為のflex formatting context切り替え(親のflexとは無関係) */
+	display: inline-flex; /* ベースライン由来の余白防止 */
 	flex-shrink: 0;         /* フレックスは初期値0 1 autoで縮むのでそれを防ぐため */
 }
 
@@ -420,7 +419,6 @@ ul {
 	background: var(--color-bg-dark);
 	padding-top: 32px;
 	padding-bottom: 48px;
-	overflow-x: hidden;
 }
 
 .hero__img{
@@ -558,8 +556,10 @@ ul {
 
 .portfolio__img{
 	width: 100%;
+	aspect-ratio: 448 / 576;
 	object-fit: cover;
-}
+	}
+
 
 /* overlay */
 .portfolio__caption{
@@ -1479,6 +1479,14 @@ ul {
 @media (min-width: 1024px) {
 	/* Portfolio
 	--------------------------------*/
+
+	.portfolio{
+			content-visibility: auto;
+			contain-intrinsic-size: 800px;
+		
+		padding-block:80px ;
+	}
+
 	.portfolio__inner{
 		max-width:none
 	}
@@ -1486,6 +1494,10 @@ ul {
 	.portfolio__header{
 		display: flex;
 		justify-content: space-between;
+	}
+
+	.portfolio__button{
+		margin-bottom: 80px;
 	}
 
 	.portfolio__list {
