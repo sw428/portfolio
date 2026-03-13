@@ -61,50 +61,51 @@ document.querySelectorAll(".service__toggle").forEach((btn) => {
 
 	btn.setAttribute("aria-expanded", String(isOpen));
 	detail.hidden = !isOpen;
-});
+	});
 });
 
 
 /* スクロールずれ
 --------------------------------*/
 let resizeTimer = null;
-let anchorElement = null;
-let anchorTopBefore = 0;
+let anchorSection = null;
 
-function getAnchorElement() {
-  const sections = document.querySelectorAll("main section[id]");
-  let closest = null;
-  let minDistance = Infinity;
+function getMostVisibleSection() {
+  const sections = document.querySelectorAll("main section");
+  let maxVisible = 0;
+  let target = null;
 
-  for (const section of sections) {
+  sections.forEach(section => {
     const rect = section.getBoundingClientRect();
-    const distance = Math.abs(rect.top);
 
-    if (distance < minDistance) {
-      minDistance = distance;
-      closest = section;
+    const visible =
+      Math.min(rect.bottom, window.innerHeight) -
+      Math.max(rect.top, 0);
+
+    if (visible > maxVisible) {
+      maxVisible = visible;
+      target = section;
     }
-  }
+  });
 
-  return closest;
+  return target;
 }
 
 window.addEventListener("resize", () => {
 
-  anchorElement = getAnchorElement();
-  if (!anchorElement) return;
-
-  anchorTopBefore = anchorElement.getBoundingClientRect().top;
+  anchorSection = getMostVisibleSection();
 
   clearTimeout(resizeTimer);
 
   resizeTimer = setTimeout(() => {
 
-    const anchorTopAfter = anchorElement.getBoundingClientRect().top;
-    const diff = anchorTopAfter - anchorTopBefore;
+    if (!anchorSection) return;
 
-    window.scrollBy(0, diff);
+    anchorSection.scrollIntoView({
+      block: "start",
+      behavior: "instant"
+    });
 
-  },150);
+  }, 120);
 
 });
