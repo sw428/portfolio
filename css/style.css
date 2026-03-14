@@ -47,6 +47,7 @@ a {
 ul {
 	list-style: none;
 }
+
 /* Layout
 --------------------------------*/
 .l-inner{
@@ -514,7 +515,7 @@ ul {
 }
 
 .portfolio__inner{
-	max-width: 448px;
+	max-width: 340px;
 	margin: 0 auto;
 }
 
@@ -544,7 +545,7 @@ ul {
 }
 .portfolio__item{
 	padding: 16px 18px;
-	max-width: 448px;
+	max-width: 340px;
 	background:var(--color-bg-dark); /*パディング領域の色背景色に上書き*/
 }
 
@@ -557,7 +558,6 @@ ul {
 .portfolio__img{
 	width: 100%;
 	aspect-ratio: 448 / 576;
-	object-fit: cover;
 	}
 
 
@@ -1481,9 +1481,6 @@ ul {
 	--------------------------------*/
 
 	.portfolio{
-			content-visibility: auto;
-			contain-intrinsic-size: 800px;
-		
 		padding-block:80px ;
 	}
 
