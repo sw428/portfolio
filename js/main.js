@@ -39,14 +39,14 @@ nav.addEventListener("click", (e) => {
 //  ESCキーで閉じる
 document.addEventListener("keydown", (e) => {
 	if (e.key === "Escape" && header.classList.contains("is-open")) {
-	closeMenu();
+		closeMenu();
 	}
 });
 
 //  SP→PC切替時の事故防止
 window.addEventListener("resize", () => {
 	if (window.matchMedia("(min-width: 769px)").matches) {
-	closeMenu();
+		closeMenu();
 	}
 });
 
@@ -54,13 +54,12 @@ window.addEventListener("resize", () => {
 --------------------------------*/
 // クラスで開閉状態切り替えアクセシビリティに反映
 document.querySelectorAll(".service__toggle").forEach((btn) => {
-	const detail =btn.nextElementSibling;
+	const detail = btn.nextElementSibling;
 
 	btn.addEventListener("click", () => {
-	const isOpen = btn.classList.toggle("is-open");
+		const isOpen = btn.classList.toggle("is-open");
 
-	btn.setAttribute("aria-expanded", String(isOpen));
-	detail.hidden = !isOpen;
+		btn.setAttribute("aria-expanded", String(isOpen));
+		detail.hidden = !isOpen;
 	});
 });
-
