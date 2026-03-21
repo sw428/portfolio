@@ -1,5 +1,5 @@
 @charset "UTF-8";
-
+// 実行コマンド sass scss:css --watch
 /* Variables
 --------------------------------*/
 :root {
@@ -126,6 +126,35 @@ ul {
 
 /* Components
 --------------------------------*/
+/* c-stats
+--------------------*/
+.c-stats {
+	border: 1px solid var(--color-border);
+	border-radius: 6px;
+}
+
+.c-stats > * + * {
+	border-top: 1px solid var(--color-border);
+}
+
+.c-stats__item {
+	display: flex;
+	gap: 29px;
+}
+
+.c-stats__icon {
+	margin-top: 32px;
+	margin-left: 28px;
+}
+
+.c-stats__value {
+	margin-top: 45px;
+	margin-bottom: 13px;
+}
+
+.c-stats__label {
+	margin-bottom: 36px;
+}
 /* Button
 --------------------*/
 /* base */
@@ -363,6 +392,8 @@ ul {
 	color: var(--color-accent);
 }
 
+/* home
+===================================*/
 /* Header
 --------------------------------*/
 .header {
@@ -523,13 +554,18 @@ ul {
 
 .service__list {
 	text-align: left;
-	border-radius: 6px;
 	margin-bottom: 44px;
+	border: 1px solid var(--color-border);
+	border-radius: 6px;
+}
+
+.service__list > * + *{
+	border-top: 1px solid var(--color-border);
 }
 
 .service__item {
 	padding: 48px 28px;
-	border: 1px solid var(--color-border);
+
 }
 
 .service__head {
@@ -666,33 +702,6 @@ ul {
 	margin-bottom: 96px;
 }
 
-.about__stats {
-	border: 1px solid var(--color-border);
-	border-radius: 6px;
-}
-
-.about__stats > * + * {
-	border-top: 1px solid var(--color-border);
-}
-
-.about__card {
-	display: flex;
-	gap: 29px;
-}
-
-.about__num {
-	margin-top: 45px;
-	margin-bottom: 13px;
-}
-
-.about__icon {
-	margin-top: 32px;
-	margin-left: 28px;
-}
-
-.about__label-text {
-	margin-bottom: 36px;
-}
 
 /* Features
 --------------------------------*/
@@ -1166,19 +1175,38 @@ ul {
 	color: var(--color-accent);
 }
 
-/*下層ページ(about) 
+
+
+/* about-page 
+===================================*/
+/* about-me 
 --------------------------------*/
 .about-page {
 	.about-me {
+		text-align: center;
+		padding-top: 80px;
+		padding-bottom: 87px;
 		background-color: var(--color-bg-dark);
 	}
 
-	about-me__title {
+	.about-me__title {
+		margin-bottom: 12px;
 	}
 
-	about-me__text {
+	.about-me__text {
+		max-width: 550px;
+		margin: 0 auto;
 	}
 }
+
+/* about
+--------------------------------*/
+.about-page {
+	.about__text{
+		color: var(--color-text-dark-gray-64);
+	}
+}
+
 
 /* 480px以上
 --------------------------------*/
@@ -1192,11 +1220,26 @@ ul {
 /* PC
 --------------------------------*/
 @media (min-width: 768px) {
+	/* Components
+	--------------------------------*/
+	.c-stats {
+		display: flex;
+	}
+
+	.c-stats > * + * {
+		border-top: none;
+		border-left: 1px solid var(--color-border);
+	}
+
+	.c-stats__item {
+		flex: 1;
+	}
 	.l-inner {
 		width: min(100%, 1440px);
 		padding-inline: clamp(23px, calc(16.67vw + -105px), 135px);
 	}
-
+	/* Text (Typography)
+	--------------------------------*/
 	.t-h1-text {
 		letter-spacing: -2px;
 	}
@@ -1207,6 +1250,8 @@ ul {
 		display: none;
 	}
 
+	/* HOME
+	===================================*/
 	/* Header
 	--------------------------------*/
 	.header__toggle {
@@ -1285,6 +1330,12 @@ ul {
 		margin-bottom: 60px;
 	}
 
+	.service__list > * + * {
+		border-left: 1px solid var(--color-border);
+		border-top: none;
+	}
+
+
 	.service__bag {
 		width: 32px;
 		height: 26px;
@@ -1308,19 +1359,6 @@ ul {
 
 	.about__img {
 		width: 100%;
-	}
-
-	.about__stats {
-		display: flex;
-	}
-
-	.about__card {
-		flex: 1;
-	}
-
-	.about__stats > * + * {
-		border-top: none;
-		border-left: 1px solid var(--color-border);
 	}
 
 	/* Features
