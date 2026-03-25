@@ -155,6 +155,16 @@ ul {
   margin-bottom: 36px;
 }
 
+/* logos
+--------------------*/
+.c-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 42px;
+  align-items: center;
+  justify-content: space-around;
+}
+
 /* Button
 --------------------*/
 /* base */
@@ -746,7 +756,7 @@ ul {
   left: -16px;
   width: 148px;
   height: 148px;
-  background: url("../img/top/get-started/logo.star.svg") no-repeat center/contain;
+  background: url("../img/top-page/get-started/logo.star.svg") no-repeat center/contain;
 }
 
 .get-started__inner {
@@ -918,14 +928,6 @@ ul {
 
 .faq__answer {
   color: var(--color-text-dark-gray-64);
-}
-
-.faq__logos {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 42px;
-  align-items: center;
-  justify-content: center;
 }
 
 /* Blog
@@ -1186,8 +1188,68 @@ ul {
 
 /* about
 --------------------------------*/
-.about-page .about__text {
+.about-page .about {
+  padding-top: 80px;
+  padding-bottom: 93px;
+}
+.about-page .about__img-wrapper {
+  margin-bottom: 36px;
+}
+.about-page .about__name {
+  margin-bottom: 17px;
+}
+.about-page .about__text + .about__text {
+  margin-top: 36px;
+}
+
+.about-page .video-reel {
+  background-color: var(--color-bg-light);
+  padding-bottom: 64px;
+}
+.about-page .video-reel__label {
+  margin-bottom: 17px;
+}
+.about-page .video-reel__title {
+  margin-bottom: 32px;
+}
+.about-page .video-reel__lead {
+  margin-bottom: 50px;
   color: var(--color-text-dark-gray-64);
+}
+.about-page .video-reel__video {
+  margin-bottom: 56px;
+}
+.about-page .video-reel__text {
+  color: var(--color-text-dark-gray-64);
+}
+
+.about-page .founder-words {
+  background-color: var(--color-bg-light);
+  padding-bottom: 56px;
+}
+.about-page .founder-words__content {
+  border-top: 1px solid var(--color-border);
+  padding-top: 59px;
+  padding-bottom: 56px;
+  border-bottom: 1px solid var(--color-border);
+}
+.about-page .founder-words__label {
+  margin-bottom: 33px;
+}
+.about-page .founder-words__title {
+  margin-bottom: 25px;
+}
+.about-page .founder-words__name {
+  margin-bottom: 6px;
+}
+.about-page .founder-words__name {
+  margin-bottom: 6px;
+}
+.about-page .founder-words__logos-area {
+  margin-top: 83px;
+}
+.about-page .founder-words__role {
+  color: var(--color-text-dark);
 }
 
 /* 480px以上
@@ -1212,6 +1274,10 @@ ul {
   }
   .c-stats__item {
     flex: 1;
+  }
+  .c-logos {
+    justify-content: space-between;
+    flex-wrap: nowrap;
   }
   .l-inner {
     width: min(100%, 1440px);
@@ -1381,10 +1447,6 @@ ul {
   }
   .faq__header {
     max-width: 470px;
-  }
-  .faq__logos {
-    justify-content: space-between;
-    flex-wrap: nowrap;
   }
   /* blog
   --------------------------------*/
