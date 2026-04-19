@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="ポートフォリオサイト" />
+    <title>Services</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;800;900&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body class="services-page">
+    <header class="header">
+      <div class="l-inner header__inner">
+        <div class="header__controls">
+          <!-- ロゴ -->
+          <a href="#top" class="header__brand">
+            <img src="img/common/logo-agency.svg" class="header__logo" alt="Personal" />
+          </a>
+
+          <!-- ハンバーガー -->
+          <button
+            class="header__toggle"
+            type="button"
+            aria-label="メニューを開く"
+            aria-controls="global-nav"
+            aria-expanded="false"
+          >
+            <span class="header__line"></span>
+            <span class="header__line"></span>
+            <span class="header__line"></span>
+          </button>
+
+          <nav id="global-nav" class="header__nav" aria-hidden="true">
+            <div class="header__nav-panel">
+              <ul class="header__nav-list t-text">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#blog">Pricing</a></li>
+                <li><a href="#contact">Blog</a></li>
+              </ul>
+            </div>
+          </nav>
+
+          <div class="header__actions">
+            <a href="#contact" class="header__button c-button c-button--dark c-button--w138"> Contact </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="c-page-hero">
+        <div class="l-inner">
+          <h1 class="c-page-hero__title t-h1-text">Services</h1>
+          <p class="c-page-hero__text t-text">
+            Agency provides a full service range including technical skills, design, business understanding.
+          </p>
+        </div>
+      </section>
+
+      <section class="services">
+        <div class="l-inner">
+          <p class="services__label t-accent-text">Services</p>
+          <div class="services__grid">
+            <h2 class="services__heading t-h3-text">
+              Digital agency is a business you hire to outsource your digital marketing efforts
+            </h2>
+            <div class="services__body">
+              <p class="services__text t-text">
+                Ability to put themselves in the merchant's shoes. It is meant to partner on the long run, and work as
+                an extension of the merchant's team.
+              </p>
+              <p class="services__text t-text">
+                A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling
+                in-house. They can provide your business with a variety of digital solutions to promote your product or
+                service online and help you.
+              </p>
+            </div>
+          </div>
+
+          <ul class="services__list">
+            <li class="services__item">
+              <article class="service-card">
+                <div class="service-card__head">
+                  <div class="service-card__heading">
+                    <span class="service__icon c-circle c-circle--md">
+                      <img src="img/common/icon-design.svg" alt="" />
+                    </span>
+                    <h3 class="service-card__title t-h2-text">Design</h3>
+                  </div>
+
+                  <button
+                    class="service-card__toggle"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="service-design-body"
+                    aria-label="Designの詳細を開閉"
+                  >
+                    <span class="service-card__toggle-icon c-circle c-circle--sm">
+                      <img src="img/common/icon-chevron.svg" alt="" />
+                    </span>
+                  </button>
+                </div>
+
+                <div class="service-card__body" id="service-design-body" hidden>
+                  <p class="service-card__lead t-h4-text">
+                    Agency is a business you hire to outsource your digital marketing efforts
+                  </p>
+
+                  <p class="service-card__text t-text">
+                    Business you hire to outsource your digital marketing efforts, instead of handling in-house. They
+                    can provide your business with a variety of digital solutions to promote your product or service
+                    online and help you.
+                  </p>
+
+                  <ul class="service-card__list">
+                    <li class="service-card__item">
+                      <span class="features__icon c-circle c-circle--sm">
+                        <img src="img/common/icon-check.svg" alt="" />
+                      </span>
+                      <span class="service-card__label">Web Development</span>
+                    </li>
+                    <li class="service-card__item">
+                      <span class="features__icon c-circle c-circle--sm">
+                        <img src="img/common/icon-check.svg" alt="" />
+                      </span>
+                      <span class="service-card__label">Brand Strategy</span>
+                    </li>
+                    <li class="service-card__item">
+                      <span class="features__icon c-circle c-circle--sm">
+                        <img src="img/common/icon-check.svg" alt="" />
+                      </span>
+                      <span class="service-card__label">Art Direction</span>
+                    </li>
+                  </ul>
+                </div>
+              </article>
+            </li>
+
+            <li class="services__item">
+              <article class="service-card">
+                <div class="service-card__head">
+                  <div class="service-card__heading">
+                    <span class="service__icon c-circle c-circle--md">
+                      <img src="img/common/icon-design.svg" alt="" />
+                    </span>
+                    <h3 class="service-card__title t-h2-text">Deve&shy;lopment</h3>
+                  </div>
+
+                  <button
+                    class="service-card__toggle"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="service-development-body"
+                    aria-label="Developmentの詳細を開閉"
+                  >
+                    <span class="service-card__toggle-icon c-circle c-circle--sm">
+                      <img src="img/common/icon-chevron.svg" alt="" />
+                    </span>
+                  </button>
+                </div>
+                <div class="service-card__body" id="service-development-body" hidden>
+                  <p class="service-card__lead t-h4-text">
+                    Agency helps build and improve digital products and websites
+                  </p>
+
+                  <p class="service-card__text t-text">
+                    We support front-end implementation, responsive coding, maintenance, and technical improvement so
+                    your website works smoothly and gives users a better experience.
+                  </p>
+
+                  <ul class="service-card__list">
+                    <li class="service-card__item">
+                      <span class="features__icon c-circle c-circle--sm">
+                        <img src="img/common/icon-check.svg" alt="" />
+                      </span>
+                      <span class="service-card__label">Front-end Coding</span>
+                    </li>
+                    <li class="service-card__item">
+                      <span class="features__icon c-circle c-circle--sm">
+                        <img src="img/common/icon-check.svg" alt="" />
+                      </span>
+                      <span class="service-card__label">Responsive Layout</span>
+                    </li>
+                    <li class="service-card__item">
+                      <span class="features__icon c-circle c-circle--sm">
+                        <img src="img/common/icon-check.svg" alt="" />
+                      </span>
+                      <span class="service-card__label">Performance Support</span>
+                    </li>
+                  </ul>
+                </div>
+              </article>
+            </li>
+
+            <li class="services__item">
+              <article class="service-card">
+                <div class="service-card__head">
+                  <div class="service-card__heading">
+                    <span class="service__icon c-circle c-circle--md">
+                      <img src="img/common/icon-design.svg" alt="" />
+                    </span>
+                    <h3 class="service-card__title t-h2-text">Marke&shy;ting</h3>
+                  </div>
+
+                  <button
+                    class="service-card__toggle"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="service-marketing-body"
+                    aria-label="Marketingの詳細を開閉"
+                  >
+                    <span class="service-card__toggle-icon c-circle c-circle--sm">
+                      <img src="img/common/icon-chevron.svg" alt="" />
+                    </span>
+                  </button>
+                </div>
+
+                <div class="service-card__body" id="service-marketing-body" hidden>
+                  <p class="service-card__lead t-h4-text">
+                    Agency is a business you hire to outsource your digital marketing efforts
+                  </p>
+
+                  <p class="service-card__text t-text">
+                    Business you hire to outsource your digital marketing efforts, instead of handling in-house. They
+                    can provide your business with a variety of digital solutions to promote your product or service
+                    online and help you.
+                  </p>
+
+                  <ul class="service-card__list">
+                    <li class="service-card__item">
+                      <span class="features__icon c-circle c-circle--sm">
+                        <img src="img/common/icon-check.svg" alt="" />
+                      </span>
+                      <span class="service-card__label">Web Development</span>
+                    </li>
+                    <li class="service-card__item">
+                      <span class="features__icon c-circle c-circle--sm">
+                        <img src="img/common/icon-check.svg" alt="" />
+                      </span>
+                      <span class="service-card__label">Brand Strategy</span>
+                    </li>
+                    <li class="service-card__item">
+                      <span class="features__icon c-circle c-circle--sm">
+                        <img src="img/common/icon-check.svg" alt="" />
+                      </span>
+                      <span class="service-card__label">Art Direction</span>
+                    </li>
+                  </ul>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="how-we-work">
+        <div class="l-inner">
+          <div class="how-we-work__inner">
+            <div class="how-we-work__content">
+              <p class="how-we-work__label t-accent-text">How We Work</p>
+              <h2 class="how-we-work__title t-h3-text">Making Your Projects Look Awesome</h2>
+              <p class="how-we-work__text t-text">
+                Technical skills, design, business understanding, ability to put themselves in the merchant's shoes.
+              </p>
+            </div>
+            <p class="how-we-work__link">
+              <a href="#">Read More</a>
+            </p>
+            <div class="">
+              <ol class="how-we-work__list">
+                <li class="how-we-work__item">
+                  <span class="how-we-work__number t-h1-text" aria-hidden="true">1</span>
+                  <p class="how-we-work__item-text t-h4-text">Full service range including</p>
+                </li>
+                <li class="how-we-work__item">
+                  <span class="how-we-work__number t-h1-text" aria-hidden="true">2</span>
+                  <p class="how-we-work__item-text t-h4-text">Technical skills, design, business</p>
+                </li>
+                <li class="how-we-work__item">
+                  <span class="how-we-work__number t-h1-text" aria-hidden="true">3</span>
+                  <p class="how-we-work__item-text t-h4-text">Themselves in the merchant's</p>
+                </li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="c-dream-hero">
+            <div class="c-dream-hero__inner">
+              <div class="c-dream-hero__visual">
+                <img src="img/common/dream-hero.png" alt="" aria-hidden="true" width="273" height="264" />
+              </div>
+
+              <div class="c-dream-hero__content">
+                <h2 class="c-dream-hero__title t-h3-text">
+                  Help To Build<br />
+                  Your Dream<br />
+                  Project
+                </h2>
+                <p class="c-dream-hero__text t-text">
+                  A digital agency is a business you hire to outsource your digital marketing efforts, instead of
+                  handling in-house.
+                </p>
+                <div class="c-dream-hero__actions">
+                  <a href="#contact" class="c-dream-hero__button c-button c-button--secondary c-button--w154">
+                    Contact Now
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="l-inner footer__inner">
+          <div class="footer__content">
+            <h4 class="footer__logo t-h4-text">Agency</h4>
+            <div class="footer__groups">
+              <nav class="footer__menu" aria-label="Footer menu">
+                <h5 class="footer__title t-accent-text">Menu</h5>
+                <ul class="footer__list">
+                  <li class="footer__item">
+                    <a class="footer__link t-text" href="#about">About</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link t-text" href="#services">Services</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link t-text" href="#blog">Blog</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link t-text" href="#contact">Contact</a>
+                  </li>
+                </ul>
+              </nav>
+
+              <nav class="footer__services" aria-label="Footer services">
+                <h5 class="footer__title t-accent-text">Service</h5>
+                <ul class="footer__list">
+                  <li class="footer__item">
+                    <a class="footer__link t-text" href="#services">Design</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link t-text" href="#services">Development</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link t-text" href="#services">Marketing</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link t-text" href="#services">See More</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <nav class="footer__social" aria-label="Social links">
+            <ul class="footer__social-list">
+              <li class="footer__social-item">
+                <a class="footer__social-link c-circle c-circle--48" href="#" aria-label="Facebook">
+                  <img src="img/top-page/footer/facebook.svg" alt="" aria-hidden="true" />
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a class="footer__social-link c-circle c-circle--48" href="#" aria-label="Twitter">
+                  <img src="img/top-page/footer/twitter.svg" alt="" aria-hidden="true" />
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a class="footer__social-link c-circle c-circle--48" href="#" aria-label="Instagram">
+                  <img src="img/top-page/footer/instagram.svg" alt="" aria-hidden="true" />
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="footer__bottom">
+          <div class="footer__meta">
+            <p class="footer__copyright t-text">
+              <a
+                class="footer__credit-link"
+                href="https://www.figma.com/community/file/1063415783897538948"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Original Figma template</a
+              >
+              by Laaqiq
+              <br />
+              Coded by S.W.
+            </p>
+          </div>
+
+          <div class="footer__links">
+            <a class="footer__bottom-link t-text" href="#">Terms of Use</a>
+            <a class="footer__bottom-link t-text" href="#">Privacy Policy</a>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script src="js/main.js"></script>
+  </body>
+</html>
