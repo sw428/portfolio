@@ -621,19 +621,11 @@ ul {
 }
 
 .service__list > * + * {
-<<<<<<< Updated upstream
-	border-top: 1px solid var(--color-border);
-}
-
-.service__item {
-	padding: 48px 28px;
-=======
   border-top: 1px solid var(--color-border);
 }
 
 .service__item {
   padding: 48px 28px;
->>>>>>> Stashed changes
 }
 
 .service__head {
@@ -815,16 +807,6 @@ ul {
 }
 
 .get-started__star::before {
-<<<<<<< Updated upstream
-	content: "";
-	position: absolute;
-	top: -166px;
-	left: -16px;
-	width: 148px;
-	height: 148px;
-	background: url("../img/top-page/get-started/logo.star.svg") no-repeat
-		center / contain;
-=======
   content: "";
   position: absolute;
   top: -166px;
@@ -832,7 +814,6 @@ ul {
   width: 148px;
   height: 148px;
   background: url("../img/top-page/get-started/logo.star.svg") no-repeat center / contain;
->>>>>>> Stashed changes
 }
 
 .get-started__inner {
@@ -1255,104 +1236,11 @@ ul {
   color: var(--color-white);
 }
 
-<<<<<<< Updated upstream
-.footer__url {
-	color: var(--color-accent);
-}
-
-=======
->>>>>>> Stashed changes
 /* about-page 
 ===================================*/
 /* about
 --------------------------------*/
 .about-page {
-<<<<<<< Updated upstream
-	.about {
-		padding-top: 80px;
-		padding-bottom: 93px;
-	}
-
-	.about__img-wrapper {
-		margin-bottom: 36px;
-	}
-
-	.about__name {
-		margin-bottom: 17px;
-	}
-
-	.about__text + .about__text {
-		margin-top: 36px;
-	}
-}
-
-.about-page {
-	.video-reel {
-		background-color: var(--color-bg-light);
-		padding-bottom: 64px;
-	}
-
-	.video-reel__label {
-		margin-bottom: 17px;
-	}
-
-	.video-reel__title {
-		margin-bottom: 32px;
-	}
-
-	.video-reel__lead {
-		margin-bottom: 50px;
-		color: var(--color-text-dark-gray-64);
-	}
-
-	.video-reel__video {
-		margin-bottom: 56px;
-	}
-
-	.video-reel__text {
-		color: var(--color-text-dark-gray-64);
-	}
-}
-
-.about-page {
-	.founder-words {
-		background-color: var(--color-bg-light);
-		padding-bottom: 56px;
-	}
-
-	.founder-words__content {
-		border-top: 1px solid var(--color-border);
-		padding-top: 59px;
-		padding-bottom: 56px;
-		border-bottom: 1px solid var(--color-border);
-	}
-
-	.founder-words__label {
-		margin-bottom: 33px;
-	}
-
-	.founder-words__title {
-		margin-bottom: 25px;
-	}
-
-	.founder-words__name {
-		margin-bottom: 6px;
-	}
-
-	.founder-words__name {
-		margin-bottom: 6px;
-	}
-
-	.founder-words__logos-area {
-		margin-top: 83px;
-	}
-
-	.founder-words__role {
-		color: var(--color-text-dark);
-	}
-}
-
-=======
   .about {
     padding-top: 80px;
     padding-bottom: 93px;
@@ -1599,7 +1487,6 @@ ul {
   }
 }
 
->>>>>>> Stashed changes
 /* 480px以上
 --------------------------------*/
 @media (min-width: 480px) {
@@ -1627,19 +1514,12 @@ ul {
     flex: 1;
   }
 
-<<<<<<< Updated upstream
-	.c-logos {
-		justify-content: space-between;
-		flex-wrap: nowrap;
-	}
-=======
   /* logo
   --------------------------------*/
   .c-logos {
     justify-content: space-between;
     flex-wrap: nowrap;
   }
->>>>>>> Stashed changes
 
   /* dream-hero
   --------------------------------*/
@@ -1770,21 +1650,12 @@ ul {
     border-top: none;
   }
 
-<<<<<<< Updated upstream
-	.service__bag {
-		width: 32px;
-		height: 26px;
-	}
-
-	/* About
-=======
   .service__bag {
     width: 32px;
     height: 26px;
   }
 
   /* About
->>>>>>> Stashed changes
 	--------------------------------*/
   .about {
     padding-top: 187px;
@@ -1881,11 +1752,7 @@ ul {
     max-width: 470px;
   }
 
-<<<<<<< Updated upstream
-	/* blog
-=======
   /* blog
->>>>>>> Stashed changes
 	--------------------------------*/
   .blog {
     padding-top: 92px;
@@ -2130,10 +1997,6 @@ ul {
     }
   }
 }
-<<<<<<< Updated upstream
-bxb
-=======
->>>>>>> Stashed changes
 /* 1024～1440
 --------------------------------*/
 @media (min-width: 1024px) {
