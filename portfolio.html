@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="ポートフォリオサイト" />
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;800;900&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body class="portfolio-page">
+    <header class="header">
+      <div class="l-inner header__inner">
+        <div class="header__controls">
+          <!-- ロゴ -->
+          <a href="#top" class="header__brand">
+            <img src="img/common/logo-agency.svg" class="header__logo" alt="Personal" />
+          </a>
+
+          <!-- ハンバーガー -->
+          <button
+            class="header__toggle"
+            type="button"
+            aria-label="メニューを開く"
+            aria-controls="global-nav"
+            aria-expanded="false"
+          >
+            <span class="header__line"></span>
+            <span class="header__line"></span>
+            <span class="header__line"></span>
+          </button>
+
+          <nav id="global-nav" class="header__nav" aria-hidden="true">
+            <div class="header__nav-panel">
+              <ul class="header__nav-list t-text">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#blog">Pricing</a></li>
+                <li><a href="#contact">Blog</a></li>
+              </ul>
+            </div>
+          </nav>
+
+          <div class="header__actions">
+            <a href="#contact" class="header__button c-button c-button--dark c-button--w138"> Contact </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="c-page-hero">
+        <div class="l-inner">
+          <h1 class="c-page-hero__title t-h1-text">Portfolio</h1>
+          <p class="c-page-hero__text t-text">
+            Agency provides a full service range including technical skills, design, business understanding.
+          </p>
+        </div>
+      </section>
+
+      <section class="portfolio">
+        <ul class="filter__list">
+          <li>
+            <a href="#" class="is-active">Show All <span>14</span></a>
+          </li>
+          <li>
+            <a href="#">Design <span>6</span></a>
+          </li>
+          <li>
+            <a href="#">Branding <span>4</span></a>
+          </li>
+          <li>
+            <a href="#">Illustration <span>3</span></a>
+          </li>
+          <li>
+            <a href="#">Motion <span>1</span></a>
+          </li>
+        </ul>
+        <div class="l-inner">
+          <div class="portfolio-filter">
+            <label class="u-visually-hidden" for="portfolio-category">Filter portfolio</label>
+            <select id="portfolio-category" class="portfolio-filter__select">
+              <option value="all">Show All</option>
+              <option value="design">Design</option>
+              <option value="branding">Branding</option>
+              <option value="illustration">Illustration</option>
+              <option value="illustration">Motion</option>
+            </select>
+          </div>
+
+          <div class="portfolio__list">
+            <figure class="portfolio__item">
+              <a href="#" class="portfolio__link">
+                <picture class="portfolio__media">
+                  <source media="(min-width: 768px)" srcset="img/portfolio-page/keyboard-pc.png" />
+                  <img class="portfolio__img" src="img/portfolio-page/keyboard-sp.png" alt="デザイン制作" />
+                </picture>
+                <figcaption class="portfolio__caption">
+                  <span class="portfolio__badge c-badge">
+                    <span class="portfolio__badge-label t-text">Design</span>
+                  </span>
+                  <h3 class="portfolio__item-title t-h3-text">KeyBoard</h3>
+                </figcaption>
+              </a>
+            </figure>
+
+            <figure class="portfolio__item">
+              <a href="#" class="portfolio__link">
+                <div class="portfolio__media">
+                  <img
+                    width="448"
+                    height="576"
+                    class="portfolio__img"
+                    loading="lazy"
+                    decoding="async"
+                    src="img/portfolio-page/sofa.png"
+                    alt="ブランディング制作"
+                  />
+                </div>
+                <figcaption class="portfolio__caption">
+                  <span class="portfolio__badge c-badge">
+                    <span class="portfolio__badge-label">Design</span>
+                  </span>
+                  <h3 class="portfolio__item-title t-h3-text">SOFA</h3>
+                </figcaption>
+              </a>
+            </figure>
+
+            <figure class="portfolio__item">
+              <a href="#" class="portfolio__link">
+                <div class="portfolio__media">
+                  <img
+                    width="448"
+                    height="576"
+                    class="portfolio__img"
+                    loading="lazy"
+                    decoding="async"
+                    src="img/portfolio-page/dddone.png"
+                    alt="ブランディング制作"
+                  />
+                </div>
+                <figcaption class="portfolio__caption">
+                  <span class="portfolio__badge c-badge">
+                    <span class="portfolio__badge-label">Branding</span>
+                  </span>
+                  <h3 class="portfolio__item-title t-h3-text">DDDone</h3>
+                </figcaption>
+              </a>
+            </figure>
+
+            <figure class="portfolio__item">
+              <a href="#" class="portfolio__link">
+                <div class="portfolio__media">
+                  <img
+                    width="448"
+                    height="576"
+                    class="portfolio__img"
+                    loading="lazy"
+                    decoding="async"
+                    src="img/portfolio-page/work-media.png"
+                    alt="ブランディング制作"
+                  />
+                </div>
+                <figcaption class="portfolio__caption">
+                  <span class="portfolio__badge c-badge">
+                    <span class="portfolio__badge-label">Illustration</span>
+                  </span>
+                  <h3 class="portfolio__item-title t-h3-text">Work Media</h3>
+                </figcaption>
+              </a>
+            </figure>
+
+            <figure class="portfolio__item">
+              <a href="#" class="portfolio__link">
+                <div class="portfolio__media">
+                  <img
+                    width="448"
+                    height="576"
+                    class="portfolio__img"
+                    loading="lazy"
+                    decoding="async"
+                    src="img/portfolio-page/handp.png"
+                    alt="イラスト制作"
+                  />
+                </div>
+                <figcaption class="portfolio__caption">
+                  <span class="portfolio__badge c-badge">
+                    <span class="portfolio__badge-label">Branding</span>
+                  </span>
+                  <h3 class="portfolio__item-title t-h3-text">HandP</h3>
+                </figcaption>
+              </a>
+            </figure>
+          </div>
+
+          <nav class="portfolio__pagination" aria-label="Portfolio pages">
+            <ul class="portfolio__pagination-list">
+              <li class="portfolio__pagination-item">
+                <a href="#" class="portfolio__page-link is-current" aria-current="page">1</a>
+              </li>
+              <li class="portfolio__pagination-item">
+                <a href="#" class="portfolio__page-link">2</a>
+              </li>
+              <li class="portfolio__pagination-item">
+                <a href="#" class="portfolio__page-link">3</a>
+              </li>
+              <li class="portfolio__pagination-item">
+                <a href="#" class="portfolio__page-link">4</a>
+              </li>
+              <li class="portfolio__pagination-item">
+                <a href="#" class="portfolio__page-link">5</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="c-dream-hero">
+            <div class="c-dream-hero__inner">
+              <div class="c-dream-hero__visual">
+                <img src="img/common/dream-hero.png" alt="" aria-hidden="true" width="273" height="264" />
+              </div>
+
+              <div class="c-dream-hero__content">
+                <h2 class="c-dream-hero__title t-h3-text">
+                  Help To Build<br />
+                  Your Dream<br />
+                  Project
+                </h2>
+                <p class="c-dream-hero__text t-text">
+                  A digital agency is a business you hire to outsource your digital marketing efforts, instead of
+                  handling in-house.
+                </p>
+                <div class="c-dream-hero__actions">
+                  <a href="#contact" class="c-dream-hero__button c-button c-button--secondary c-button--w154">
+                    Contact Now
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="l-inner footer__inner">
+          <div class="footer__content">
+            <h4 class="footer__logo t-h4-text">Agency</h4>
+            <div class="footer__groups">
+              <nav class="footer__menu" aria-label="Footer menu">
+                <h5 class="footer__title t-accent-text">Menu</h5>
+                <ul class="footer__list">
+                  <li class="footer__item">
+                    <a class="footer__link t-text" href="#about">About</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link t-text" href="#services">Services</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link t-text" href="#blog">Blog</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link t-text" href="#contact">Contact</a>
+                  </li>
+                </ul>
+              </nav>
+
+              <nav class="footer__services" aria-label="Footer services">
+                <h5 class="footer__title t-accent-text">Service</h5>
+                <ul class="footer__list">
+                  <li class="footer__item">
+                    <a class="footer__link t-text" href="#services">Design</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link t-text" href="#services">Development</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link t-text" href="#services">Marketing</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link t-text" href="#services">See More</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <nav class="footer__social" aria-label="Social links">
+            <ul class="footer__social-list">
+              <li class="footer__social-item">
+                <a class="footer__social-link c-circle c-circle--48" href="#" aria-label="Facebook">
+                  <img src="img/top-page/footer/facebook.svg" alt="" aria-hidden="true" />
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a class="footer__social-link c-circle c-circle--48" href="#" aria-label="Twitter">
+                  <img src="img/top-page/footer/twitter.svg" alt="" aria-hidden="true" />
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a class="footer__social-link c-circle c-circle--48" href="#" aria-label="Instagram">
+                  <img src="img/top-page/footer/instagram.svg" alt="" aria-hidden="true" />
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="footer__bottom">
+          <div class="footer__meta">
+            <p class="footer__copyright t-text">
+              <a
+                class="footer__credit-link"
+                href="https://www.figma.com/community/file/1063415783897538948"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Original Figma template</a
+              >
+              by Laaqiq
+              <br />
+              Coded by S.W.
+            </p>
+          </div>
+
+          <div class="footer__links">
+            <a class="footer__bottom-link t-text" href="#">Terms of Use</a>
+            <a class="footer__bottom-link t-text" href="#">Privacy Policy</a>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script src="js/main.js"></script>
+  </body>
+</html>
