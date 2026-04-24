@@ -1,0 +1,24 @@
+/* c-page-hero
+--------------------------------*/
+.c-page-hero {
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 87px;
+  background-color: var(--color-bg-dark);
+}
+
+.c-page-hero__title {
+  margin-bottom: 12px;
+}
+
+.c-page-hero__text {
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .c-page-hero {
+    padding-top: 104px;
+    padding-bottom: 66px;
+  }
+}

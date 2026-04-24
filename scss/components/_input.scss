@@ -1,0 +1,43 @@
+/* Input
+--------------------------------*/
+.c-input {
+  width: 100%;
+  height: 48px;
+  padding: 9px 16px 7px;
+
+  font-size: 1rem;
+  /* 16px */
+  font-weight: 400;
+  line-height: 2;
+  /* 32 ÷ 16 */
+  letter-spacing: 0px;
+  color: var(--color-text-dark);
+  border-radius: 6px;
+  background: var(--color-white);
+}
+
+.c-input::placeholder {
+  color: var(--color-text-dark-gray-64);
+}
+
+/* textarea */
+.c-input--textarea {
+  height: auto;
+  min-height: 120px;
+  padding: 14px 16px;
+  resize: none;
+  margin: 0;
+}
+
+/* select */
+.c-input--select {
+  appearance: none;
+  padding-right: 40px;
+  color: var(--color-text-dark-gray-64);
+}
+
+.c-control {
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  display: block;
+}

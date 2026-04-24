@@ -1,0 +1,50 @@
+/* dream-hero
+--------------------------------*/
+.c-dream-hero {
+  padding-top: 32px;
+  padding-bottom: 48px;
+  background: var(--color-accent);
+  border-radius: 6px;
+}
+
+.c-dream-hero__inner {
+  padding-inline: clamp(28px, calc(6.76vw + 2.65px), 100px);
+}
+
+.c-dream-hero__visual {
+  margin-bottom: 37px;
+  width: min(100%, 443px);
+}
+
+.c-dream-hero__visual img {
+  width: 100%;
+}
+
+.c-dream-hero__title {
+  margin-bottom: 15px;
+  color: var(--color-white);
+}
+
+.c-dream-hero__text {
+  margin-bottom: 21px;
+  color: var(--color-text-gray-64);
+}
+
+@media (min-width: 768px) {
+  .c-dream-hero__inner {
+    display: grid;
+    grid-template-columns: minmax(0, 470px) minmax(0, 443px);
+    gap: 61px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .c-dream-hero__visual {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .c-dream-hero__content {
+    grid-column: 1;
+    grid-row: 1;
+  }
+}

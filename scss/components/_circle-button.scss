@@ -1,0 +1,46 @@
+/* Circle button
+--------------------*/
+.c-circle-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+
+  background: var(--color-white);
+  border: none;
+  cursor: pointer;
+}
+
+/* 疑似要素作るための箱(flexboxの為幅がないと崩れる) */
+.c-circle-button__icon {
+  /* ← 疑似要素の基準 */
+  position: relative;
+  width: 12px;
+  height: 12px;
+}
+
+/* +マーク */
+.c-circle-button__icon::before,
+.c-circle-button__icon::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  margin: auto;
+
+  width: 12px;
+  height: 2px;
+  background: var(--color-bg-orange);
+  transition: transform 0.3s;
+}
+
+/* 縦線 */
+.c-circle-button__icon::after {
+  transform: rotate(90deg);
+}
+
+.service__toggle.is-open .c-circle-button__icon::after {
+  transform: rotate(0deg);
+}

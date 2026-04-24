@@ -1,0 +1,195 @@
+/* services-page
+===================================*/
+/* services
+--------------------------------*/
+.services-page {
+  .services {
+    background-color: var(--color-bg-light);
+    padding-top: 76px;
+    padding-bottom: 91px;
+  }
+
+  .services__list {
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .services__label {
+    margin-bottom: 33px;
+  }
+
+  .services__text {
+    color: var(--color-text-dark-gray-64);
+  }
+
+  .services__heading {
+    margin-bottom: 28px;
+  }
+
+  .services__body {
+    margin-bottom: 96px;
+  }
+
+  .services__body > * + * {
+    margin-top: 36px;
+  }
+
+  .service__icon {
+    margin-right: 33px;
+  }
+
+  .service-card__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 33px;
+    border-top: 1px solid var(--color-border);
+  }
+
+  .service-card__heading {
+    display: flex;
+    align-items: center;
+  }
+
+  .service-card__body {
+    padding-top: 72px;
+    padding-bottom: 84px;
+  }
+
+  .service-card__lead {
+    margin-bottom: 28px;
+  }
+
+  .service-card__text {
+    color: var(--color-text-dark-gray-64);
+    margin-bottom: 42px;
+  }
+
+  .service-card__list > * + * {
+    margin-top: 16px;
+  }
+
+  .service-card__item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  /* how-we-work
+  --------------------------------*/
+  .how-we-work {
+    padding-top: 91px;
+    background-color: var(--color-bg-light);
+  }
+
+  .how-we-work__label {
+    padding-bottom: 17px;
+  }
+
+  .how-we-work__title {
+    padding-bottom: 15px;
+  }
+
+  .how-we-work__text {
+    color: var(--color-text-dark-gray-64);
+    padding-bottom: 32px;
+  }
+
+  .how-we-work__link {
+    color: var(--color-text-dark);
+    padding-bottom: 72px;
+  }
+
+  .how-we-work__list {
+    margin-bottom: 92px;
+    margin-top: 61px;
+  }
+
+  .how-we-work__list > * + * {
+    margin-top: 32px;
+  }
+
+  .how-we-work__item {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .how-we-work__number {
+    color: var(--color-text-dark);
+    width: 47px;
+  }
+
+  /* footer
+  --------------------------------*/
+  .footer {
+    background-color: var(--color-bg-light);
+  }
+
+  .footer__logo {
+    color: var(--color-text-dark);
+  }
+
+  .footer__link {
+    color: var(--color-text-dark);
+  }
+
+  .footer__copyright {
+    color: var(--color-text-dark-gray-64);
+  }
+
+  .footer__bottom {
+    border-top: 1px solid var(--color-border);
+  }
+
+  .footer__bottom-link {
+    color: var(--color-text-dark);
+  }
+}
+
+@media (min-width: 768px) {
+  /* services-page
+  ===================================*/
+  /* service
+  --------------------------------*/
+  .services-page {
+    .services__grid {
+      display: grid;
+      grid-template-columns: minmax(0, 470px) minmax(0, 570px);
+      justify-content: space-between;
+      column-gap: 80px;
+    }
+
+    .services__body {
+      margin-top: 15px;
+    }
+
+    .service-card__body {
+      width: min(100%, 560px);
+      margin-left: auto;
+    }
+
+    .service-card__lead {
+      font-size: 2.5rem;
+      line-height: 1.2;
+      font-weight: 800;
+    }
+
+    /* how we work
+    --------------------------------*/
+    .how-we-work__inner {
+      display: grid;
+      grid-template-columns: minmax(0, 470px) 1fr;
+      gap: 130px;
+    }
+
+    .how-we-work__link {
+      display: none;
+    }
+
+    .how-we-work__content {
+      max-width: 470px;
+      min-width: 0;
+    }
+  }
+}

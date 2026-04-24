@@ -1,0 +1,127 @@
+/* about-page 
+===================================*/
+/* about
+--------------------------------*/
+.about-page {
+  .about {
+    padding-top: 80px;
+    padding-bottom: 93px;
+  }
+
+  .about__img-wrapper {
+    margin-bottom: 36px;
+  }
+
+  .about__content {
+    margin-bottom: 36px;
+  }
+
+  .about__name {
+    margin-bottom: 17px;
+  }
+
+  .about__text {
+    margin-bottom: 0;
+  }
+
+  .about__text + .about__text {
+    margin-top: 36px;
+  }
+
+  /* video-reel
+  --------------------------------*/
+  .video-reel {
+    background-color: var(--color-bg-light);
+    padding-bottom: 64px;
+  }
+
+  .video-reel__label {
+    margin-bottom: 17px;
+  }
+
+  .video-reel__title {
+    margin-bottom: 32px;
+  }
+
+  .video-reel__lead {
+    margin-bottom: 50px;
+    color: var(--color-text-dark-gray-64);
+  }
+
+  .video-reel__video {
+    margin-bottom: 56px;
+  }
+
+  .video-reel__text {
+    color: var(--color-text-dark-gray-64);
+  }
+  .video-reel__text + .video-reel__text {
+    margin-top: 36px;
+  }
+
+  /* founder-words
+  --------------------------------*/
+  .founder-words {
+    background-color: var(--color-bg-light);
+    padding-bottom: 125px;
+  }
+
+  .founder-words__content {
+    border-top: 1px solid var(--color-border);
+    padding-top: 59px;
+    padding-bottom: 56px;
+    border-bottom: 1px solid var(--color-border);
+    max-width: clamp(329px, calc(78.97vw + 32.87px), 1170px);
+    margin: 0 auto;
+  }
+
+  .founder-words__label {
+    margin-bottom: 33px;
+  }
+
+  .founder-words__title {
+    margin-bottom: 25px;
+  }
+
+  .founder-words__name {
+    margin-bottom: 6px;
+  }
+
+  .founder-words__name {
+    margin-bottom: 6px;
+  }
+
+  .founder-words__logos-area {
+    margin-top: 83px;
+  }
+
+  .founder-words__role {
+    color: var(--color-text-dark-gray-64);
+  }
+}
+
+/* PC
+--------------------------------*/
+@media (min-width: 768px) {
+  /* about-page
+  ===================================*/
+  /* about
+  --------------------------------*/
+  .about-page {
+    .about__inner {
+      display: block;
+    }
+
+    .about__title {
+      margin-bottom: 60px;
+    }
+
+    .about__text {
+      text-align: left;
+    }
+
+    .about__content {
+      margin-bottom: 65px;
+    }
+  }
+}

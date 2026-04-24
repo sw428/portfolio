@@ -1,0 +1,26 @@
+/* color utilities
+--------------------------------*/
+/* text color */
+.t-color-white {
+  color: var(--color-white);
+}
+
+.t-color-light-gray {
+  color: var(--color-text-gray-30);
+}
+
+.t-color-gray {
+  color: var(--color-text-gray-64);
+}
+
+.t-color-dark {
+  color: var(--color-text-dark);
+}
+
+.t-color-dark-gray {
+  color: var(--color-text-dark-gray-64);
+}
+
+.t-color-accent {
+  color: var(--color-accent);
+}

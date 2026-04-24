@@ -1,0 +1,17 @@
+.u-visually-hidden {
+  /* レイアウトから外す */
+  position: absolute;
+  /* ほぼ見えなくする */
+  width: 1px;
+  height: 1px;
+  /* 画面外に押し出す */
+  margin: -1px;
+  /* はみ出し隠す */
+  overflow: hidden;
+  /* 完全に切り抜く */
+  clip: rect(0, 0, 0, 0);
+  /* 改行防止 */
+  white-space: nowrap;
+  /* 枠消す */
+  border: 0;
+}

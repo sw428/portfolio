@@ -1,0 +1,50 @@
+/* Button
+--------------------*/
+/* base */
+.c-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  /*ディセンダー分と余白の差分ずれるため*/
+  padding-top: 3px;
+  border-radius: 6px;
+  font-weight: 900;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+/* color*/
+.c-button--primary {
+  background: var(--color-accent);
+  color: var(--color-white);
+}
+
+.c-button--secondary {
+  background: var(--color-white);
+  color: var(--color-text-dark);
+}
+
+.c-button--white {
+  color: var(--color-text-dark);
+  background-color: var(--color-white);
+}
+
+.c-button--dark {
+  background-color: transparent;
+  border: 1px solid var(--color-text-gray-30);
+  color: var(--color-white);
+}
+
+/* size */
+.c-button--w170 {
+  width: 170px;
+}
+
+.c-button--w154 {
+  width: 154px;
+}
+
+.c-button--w138 {
+  width: 138px;
+}

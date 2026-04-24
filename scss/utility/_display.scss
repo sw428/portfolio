@@ -1,0 +1,11 @@
+.u-sp-only {
+  display: inline;
+}
+
+/* PC
+--------------------------------*/
+@media (min-width: 768px) {
+  .u-sp-only {
+    display: none;
+  }
+}

@@ -1,0 +1,32 @@
+/* Circle
+--------------------*/
+/* base */
+.c-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--color-bg-orange);
+  flex: 0 0 auto;
+}
+
+/* circle size  */
+.c-circle--lg {
+  width: 112px;
+  height: 112px;
+}
+
+.c-circle--md {
+  width: 80px;
+  height: 80px;
+}
+
+.c-circle--48 {
+  width: 48px;
+  height: 48px;
+}
+
+.c-circle--sm {
+  width: 32px;
+  height: 32px;
+}
