@@ -1,0 +1,112 @@
+/* work-media-project-page
+--------------------------------*/
+.work-media-project-page {
+  background-color: var(--color-bg-light);
+
+  .work-hero {
+    padding-top: 39px;
+    padding-bottom: 83px;
+  }
+
+  .work-hero__back {
+    display: inline-flex;
+    gap: 14px;
+    color: var(--color-text-dark);
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 700;
+    margin-bottom: 45px;
+  }
+
+  .work-hero__title {
+    color: var(--color-text-dark);
+    margin-bottom: 26px;
+  }
+
+  .work-hero__lead {
+    color: var(--color-text-dark);
+    margin-bottom: 24px;
+  }
+
+  .work-hero__text {
+    color: var(--color-text-dark-gray-64);
+    margin-bottom: 60px;
+  }
+
+  .work-hero__label {
+    color: var(--color-accent);
+  }
+
+  .work-hero__group--category {
+    margin-bottom: 48px;
+  }
+
+  .work-hero__list {
+    color: var(--color-text-dark);
+  }
+
+  .work-hero__group--client {
+    margin-bottom: 44px;
+  }
+
+  .work-hero__group--category .work-hero__label {
+    margin-bottom: 16px;
+  }
+
+  .work-hero__group--client .work-hero__label {
+    margin-bottom: 20px;
+  }
+
+  .work-hero__group--date .work-hero__label {
+    margin-bottom: 14px;
+  }
+
+  .work-problem__title {
+    margin-bottom: 31px;
+  }
+
+  .work-problem__lead {
+    margin-bottom: 20px;
+  }
+
+  .work-problem__lead,
+  .work-problem__text {
+    color: var(--color-text-dark-gray-64);
+  }
+
+  .work-problem__text {
+    margin-bottom: 64px;
+  }
+
+  .work-problem__media {
+    width: max(100%, 329px);
+  }
+
+  .work-problem__video {
+    position: relative;
+    aspect-ratio: 329 / 259;
+    overflow: hidden;
+    border-radius: 6px;
+    margin-bottom: 17px;
+  }
+
+  .work-problem__gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 17px 17px;
+    margin-bottom: 72px;
+  }
+
+  .work-problem__gallery-item {
+    aspect-ratio: 156 / 120;
+    overflow: hidden;
+    border-radius: 6px;
+  }
+
+  .work-problem__thumb {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

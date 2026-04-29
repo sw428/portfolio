@@ -3,6 +3,7 @@
 @use "foundation/base";
 @use "foundation/typography";
 
+@use "layout/header";
 @use "layout/inner";
 
 @use "components/button";
@@ -14,6 +15,7 @@
 @use "components/page-hero";
 @use "components/logos";
 @use "components/dream-hero";
+@use "components/video";
 
 @use "utility/display";
 @use "utility/visually-hidden";
@@ -23,3 +25,5 @@
 @use "pages/about";
 @use "pages/services";
 @use "pages/portfolio";
+@use "pages/work-media-project";
+@use "layout/footer";

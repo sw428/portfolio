@@ -3,18 +3,21 @@
 .l-inner {
   width: min(100%, 550px);
   padding-inline: 23px;
-  margin: 0 auto;
+  margin-inline: auto;
+}
+
+.l-narrow {
+  width: min(100%, 570px);
+  margin-inline: auto;
 }
 
 @media (min-width: 768px) {
   .l-inner {
     width: min(100%, 1440px);
-    padding-inline: clamp(23px, calc(16.67vw + -105px), 135px);
+    padding-inline: clamp(23px, calc(16.67vw - 105px), 135px);
   }
 
   .l-narrow {
-    width: min(100%, 570px);
-    margin: 0 auto;
-    padding-inline: initial;
+    padding-inline: 0;
   }
 }

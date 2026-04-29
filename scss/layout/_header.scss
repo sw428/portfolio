@@ -1,0 +1,158 @@
+/* Header
+--------------------------------*/
+.header {
+  background-color: var(--color-bg-dark);
+  padding-top: 16px;
+}
+
+/* home：header下にも余白を持つ */
+.header--home {
+  padding-bottom: 32px;
+}
+
+/* sub：通常の下層ヘッダー */
+.header--sub {
+  padding-bottom: 16px;
+}
+
+/* flush：次セクション側で余白を管理する */
+.header--flush {
+  padding-bottom: 0;
+}
+
+.header__brand {
+  display: inline-flex;
+  flex-shrink: 0;
+}
+
+.header__controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__actions {
+  display: none;
+}
+
+/* Toggle button
+--------------------------------*/
+.header__toggle {
+  width: 48px;
+  height: 48px;
+  background: none;
+  border: 1px solid var(--color-text-gray-30);
+  border-radius: 6px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1001;
+}
+
+.header__line {
+  display: block;
+  width: 16px;
+  height: 2px;
+  background: var(--color-white);
+  margin: 6px auto;
+  transition:
+    transform 0.3s,
+    opacity 0.3s;
+}
+
+/* SP overlay menu
+--------------------------------*/
+.header__nav {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  color: var(--color-accent);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.header.is-open .header__nav {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.header__nav-panel {
+  background: var(--color-border-dark);
+  width: min(320px, 80vw);
+  padding: 24px;
+  margin-left: auto;
+}
+
+.header__nav-list {
+  color: var(--color-white);
+}
+
+/* Hamburger open state
+--------------------------------*/
+.header.is-open .header__line:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.header.is-open .header__line:nth-child(2) {
+  opacity: 0;
+}
+
+.header.is-open .header__line:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.header.is-open .header__toggle {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+}
+
+/* PC
+--------------------------------*/
+@media (min-width: 768px) {
+  /* Header
+	--------------------------------*/
+  .header__toggle {
+    display: none;
+  }
+
+  .header__controls {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 1fr auto;
+  }
+
+  .header__nav {
+    display: block;
+    position: static;
+    inset: auto;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    background: transparent;
+    z-index: auto;
+  }
+
+  .header__nav-panel {
+    width: auto;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+  }
+
+  .header__nav-list {
+    color: var(--color-white);
+    display: flex;
+    justify-content: space-between;
+    padding-left: clamp(21px, calc(20.39vw + -135.57px), 158px);
+    padding-right: clamp(21px, calc(25vw + -171px), 189px);
+  }
+
+  .header__actions {
+    display: inline-flex;
+  }
+}
