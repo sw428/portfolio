@@ -39,3 +39,8 @@
   background: rgba(0, 0, 0, 0.6);
   color: #fff;
 }
+
+.c-video__play[hidden],
+.c-video__time[hidden] {
+  display: none;
+}

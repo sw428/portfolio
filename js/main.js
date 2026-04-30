@@ -81,3 +81,31 @@ toggles.forEach((toggle) => {
     body.hidden = isOpen;
   });
 });
+
+/* work-media-project
+===================================*/
+// c-video の再生ボタンを押したら、controls を付けて動画を再生する
+const videoBlocks = document.querySelectorAll(".c-video");
+
+videoBlocks.forEach((videoBlock) => {
+  const video = videoBlock.querySelector(".c-video__player");
+  const playButton = videoBlock.querySelector(".c-video__play");
+  const time = videoBlock.querySelector(".c-video__time");
+
+  if (!video || !playButton) return;
+
+  playButton.addEventListener("click", () => {
+    // video に controls 属性を追加する
+    video.controls = true;
+
+    // 動画を再生する
+    video.play();
+
+    // 自作の再生ボタンと時間表示を消す
+    playButton.hidden = true;
+
+    if (time) {
+      time.hidden = true;
+    }
+  });
+});

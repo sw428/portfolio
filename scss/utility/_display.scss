@@ -1,11 +1,20 @@
-.u-sp-only {
-  display: inline;
+// u-sp-only → 表示
+// u-pc-only → 非表示
+
+// PC
+// u-sp-only → 非表示
+// u-pc-only → 表示
+
+.u-pc-only {
+  display: none;
 }
 
-/* PC
---------------------------------*/
 @media (min-width: 768px) {
   .u-sp-only {
     display: none;
+  }
+
+  .u-pc-only {
+    display: revert;
   }
 }
