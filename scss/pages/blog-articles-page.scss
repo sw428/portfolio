@@ -1,0 +1,34 @@
+.blog-articles-page {
+  background-color: var(--color-bg-light);
+
+  .blog-articles {
+    padding-top: 80px;
+    padding-bottom: 79px;
+
+    .blog-card {
+      display: grid;
+      max-width: 329px;
+      margin-inline: auto;
+      margin-bottom: 52px;
+    }
+
+    .blog-card__media-link {
+      display: block;
+      aspect-ratio: 329 / 224;
+      overflow: hidden;
+      border-radius: 6px;
+      margin-bottom: 26px;
+    }
+
+    .blog-card__img {
+      object-fit: cover;
+      object-position: 6% 0%;
+      height: 100%;
+    }
+
+    .blog__more {
+      text-align: center;
+      margin-bottom: 80px;
+    }
+  }
+}
