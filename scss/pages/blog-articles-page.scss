@@ -1,34 +1,99 @@
 .blog-articles-page {
   background-color: var(--color-bg-light);
 
+  .blog-articles__list {
+    display: grid;
+    gap: 52px;
+    margin-bottom: 52px;
+  }
+
   .blog-articles {
     padding-top: 80px;
     padding-bottom: 79px;
+  }
+
+  .blog-articles__inner {
+    max-width: 329px;
+    margin-inline: auto;
+  }
+
+  .blog-card__media-link {
+    display: block;
+    aspect-ratio: 329 / 224;
+    overflow: hidden;
+    border-radius: 6px;
+    margin-bottom: 26px;
+  }
+
+  .blog-card__img {
+    object-fit: cover;
+    object-position: 6% 0%;
+    height: 100%;
+  }
+
+  .blog-articles__more {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+
+  .newsletter {
+    padding-bottom: 80px;
+    margin-bottom: 79px;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .newsletter__title {
+    margin-bottom: 35px;
+  }
+
+  /* PC
+  --------------------------------*/
+  @media (min-width: 768px) {
+    .blog-articles__inner {
+      max-width: none;
+    }
+
+    .blog-articles__list {
+      grid-template-columns: repeat(6, 1fr);
+      row-gap: 68px;
+      column-gap: 30px;
+    }
+
+    .blog-card:nth-child(-n + 2) .blog-card__title-link {
+      font-size: 2.5rem;
+      line-height: 1.2;
+      font-weight: 800;
+    }
+
+    .blog-articles__divider {
+      grid-column: 1 / -1;
+      height: 1px;
+      margin-bottom: 11px;
+      background-color: var(--color-border);
+    }
 
     .blog-card {
-      display: grid;
-      max-width: 329px;
-      margin-inline: auto;
-      margin-bottom: 52px;
+      grid-column: span 2;
     }
 
-    .blog-card__media-link {
-      display: block;
-      aspect-ratio: 329 / 224;
-      overflow: hidden;
-      border-radius: 6px;
-      margin-bottom: 26px;
+    .blog-card--large {
+      grid-column: span 3;
     }
 
-    .blog-card__img {
-      object-fit: cover;
-      object-position: 6% 0%;
-      height: 100%;
+    .blog-card--large .blog-card__media-link {
+      aspect-ratio: 570 / 336;
     }
 
-    .blog__more {
-      text-align: center;
-      margin-bottom: 80px;
+    .newsletter {
+      padding: 63px 0 63px;
+    }
+
+    .newsletter__fields {
+      justify-content: flex-end;
+    }
+
+    .blog-articles-page .newsletter__title {
+      margin-bottom: 0;
     }
   }
 }
