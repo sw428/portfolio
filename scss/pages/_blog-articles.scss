@@ -30,6 +30,10 @@
   /* PC
   --------------------------------*/
   @media (min-width: 768px) {
+    .blog-articles {
+      padding-bottom: 0px;
+    }
+
     .blog-articles__list {
       grid-template-columns: repeat(6, 1fr);
       row-gap: 68px;
@@ -65,7 +69,11 @@
     }
 
     .newsletter {
-      padding: 63px 0 63px;
+      padding: 63px 0 67px;
+    }
+
+    .newsletter__title {
+      margin: 0;
     }
 
     .newsletter__fields {

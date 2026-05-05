@@ -16,7 +16,7 @@
 
 .footer__title {
   margin-bottom: 16px;
-  letter-spacing: -1px;
+  letter-spacing: 0px;
 }
 
 .footer__services {
@@ -105,13 +105,14 @@
 --------------------------------*/
 @media (min-width: 768px) {
   .footer {
-    padding-top: 96px;
+    padding-top: 92px;
   }
 
   .footer__inner {
     display: flex;
     gap: clamp(100px, calc(44.94vw + -315.14px), 305px);
     justify-content: space-between;
+    margin-bottom: 68px;
   }
 
   .footer__content {
@@ -122,6 +123,10 @@
   .footer__groups {
     display: flex;
     gap: clamp(150px, calc(32.44vw + -219.14px), 248px);
+  }
+  .footer__menu,
+  .footer__services {
+    margin-bottom: 0px;
   }
 
   .footer__bottom {
