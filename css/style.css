@@ -57,6 +57,7 @@ ul {
   /* 80(hight) ÷ 72 */
   line-height: 1.2;
   font-weight: 800;
+  letter-spacing: -2px;
   color: var(--color-white);
 }
 
@@ -66,6 +67,7 @@ ul {
   /* 64 ÷ 56 */
   line-height: 1.17;
   font-weight: 800;
+  letter-spacing: -1px;
 }
 
 .t-h3-text {
@@ -284,6 +286,11 @@ ul {
   margin-inline: auto;
 }
 
+.l-blog-articles__inner {
+  max-width: 329px;
+  margin-inline: auto;
+}
+
 @media (min-width: 768px) {
   .l-inner {
     width: min(100%, 1440px);
@@ -291,6 +298,9 @@ ul {
   }
   .l-narrow {
     padding-inline: initial;
+  }
+  .l-blog-articles__inner {
+    max-width: none;
   }
 }
 /* Button
@@ -653,6 +663,38 @@ ul {
   display: none;
 }
 
+.c-blog-card__media-link {
+  display: block;
+  aspect-ratio: 329/224;
+  overflow: hidden;
+  border-radius: 6px;
+  margin-bottom: 26px;
+}
+
+.c-blog-card__category {
+  margin-bottom: 15px;
+}
+
+.c-blog-card__title {
+  margin-bottom: 15px;
+}
+
+.c-blog-card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 6% 0%;
+}
+
+.c-blog-card__date {
+  color: var(--color-text-dark-gray-64);
+}
+
+@media (min-width: 768px) {
+  .c-blog-card__media-link {
+    aspect-ratio: 370/224;
+  }
+}
 .u-pc-only {
   display: none;
 }
@@ -2219,22 +2261,6 @@ ul {
   padding-top: 80px;
   padding-bottom: 79px;
 }
-.blog-articles-page .blog-articles__inner {
-  max-width: 329px;
-  margin-inline: auto;
-}
-.blog-articles-page .blog-card__media-link {
-  display: block;
-  aspect-ratio: 329/224;
-  overflow: hidden;
-  border-radius: 6px;
-  margin-bottom: 26px;
-}
-.blog-articles-page .blog-card__img {
-  object-fit: cover;
-  object-position: 6% 0%;
-  height: 100%;
-}
 .blog-articles-page .blog-articles__more {
   text-align: center;
   margin-bottom: 80px;
@@ -2252,15 +2278,12 @@ ul {
   --------------------------------*/
 }
 @media (min-width: 768px) {
-  .blog-articles-page .blog-articles__inner {
-    max-width: none;
-  }
   .blog-articles-page .blog-articles__list {
     grid-template-columns: repeat(6, 1fr);
     row-gap: 68px;
     column-gap: 30px;
   }
-  .blog-articles-page .blog-card:nth-child(-n+2) .blog-card__title-link {
+  .blog-articles-page .c-blog-card:nth-child(-n+2) .c-blog-card__title-link {
     font-size: 2.5rem;
     line-height: 1.2;
     font-weight: 800;
@@ -2271,13 +2294,13 @@ ul {
     margin-bottom: 11px;
     background-color: var(--color-border);
   }
-  .blog-articles-page .blog-card {
+  .blog-articles-page .c-blog-card {
     grid-column: span 2;
   }
   .blog-articles-page .blog-card--large {
     grid-column: span 3;
   }
-  .blog-articles-page .blog-card--large .blog-card__media-link {
+  .blog-articles-page .blog-card--large .c-blog-card__media-link {
     aspect-ratio: 570/336;
   }
   .blog-articles-page .newsletter {
@@ -2289,6 +2312,150 @@ ul {
   .blog-articles-page .blog-articles-page .newsletter__title {
     margin-bottom: 0;
   }
+}
+
+.blog-agency-outsource-page {
+  background-color: var(--color-bg-light);
+}
+.blog-agency-outsource-page .blog-detail__header {
+  margin-bottom: 68px;
+}
+.blog-agency-outsource-page .blog-detail__back {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 42px;
+}
+.blog-agency-outsource-page .blog-detail {
+  padding-top: 39px;
+}
+.blog-agency-outsource-page .blog-detail__title {
+  margin-bottom: 31px;
+}
+.blog-agency-outsource-page .blog-detail__back {
+  font-size: 12px;
+  font-weight: 800;
+}
+.blog-agency-outsource-page .blog-detail__meta-label,
+.blog-agency-outsource-page .blog-detail__date-label {
+  color: var(--color-text-dark-gray-64);
+}
+.blog-agency-outsource-page .blog-detail__meta-link,
+.blog-agency-outsource-page .blog-detail__date-text {
+  color: var(--color-text-dark);
+}
+.blog-agency-outsource-page .blog-detail__meta {
+  margin-bottom: 16px;
+}
+.blog-agency-outsource-page .blog-detail__figure {
+  margin-bottom: 65px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.blog-agency-outsource-page .blog-detail__lead {
+  margin-bottom: 28px;
+}
+.blog-agency-outsource-page .blog-detail__text--intro {
+  margin-bottom: 57px;
+}
+.blog-agency-outsource-page .blog-detail__text {
+  color: var(--color-text-dark-gray-64);
+}
+.blog-agency-outsource-page .blog-detail__heading {
+  margin-bottom: 35px;
+}
+.blog-agency-outsource-page .blog-detail__text--section {
+  margin-bottom: 28px;
+}
+.blog-agency-outsource-page .blog-detail__list {
+  padding-left: 0;
+  list-style: none;
+}
+.blog-agency-outsource-page .blog-detail__text--closing {
+  margin-bottom: 57px;
+}
+.blog-agency-outsource-page .blog-detail__list-item {
+  position: relative;
+  padding-left: 16px;
+  color: var(--color-text-dark);
+  margin-left: 9px;
+}
+.blog-agency-outsource-page .blog-detail__list-item::before {
+  content: "";
+  position: absolute;
+  top: 11.5px;
+  left: -7px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--color-accent);
+}
+.blog-agency-outsource-page .blog-detail__list {
+  margin-bottom: 32px;
+}
+.blog-agency-outsource-page .blog-detail__text--overview {
+  margin-bottom: 57px;
+}
+.blog-agency-outsource-page .blog-detail__text--service {
+  margin-bottom: 39px;
+}
+.blog-agency-outsource-page .blog-detail__ordered-item {
+  color: var(--color-text-dark);
+  margin-left: 18px;
+}
+.blog-agency-outsource-page .blog-detail__ordered-list {
+  margin-bottom: 32px;
+}
+.blog-agency-outsource-page .blog-detail__text--solution {
+  margin-bottom: 64px;
+}
+.blog-agency-outsource-page .blog-detail__text--after-quote {
+  margin-bottom: 64px;
+}
+.blog-agency-outsource-page .blog-detail__quote {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  padding: 42px 28px 32px 32px;
+  background: var(--color-bg-pink);
+  margin-bottom: 76px;
+}
+.blog-agency-outsource-page .blog-detail__author {
+  padding: 63px 0 64px 0;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  text-align: center;
+}
+.blog-agency-outsource-page .blog-detail__author-img {
+  margin: 0 auto 10px;
+}
+.blog-agency-outsource-page .blog-detail__author-role {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0;
+  margin-bottom: 40px;
+}
+.blog-agency-outsource-page .blog-detail__social-list {
+  display: inline-flex;
+}
+.blog-agency-outsource-page .related-articles {
+  padding-top: 72px;
+  padding-bottom: 100px;
+}
+.blog-agency-outsource-page .related-articles__title {
+  margin-bottom: 65px;
+}
+@media (min-width: 768px) {
+  .blog-agency-outsource-page .blog-detail__info {
+    display: flex;
+    gap: 243px;
+  }
+}
+.blog-agency-outsource-page .blog-detail__figure {
+  aspect-ratio: 970/592;
+  margin-bottom: 74px;
+}
+.blog-agency-outsource-page .blog-detail__img {
+  width: 100%;
 }
 
 /* Footer
@@ -2309,6 +2476,7 @@ ul {
 
 .footer__title {
   margin-bottom: 16px;
+  letter-spacing: -1px;
 }
 
 .footer__services {

@@ -12,25 +12,6 @@
     padding-bottom: 79px;
   }
 
-  .blog-articles__inner {
-    max-width: 329px;
-    margin-inline: auto;
-  }
-
-  .blog-card__media-link {
-    display: block;
-    aspect-ratio: 329 / 224;
-    overflow: hidden;
-    border-radius: 6px;
-    margin-bottom: 26px;
-  }
-
-  .blog-card__img {
-    object-fit: cover;
-    object-position: 6% 0%;
-    height: 100%;
-  }
-
   .blog-articles__more {
     text-align: center;
     margin-bottom: 80px;
@@ -49,17 +30,13 @@
   /* PC
   --------------------------------*/
   @media (min-width: 768px) {
-    .blog-articles__inner {
-      max-width: none;
-    }
-
     .blog-articles__list {
       grid-template-columns: repeat(6, 1fr);
       row-gap: 68px;
       column-gap: 30px;
     }
 
-    .blog-card:nth-child(-n + 2) .blog-card__title-link {
+    .c-blog-card:nth-child(-n + 2) .c-blog-card__title-link {
       font-size: 2.5rem;
       line-height: 1.2;
       font-weight: 800;
@@ -72,15 +49,18 @@
       background-color: var(--color-border);
     }
 
-    .blog-card {
+    .c-blog-card {
       grid-column: span 2;
     }
 
+    // modifier風のクラス名だが、カードコンポーネント自体のバリエーションではなく、
+    // このページのグリッド上での大きさを調整するためのページ固有クラス。
+    // そのため c- は付けず、components ではなく pages 側で管理する。
     .blog-card--large {
       grid-column: span 3;
     }
 
-    .blog-card--large .blog-card__media-link {
+    .blog-card--large .c-blog-card__media-link {
       aspect-ratio: 570 / 336;
     }
 

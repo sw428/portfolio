@@ -11,6 +11,11 @@
   margin-inline: auto;
 }
 
+.l-blog-articles__inner {
+  max-width: 329px;
+  margin-inline: auto;
+}
+
 @media (min-width: 768px) {
   .l-inner {
     width: min(100%, 1440px);
@@ -19,5 +24,9 @@
 
   .l-narrow {
     padding-inline: initial;
+  }
+
+  .l-blog-articles__inner {
+    max-width: none;
   }
 }
