@@ -345,81 +345,16 @@
 
 /* FAQ
 --------------------------------*/
-.faq {
+.home-faq {
   background-color: var(--color-bg-dark);
   padding-top: 92px;
   padding-bottom: 98px;
 }
 
-.faq__title {
-  margin-bottom: 17px;
+.c-logos {
+  padding-top: 118px;
 }
 
-.faq__heading {
-  color: var(--color-white);
-  margin-bottom: 15px;
-}
-
-.faq__lead {
-  margin-bottom: 32px;
-}
-
-.faq__contact {
-  display: inline-block;
-  color: var(--color-white);
-  margin-bottom: 36px;
-}
-
-.faq__list {
-  border: 1px solid var(--color-border-dark);
-  margin-bottom: 118px;
-}
-
-.faq__item {
-  padding: 40px 28px;
-}
-
-.faq__list > * + * {
-  border-top: 1px solid var(--color-border-dark);
-}
-
-.faq__question {
-  display: flex;
-  list-style: none;
-  cursor: pointer;
-  gap: 15px;
-}
-
-.faq__question::marker {
-  content: "";
-  /*safari等でlist-style: none;適用されない場合があるため*/
-}
-
-.faq__icon {
-  margin-left: auto;
-  transition: transform 0.3s ease;
-}
-
-.faq__item[open] {
-  background-color: var(--color-white);
-}
-
-.faq__item[open] .faq__question-text {
-  color: var(--color-text-dark);
-  margin-bottom: 19px;
-}
-
-.faq__item[open] .faq__icon {
-  transform: rotate(180deg);
-}
-
-.faq__question-text {
-  color: var(--color-white);
-}
-
-.faq__answer {
-  color: var(--color-text-dark-gray-64);
-}
 /* Blog
 --------------------------------*/
 .blog {
@@ -734,21 +669,11 @@
     max-width: 100%;
   }
 
-  /* FAQ
-	--------------------------------*/
-  .faq {
+  /* home-faq
+  --------------------------------*/
+  .home-faq {
     padding-top: 140px;
     padding-bottom: 123px;
-  }
-
-  .faq__inner {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: clamp(20px, calc(16.37vw + -105.71px), 130px);
-  }
-
-  .faq__header {
-    max-width: 470px;
   }
 
   /* blog
@@ -867,6 +792,7 @@
     grid-template-columns: 47fr 57fr;
     gap: clamp(30px, calc(14.88vw + -84.29px), 130px);
     padding-bottom: 139px;
+    align-items: center;
   }
 
   .final-cta__visual {
@@ -881,6 +807,10 @@
   .final-cta__body {
     order: 1;
     max-width: 470px;
+  }
+
+  .final-cta__actions {
+    padding-bottom: 0px;
   }
 
   .final-cta__grid {

@@ -18,6 +18,7 @@
 @use "components/dream-hero";
 @use "components/video";
 @use "components/blog-card";
+@use "components/faq";
 
 @use "utility/display";
 @use "utility/visually-hidden";
@@ -30,4 +31,5 @@
 @use "pages/work-media-project";
 @use "pages/blog-articles";
 @use "pages/blog-agency-outsource";
+@use "pages/contact";
 @use "layout/footer";

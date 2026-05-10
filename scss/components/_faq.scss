@@ -1,0 +1,147 @@
+/* FAQ
+--------------------------------*/
+.c-faq {
+  background-color: var(--color-bg-dark);
+}
+
+.c-faq__title {
+  margin-bottom: 17px;
+}
+
+.c-faq__heading {
+  color: var(--color-white);
+  margin-bottom: 15px;
+}
+
+.c-faq__lead {
+  margin-bottom: 32px;
+}
+
+.c-faq__contact {
+  display: inline-block;
+  color: var(--color-white);
+  margin-bottom: 36px;
+}
+
+.c-faq__list {
+  border: 1px solid var(--color-border-dark);
+  border-radius: 6px;
+}
+
+.c-faq__item {
+  padding: 40px 28px;
+}
+
+.c-faq__list > * + * {
+  border-top: 1px solid var(--color-border-dark);
+}
+
+.c-faq__question {
+  display: flex;
+  list-style: none;
+  cursor: pointer;
+  gap: 15px;
+}
+
+.c-faq__question::marker {
+  content: "";
+  /*safari等でlist-style: none;適用されない場合があるため*/
+}
+
+.c-faq__icon {
+  margin-left: auto;
+  transition: transform 0.3s ease;
+}
+
+.c-faq__item[open] {
+  background-color: var(--color-white);
+}
+
+.c-faq__item[open] .c-faq__question-text {
+  color: var(--color-text-dark);
+  margin-bottom: 19px;
+}
+
+.c-faq__item[open] .c-faq__icon {
+  transform: rotate(180deg);
+}
+
+.c-faq__question-text {
+  color: var(--color-white);
+}
+
+.c-faq__answer {
+  color: var(--color-text-dark-gray-64);
+}
+
+/* faq--dark
+--------------------------------*/
+.c-faq--dark {
+  background-color: var(--color-bg-dark);
+
+  .c-faq__heading {
+    color: var(--color-white);
+  }
+
+  .c-faq__lead {
+    color: var(--color-text-gray-64);
+  }
+
+  .c-faq__contact {
+    color: var(--color-white);
+  }
+
+  .c-faq__question-text {
+    color: var(--color-white);
+  }
+
+  .c-faq__list {
+    border: 1px solid var(--color-border-dark);
+  }
+
+  .c-faq__list > * + * {
+    border-top: 1px solid var(--color-border-dark);
+  }
+}
+
+/*faq--light
+--------------------------------*/
+.c-faq--light {
+  background-color: var(--color-bg-light);
+
+  .c-faq__heading {
+    color: var(--color-text-dark);
+  }
+
+  .c-faq__lead {
+    color: var(--color-text-dark-gray-64);
+  }
+
+  .c-faq__contact {
+    color: var(--color-text-dark);
+  }
+
+  .c-faq__question-text {
+    color: var(--color-text-dark);
+  }
+
+  .c-faq__list {
+    border: 1px solid var(--color-border);
+  }
+
+  .c-faq__item + .c-faq__item {
+    border-top: 1px solid var(--color-border);
+  }
+}
+
+@media (min-width: 768px) {
+  .c-faq__inner {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: clamp(20px, calc(16.37vw + -105.71px), 130px);
+  }
+
+  .c-faq__header {
+    max-width: 380px;
+  }
+}

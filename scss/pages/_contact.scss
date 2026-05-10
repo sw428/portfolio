@@ -1,0 +1,56 @@
+.contact-page {
+  background-color: var(--color-bg-light);
+
+  .contact-hero {
+    padding: 64px 0px;
+  }
+
+  .access-map {
+    position: relative;
+    max-width: 1440px;
+    height: 720px;
+    margin-inline: auto;
+  }
+
+  .access-map__pin {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+  }
+
+  .access-map__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .contact-info__list {
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+  }
+
+  .contact-info__item {
+    // home.scss の .contact-info__item が flex 指定を持っているため、
+    // contactページでは li の通常表示に戻す
+    // align-items は残って見えるが、flex でなくなるため実質効かない
+    display: list-item;
+    margin-bottom: 0;
+
+    padding: 32px 123px 37px 28px;
+  }
+
+  .contact-info__item + .contact-info__item {
+    border-top: 1px solid var(--color-border);
+  }
+
+  .contact-info__head {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    margin-bottom: 26px;
+  }
+
+  .contact-info__text {
+    margin-top: 0px;
+  }
+}
