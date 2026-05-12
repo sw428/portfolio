@@ -2571,10 +2571,15 @@ ul {
   }
 }
 
+/* contact hero
+--------------------------------*/
 .contact-page {
   background-color: var(--color-bg-light);
 }
-.contact-page .contact-hero {
+.contact-page .c-input--textarea {
+  min-height: 96px;
+}
+.contact-page .contact-map {
   padding: 64px 0px;
 }
 .contact-page .access-map {
@@ -2587,11 +2592,16 @@ ul {
   position: absolute;
   left: 50%;
   top: 50%;
+  transform: translate(-50%, -50%);
 }
 .contact-page .access-map__img {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+.contact-page {
+  /* contact-info
+  --------------------------------*/
 }
 .contact-page .contact-info__list {
   border: 1px solid var(--color-border);
@@ -2613,6 +2623,35 @@ ul {
 }
 .contact-page .contact-info__text {
   margin-top: 0px;
+}
+.contact-page .contact-faq {
+  padding-top: 108px;
+}
+.contact-page .c-faq {
+  padding-bottom: 118px;
+  border-bottom: 1px solid var(--color-border);
+}
+@media (min-width: 1024px) {
+  .contact-page .contact-map {
+    position: relative;
+    padding-top: 0px;
+  }
+  .contact-page .contact-card {
+    position: absolute;
+    z-index: 1;
+    width: clamp(329px, 28.27vw + 162.86px, 470px);
+    margin-bottom: 0px;
+    top: 126px;
+  }
+  .contact-page .access-map__pin {
+    left: 967px;
+  }
+  .contact-page .contact-info__list {
+    display: flex;
+  }
+  .contact-page .contact-info__item {
+    padding-left: clamp(28px, 2.98vw + 5.14px, 48px);
+  }
 }
 
 /* Footer
@@ -2687,12 +2726,12 @@ ul {
 .footer--dark {
   background-color: var(--color-bg-dark);
 }
+.footer--dark .footer__inner {
+  border-bottom: 1px solid var(--color-border-dark);
+}
 .footer--dark .footer__logo,
 .footer--dark .footer__bottom-link {
   color: var(--color-white);
-}
-.footer--dark .footer__bottom {
-  border-top: 1px solid var(--color-border-dark);
 }
 
 /* Footer light
@@ -2700,13 +2739,13 @@ ul {
 .footer--light {
   background-color: var(--color-bg-light);
 }
+.footer--light .footer__inner {
+  border-bottom: 1px solid var(--color-border);
+}
 .footer--light .footer__logo,
 .footer--light .footer__link,
 .footer--light .footer__bottom-link {
   color: var(--color-text-dark);
-}
-.footer--light .footer__bottom {
-  border-top: 1px solid var(--color-border);
 }
 .footer--light .footer__copyright {
   color: var(--color-text-dark-gray-64);
@@ -2722,7 +2761,8 @@ ul {
     display: flex;
     gap: clamp(100px, 44.94vw - 315.14px, 305px);
     justify-content: space-between;
-    margin-bottom: 68px;
+    padding-bottom: 68px;
+    border-bottom: 1px solid var(--color-border);
   }
   .footer__content {
     display: flex;

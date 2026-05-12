@@ -70,13 +70,13 @@
 .footer--dark {
   background-color: var(--color-bg-dark);
 
+  .footer__inner {
+    border-bottom: 1px solid var(--color-border-dark);
+  }
+
   .footer__logo,
   .footer__bottom-link {
     color: var(--color-white);
-  }
-
-  .footer__bottom {
-    border-top: 1px solid var(--color-border-dark);
   }
 }
 
@@ -85,14 +85,14 @@
 .footer--light {
   background-color: var(--color-bg-light);
 
+  .footer__inner {
+    border-bottom: 1px solid var(--color-border);
+  }
+
   .footer__logo,
   .footer__link,
   .footer__bottom-link {
     color: var(--color-text-dark);
-  }
-
-  .footer__bottom {
-    border-top: 1px solid var(--color-border);
   }
 
   .footer__copyright {
@@ -111,7 +111,8 @@
     display: flex;
     gap: clamp(100px, calc(44.94vw + -315.14px), 305px);
     justify-content: space-between;
-    margin-bottom: 68px;
+    padding-bottom: 68px;
+    border-bottom: 1px solid var(--color-border);
   }
 
   .footer__content {

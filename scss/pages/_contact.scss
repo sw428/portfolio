@@ -1,7 +1,13 @@
+/* contact hero
+--------------------------------*/
 .contact-page {
   background-color: var(--color-bg-light);
 
-  .contact-hero {
+  .c-input--textarea {
+    min-height: 96px;
+  }
+
+  .contact-map {
     padding: 64px 0px;
   }
 
@@ -16,6 +22,7 @@
     position: absolute;
     left: 50%;
     top: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .access-map__img {
@@ -23,6 +30,9 @@
     width: 100%;
     object-fit: cover;
   }
+
+  /* contact-info
+  --------------------------------*/
 
   .contact-info__list {
     border: 1px solid var(--color-border);
@@ -52,5 +62,40 @@
 
   .contact-info__text {
     margin-top: 0px;
+  }
+
+  .contact-faq {
+    padding-top: 108px;
+  }
+
+  .c-faq {
+    padding-bottom: 118px;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  @media (min-width: 1024px) {
+    .contact-map {
+      position: relative; // PCでabsoluteするための基準
+      padding-top: 0px;
+    }
+
+    .contact-card {
+      position: absolute;
+      z-index: 1;
+      width: clamp(329px, 28.27vw + 162.86px, 470px);
+      margin-bottom: 0px;
+      top: 126px;
+    }
+
+    .access-map__pin {
+      left: 967px;
+    }
+
+    .contact-info__list {
+      display: flex;
+    }
+    .contact-info__item {
+      padding-left: clamp(28px, calc(2.98vw + 5.14px), 48px);
+    }
   }
 }
