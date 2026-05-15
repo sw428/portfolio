@@ -1776,6 +1776,7 @@ ul {
 }
 .about-page .video-reel__video {
   margin-bottom: 56px;
+  aspect-ratio: 570/368;
 }
 .about-page .video-reel__text {
   color: var(--color-text-dark-gray-64);

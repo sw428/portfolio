@@ -125,23 +125,19 @@
             <p class="video-reel__lead t-text">
               Design, business understanding, ability to put themselves in the merchant's shoes meant to partner.
             </p>
-            <div class="video-reel__video">
-              <iframe
-                class="video-reel__iframe"
-                src="https://www.youtube.com/embed/6OtDnwc9CIY"
-                title="YouTube video player"
-                allow="
-                  accelerometer;
-                  autoplay;
-                  clipboard-write;
-                  encrypted-media;
-                  gyroscope;
-                  picture-in-picture;
-                  web-share;
-                "
-                allowfullscreen
-              >
-              </iframe>
+            <div class="video-reel__video c-video">
+              <video
+                class="c-video__player"
+                src="video/about-page/about-agency.mp4"
+                poster="img/about-page/about-agency.png"
+                preload="metadata"
+              ></video>
+
+              <button class="c-video__play" type="button" aria-label="動画を再生">
+                <img src="img/common/triangle.svg" alt="" class="c-video__play-icon" />
+              </button>
+
+              <span class="c-video__time t-text">0:22</span>
             </div>
             <p class="video-reel__text t-text">
               Ability to put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an
