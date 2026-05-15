@@ -184,10 +184,14 @@
   }
 
   .related-projects__img {
-    display: block;
     width: 100%;
     height: 100%;
+  }
+
+  .related-projects__img--keyboard {
     object-fit: cover;
+    // 画像の見える位置を左寄せにする
+    object-position: left center;
   }
 
   .related-projects__caption {

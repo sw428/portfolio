@@ -2038,7 +2038,7 @@ ul {
   border: none;
 }
 .portfolio-page .portfolio__list > * + * {
-  border-top: none;
+  border-color: transparent;
 }
 .portfolio-page .portfolio__media {
   aspect-ratio: 329/416;
@@ -2052,6 +2052,8 @@ ul {
   padding: 0;
   background: transparent;
   max-width: 400px;
+  border-radius: 6px;
+  overflow: hidden;
 }
 .portfolio-page .portfolio__pagination {
   margin-top: 32px;
@@ -2280,10 +2282,12 @@ ul {
   aspect-ratio: 329/416;
 }
 .work-media-project-page .related-projects__img {
-  display: block;
   width: 100%;
   height: 100%;
+}
+.work-media-project-page .related-projects__img--keyboard {
   object-fit: cover;
+  object-position: left center;
 }
 .work-media-project-page .related-projects__caption {
   position: absolute;

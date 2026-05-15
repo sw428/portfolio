@@ -68,7 +68,7 @@
   }
 
   .portfolio__list > * + * {
-    border-top: none;
+    border-color: transparent;
   }
 
   .portfolio__media {
@@ -85,6 +85,8 @@
     padding: 0;
     background: transparent;
     max-width: 400px;
+    border-radius: 6px;
+    overflow: hidden;
   }
 
   .portfolio__pagination {
