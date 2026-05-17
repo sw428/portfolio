@@ -109,3 +109,13 @@ videoBlocks.forEach((videoBlock) => {
     }
   });
 });
+
+// 印刷ボタンを取得
+const printButton = document.querySelector(".js-print");
+
+// 印刷ボタンが存在する場合だけ、クリック処理を付ける
+if (printButton) {
+  printButton.addEventListener("click", () => {
+    window.print();
+  });
+}

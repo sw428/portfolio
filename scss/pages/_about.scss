@@ -80,7 +80,20 @@
     margin-bottom: 33px;
   }
 
+  .founder-words__quote {
+    position: relative;
+  }
+
+  .founder-words__quote-mark {
+    position: absolute;
+    right: 0px;
+    top: -56px;
+    z-index: 1;
+  }
+
   .founder-words__title {
+    position: relative;
+    z-index: 2;
     margin-bottom: 25px;
   }
 
@@ -123,6 +136,11 @@
 
     .about__content {
       margin-bottom: 65px;
+    }
+
+    .founder-words__quote-mark {
+      right: 48px;
+      top: -56px;
     }
   }
 }

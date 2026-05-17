@@ -1804,7 +1804,18 @@ ul {
 .about-page .founder-words__label {
   margin-bottom: 33px;
 }
+.about-page .founder-words__quote {
+  position: relative;
+}
+.about-page .founder-words__quote-mark {
+  position: absolute;
+  right: 0px;
+  top: -56px;
+  z-index: 1;
+}
 .about-page .founder-words__title {
+  position: relative;
+  z-index: 2;
   margin-bottom: 25px;
 }
 .about-page .founder-words__name {
@@ -1838,6 +1849,10 @@ ul {
   }
   .about-page .about__content {
     margin-bottom: 65px;
+  }
+  .about-page .founder-words__quote-mark {
+    right: 48px;
+    top: -56px;
   }
 }
 /* services-page
