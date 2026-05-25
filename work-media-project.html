@@ -126,7 +126,7 @@
         <div class="work-problem__media">
           <div class="work-problem__video c-video">
             <video class="c-video__player" src="video/work-media-project-page/work-media-video.mp4"
-              poster="img/work-media-project-page/work-media.png" preload="metadata"></video>
+              poster="img/work-media-project-page/work-media.webp" preload="metadata"></video>
 
             <button class="c-video__play" type="button" aria-label="動画を再生">
               <img src="img/common/triangle.svg" alt="" class="c-video__play-icon">
@@ -212,10 +212,10 @@
           <a href="portfolio.html" class="related-projects__link">
             <figure class="related-projects__item">
               <picture class="related-projects__media">
-                <source media="(min-width: 768px)" srcset="./img/work-media-project-page/sofa-pc.png">
+                <source media="(min-width: 768px)" srcset="./img/portfolio-page/sofa.webp">
 
                 <img width="1140" height="832" class="related-projects__img" loading="lazy" decoding="async"
-                  src="img/portfolio-page/sofa.png" alt="ブランディング制作">
+                  src="img/portfolio-page/sofa.webp" alt="ブランディング制作">
               </picture>
 
               <figcaption class="related-projects__caption">
@@ -230,9 +230,9 @@
           <a href="portfolio.html" class="related-projects__link">
             <figure class="related-projects__item">
               <picture class="related-projects__media">
-                <source media="(min-width: 768px)" srcset="img/portfolio-page/work-media.png">
-                <img class="related-projects__img related-projects__img--keyboard" src="img/portfolio-page/keyboard.png"
-                  alt="デザイン制作" width="2340" height="1440">
+                <source media="(min-width: 768px)" srcset="./img/portfolio-page/work-media.webp">
+                <img class="related-projects__img related-projects__img--keyboard"
+                  src="img/portfolio-page/keyboard.webp" alt="デザイン制作" width="2340" height="1440">
               </picture>
 
               <figcaption class="related-projects__caption">
@@ -316,7 +316,8 @@
                   <a class="footer__link t-text" href="services.html">Marketing</a>
                 </li>
                 <li class="footer__item">
-                  <a class="footer__link t-text" href="services.html">See More</a>
+                  <!-- 仮リンク：下層ページ未制作のためリンク無効 -->
+                  <span class="footer__link t-text">See More</span>
                 </li>
               </ul>
             </nav>
@@ -366,7 +367,7 @@
       </div>
     </div>
   </footer>
-  <script src="js/main.js"></script>
+  <script src="js/main.js" defer></script>
 </body>
 
 </html>
