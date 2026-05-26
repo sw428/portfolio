@@ -3,6 +3,11 @@
 .contact-page {
   background-color: var(--color-bg-light);
 
+  .contact-card {
+    max-width: 470px;
+    margin: 0 auto;
+  }
+
   .c-input--textarea {
     min-height: 96px;
   }
@@ -15,7 +20,7 @@
     position: relative;
     max-width: 1440px;
     height: 720px;
-    margin-inline: auto;
+    margin: 0 auto;
   }
 
   .access-map__pin {
@@ -37,6 +42,12 @@
   .contact-info__list {
     border: 1px solid var(--color-border);
     border-radius: 6px;
+    margin: 0 auto;
+  }
+
+  .contact-info__inner {
+    max-width: 391px;
+    margin: 0 auto;
   }
 
   .contact-info__item {
@@ -45,7 +56,6 @@
     // align-items は残って見えるが、flex でなくなるため実質効かない
     display: list-item;
     margin-bottom: 0;
-
     padding: 32px 0 37px 28px;
   }
 
@@ -73,7 +83,7 @@
     border-bottom: 1px solid var(--color-border);
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     .contact-info__list {
       display: flex;
     }
@@ -86,8 +96,6 @@
       border-top: none;
       border-left: 1px solid var(--color-border);
     }
-  }
-  @media (min-width: 1024px) {
     .contact-map {
       position: relative; // PCでabsoluteするための基準
       padding-top: 0px;

@@ -3,17 +3,17 @@
 .l-inner {
   width: min(100%, 550px);
   padding-inline: 23px;
-  margin-inline: auto;
+  margin: 0 auto;
 }
 
 .l-narrow {
   width: min(100%, 570px);
-  margin-inline: auto;
+  margin: 0 auto;
 }
 
 .l-blog-articles__inner {
   max-width: 329px;
-  margin-inline: auto;
+  margin: 0 auto;
 }
 
 @media (min-width: 768px) {
