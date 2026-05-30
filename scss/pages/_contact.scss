@@ -3,9 +3,9 @@
 .contact-page {
   background-color: var(--color-bg-light);
 
-  .contact-card {
+  .c-contact-card {
     max-width: 470px;
-    margin: 0 auto;
+    margin-inline: auto;
   }
 
   .c-input--textarea {
@@ -56,7 +56,7 @@
     // align-items は残って見えるが、flex でなくなるため実質効かない
     display: list-item;
     margin-bottom: 0;
-    padding: 32px 0 37px 28px;
+    padding: 32px 58px 37px 28px;
   }
 
   .contact-info__item + .contact-info__item {
@@ -87,9 +87,16 @@
     .contact-info__list {
       display: flex;
     }
+
+    .contact-info__inner {
+      max-width: none;
+    }
+
     .contact-info__item {
       padding-left: clamp(28px, calc(2.98vw + 5.14px), 48px);
-      flex: 1 1 391px;
+      flex-basis: 391px;
+      flex-grow: 1;
+      flex-shrink: 1;
     }
 
     .contact-info__item + .contact-info__item {
@@ -101,7 +108,7 @@
       padding-top: 0px;
     }
 
-    .contact-card {
+    .c-contact-card {
       position: absolute;
       z-index: 1;
       width: clamp(329px, 28.27vw + 162.86px, 470px);

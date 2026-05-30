@@ -1,0 +1,27 @@
+.c-contact-card {
+  background-color: var(--color-white);
+  padding-top: 57px;
+  padding-bottom: 48px;
+  border-radius: 6px;
+  margin-bottom: 60px;
+}
+
+.c-contact-card__body {
+  padding-inline: 28px;
+}
+
+.c-c-contact-card__title {
+  margin-bottom: 28px;
+}
+
+.c-contact-form__fields {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.c-contact-form__actions {
+  display: flex;
+  justify-content: flex-end;
+}

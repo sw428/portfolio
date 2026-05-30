@@ -6,6 +6,7 @@
   background: var(--color-bg-dark);
   padding-top: 32px;
   padding-bottom: 48px;
+  overflow: hidden;
 }
 
 .hero__img {
@@ -440,34 +441,6 @@
   background-color: var(--color-bg-dark);
 }
 
-.contact-card {
-  background-color: var(--color-white);
-  padding-top: 57px;
-  padding-bottom: 48px;
-  border-radius: 6px;
-  margin-bottom: 60px;
-}
-
-.contact-card__inner {
-  padding-inline: 28px;
-}
-
-.contact-card__title {
-  margin-bottom: 28px;
-}
-
-.contact-form__fields {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  margin-bottom: 32px;
-}
-
-.contact-form__actions {
-  display: flex;
-  justify-content: flex-end;
-}
-
 .contact__title {
   margin-bottom: 17px;
 }
@@ -485,19 +458,16 @@
 .contact-info__item {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   gap: 16px;
   margin-bottom: 20px;
-}
-
-.contact .t-text-big {
   color: var(--color-white);
 }
 
 .contact-info__text,
 .contact-info__link {
   /*フレックススタートによるずれ調整*/
-  margin-top: 10px;
+  color: var(--color-white);
 }
 
 /* final-cta
@@ -778,7 +748,6 @@
     padding-top: 176px;
     padding-bottom: 208px;
   }
-
   .contact__inner {
     display: grid;
     grid-template-columns: clamp(380px, calc(28.27vw + 162.86px), 570px) 1fr;
