@@ -28,6 +28,10 @@
   color: var(--color-white);
 }
 
+.hero__heading-nowrap {
+  white-space: nowrap;
+}
+
 .hero__lead {
   margin-bottom: 32px;
   max-width: 340px;
@@ -119,6 +123,7 @@
   color: var(--color-white);
   border-color: var(--color-text-gray-30);
   margin-bottom: 35px;
+  white-space: nowrap;
 }
 
 .portfolio__button {

@@ -7,7 +7,7 @@
 }
 
 .c-contact-card__body {
-  padding-inline: 28px;
+  padding-inline: 48px;
 }
 
 .c-contact-card__title {
@@ -19,6 +19,26 @@
   flex-direction: column;
   gap: 16px;
   margin-bottom: 32px;
+}
+
+.c-contact-form__select-field {
+  position: relative;
+}
+
+.c-contact-form__select-field::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 24px;
+  transform: translateY(-50%);
+
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid #e85f4c;
+
+  pointer-events: none;
 }
 
 .c-contact-form__actions {

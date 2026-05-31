@@ -482,7 +482,7 @@ ul {
 /* select */
 .c-input--select {
   appearance: none;
-  padding-right: 40px;
+  padding-right: 36px;
   color: var(--color-text-dark-gray-64);
 }
 
@@ -843,7 +843,7 @@ ul {
 }
 
 .c-contact-card__body {
-  padding-inline: 28px;
+  padding-inline: 48px;
 }
 
 .c-contact-card__title {
@@ -855,6 +855,24 @@ ul {
   flex-direction: column;
   gap: 16px;
   margin-bottom: 32px;
+}
+
+.c-contact-form__select-field {
+  position: relative;
+}
+
+.c-contact-form__select-field::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 24px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid #e85f4c;
+  pointer-events: none;
 }
 
 .c-contact-form__actions {
@@ -949,6 +967,10 @@ ul {
   color: var(--color-white);
 }
 
+.hero__heading-nowrap {
+  white-space: nowrap;
+}
+
 .hero__lead {
   margin-bottom: 32px;
   max-width: 340px;
@@ -1040,6 +1062,7 @@ ul {
   color: var(--color-white);
   border-color: var(--color-text-gray-30);
   margin-bottom: 35px;
+  white-space: nowrap;
 }
 
 .portfolio__button {
