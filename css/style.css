@@ -2680,6 +2680,7 @@ ul {
 }
 .contact-page .contact-info__text {
   margin-top: 0px;
+  color: var(--color-text-dark);
 }
 .contact-page .contact-faq {
   padding-top: 108px;
