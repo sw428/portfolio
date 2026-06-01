@@ -5,13 +5,17 @@ HTML / SCSS / JavaScript で制作した、複数ページ構成の静的ポー�
 Figma のデザインテンプレートをもとに、Top / About / Services / Portfolio / Blog / Contact などのページをコーディングしました。  
 レスポンシブ対応、SCSS のレイヤー分け、BEM を意識したクラス設計、JavaScript による基本的な UI 実装を行っています。
 
+## デザイン
+
+- Figma template: [portfolio template](https://www.figma.com/community/file/1063415783897538948/portfolio-template)
+
 ## 公開ページ
 
 - https://sw428.github.io/portfolio/
 
-## デザイン
-
-- Figma template: [portfolio template](https://www.figma.com/community/file/1063415783897538948/portfolio-template)
+## 自作Wiki
+- https://sw428.github.io/wiki/intro/
+- 制作中に整理したHTML/CSS/JavaScriptの基礎知識や、実装時に迷いやすい判断基準をまとめています。
 
 ## 制作時に意識した点
 
@@ -44,7 +48,9 @@ Figma のデザインテンプレートをもとに、Top / About / Services / P
 - SCSS（`@use` を使用した構成）
 - JavaScript（Vanilla JS）
 - Prettier
-
+- chatgpt
+- codex
+- 自作wiki(使用ツール)
 ## CSS設計
 
 - BEM を意識したクラス設計
