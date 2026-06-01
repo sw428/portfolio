@@ -13,7 +13,7 @@ Figma のデザインテンプレートをもとに、Top / About / Services / P
 
 - https://sw428.github.io/portfolio/
 
-  ## 自作Wiki(https://sw428.github.io/wiki/intro/)
+## 自作Wiki(https://sw428.github.io/wiki/intro/)
 
 -制作中に整理したHTML/CSS/JavaScriptの基礎知識や、実装時に迷いやすい判断基準をまとめています。
 
