@@ -6,7 +6,7 @@ Figma のデザインテンプレートをもとに、Top / About / Services / P
 レスポンシブ対応、SCSS のレイヤー分け、BEM を意識したクラス設計、JavaScript による基本的な UI 実装を行っています。
 
 ## デザイン
-著者の方にフリーである事をメールで確認済です。
+著者にフリーで使用していいかメールで確認済です。
 - Figma template: [portfolio template](https://www.figma.com/community/file/1063415783897538948/portfolio-template)
 
 ## 公開ページ
